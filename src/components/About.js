@@ -1,0 +1,72 @@
+// components/TransformationSection.js
+
+import Image from "next/image";
+
+const About = () => {
+  return (
+    <div className="bg-white text-center p-20">
+      <h2 className="text-xl mb-10">Together, we transform</h2>
+      <h1 className="text-[150px] leading-36 mb-8 mango">
+        AUDACIOUS VISIONS <span className="block">INTO REALITY</span>
+      </h1>
+
+      <div className="flex justify-center items-center mt-18">
+        <div className="mx-4">
+          <Image
+            src="https://wearecheck.co/_nuxt/home-about-illustration.CNh6-gmc.svg"
+            alt="Illustration 1"
+            width={220}
+            height={198}
+          />
+        </div>
+        <Image
+          src="https://wearecheck.co/_nuxt/home-about-slant.BK8NVZZL.svg"
+          alt="Illustration 4"
+          width={190}
+          height={198}
+          className="h-30"
+        />
+        <div className="mx-4">
+          <Image
+            src="https://wearecheck.co/_nuxt/home-about-illustration-2.CBM_FEvc.svg"
+            alt="Illustration 2"
+            width={220}
+            height={198}
+          />
+        </div>
+        <Image
+          src="https://wearecheck.co/_nuxt/home-about-slant-2.BY4DzBxE.svg"
+          alt="Illustration 4"
+          width={190}
+          height={100}
+          className="h-30"
+        />
+        <div className="mx-4">
+          <Image
+            src="https://wearecheck.co/_nuxt/home-about-illustration-3.mEgxrqTy.svg"
+            alt="Illustration 3"
+            width={240}
+            height={198}
+          />
+        </div>
+        <Image
+          src="https://wearecheck.co/_nuxt/home-about-slant-3.CQaeGBYA.svg"
+          alt="Illustration 4"
+          width={190}
+          height={100}
+          className="h-30"
+        />
+        <div className="mx-4">
+          <Image
+            src="https://wearecheck.co/_nuxt/home-about-illustration-4.B3s7jbUm.svg"
+            alt="Illustration 4"
+            width={240}
+            height={198}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
