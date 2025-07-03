@@ -13,7 +13,7 @@ const Services = () => {
           <p className="mango text-[40px]">BY</p>
         </div>
       </div>
-      <section className="lg:overflow-y-auto lg:h-[525px] lg:scrollbar-hide">
+      <section className="overflow-y-auto lg:h-[525px] scrollbar-hide">
         <div className="flex lg:p-10 bg-slate-100 w-full lg:h-[525px] p-5 gap-24">
           <div>
             <div className="relative">

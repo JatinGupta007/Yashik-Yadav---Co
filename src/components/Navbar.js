@@ -43,20 +43,25 @@ export const Navbar = () => {
   }
 
   return (
-    <header className="fixed top-0 flex justify-between items-center  min-w-screen backdrop-blur-lg z-10">
+    <header className="top-0 flex justify-between items-center px-6  min-w-screen backdrop-blur-lg z-10">
       <div className="flex items-center space-x-2">
-        <Link href="/">
+        <Link className="flex items-center" href="/">
           <Image
             src="/justlogo.png"
             alt="logo"
             width={100}
             height={50}
-            className="md:w-40 h-30"
+            className="md:w-30 h-28"
           />
+          <h2 className="md:text-4xl text-lg uppercase mango tracking-wider">
+            Yashik Yadav & Co
+          </h2>
         </Link>
       </div>
 
-      <h2 className="md:text-4xl text-lg uppercase mango tracking-wider">Yashik Yadav & Co</h2>
+      {/*<h2 className="md:text-4xl text-lg uppercase mango tracking-wider">
+        Yashik Yadav & Co
+      </h2> */}
 
       {/*<nav className="font-semibold hidden ">
         <Link
@@ -88,7 +93,7 @@ export const Navbar = () => {
 
       <Sheet>
         <SheetTrigger>
-          <div className="flex items-center md:space-x-4 space-x-3 mr-8">
+          <div className="flex items-center md:space-x-4 space-x-3 mr-6">
             <p className="font-normal text-sm md:text-lg">Menu</p>
             {/* The black shape on right */}
             <Image

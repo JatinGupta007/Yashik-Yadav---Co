@@ -4,14 +4,14 @@ import { ArrowUpRight } from "lucide-react";
 export default function Footer() {
   return (
     <main>
-      <section className="flex justify-center p-22 gap-20  bg-gray-100 mt-20">
+      <section className="flex justify-center px-20 gap-20 pb-10 bg-gray-100">
         <div>
-          <p className="mango text-[220px] h-[260px]">LETS MAKE IT </p>
-          <p className="mango text-[200px] h-[340px] leading-46">
+          <p className="mango text-[150px] h-44">LETS MAKE IT </p>
+          <p className="mango text-[150px] leading-32">
             HAPPEN TOGETHER
           </p>
         </div>
-        <div className="self-end space-y-5 w-2/5">
+        <div className="self-end space-y-5 w-2/5 mb-8">
           <p className="text-xl">
             We champion transformation through design, regardless of your
             project idea or goal.

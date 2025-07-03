@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+/* @custom-variant dark (&:is(.dark *)); */
 
 @font-face {
   font-family: 'MangoGrotesque';
@@ -34,7 +34,7 @@
       0% 50%, 12% 38%, 0% 20%, 20% 20%, 25% 6%, 38% 18%);
 }
 
-@theme inline {
+/* @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -148,4 +148,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
+} */

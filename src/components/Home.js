@@ -2,7 +2,7 @@ const Home = () => {
   
   return (
     <>
-      <main className="relative lg:px-18 px-4 lg:pt-52 pt-24 pb-16 flex flex-col lg:items-center justify-center">
+      <main className="relative lg:px-18 px-4 lg:pt-24 pt-24 pb-16 flex flex-col lg:items-center justify-center">
         <div className="flex items-center gap-3 lg:h-[220px]">
           <div className="relative">
             <div className="absolute lg:top-12 lg:-left-8 top-6 -left-3 rotate-[-12deg] bg-yellow-400 lg:px-4 px-2 lg:h-12">

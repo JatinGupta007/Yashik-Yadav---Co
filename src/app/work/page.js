@@ -6,7 +6,6 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-
 import {
   Sheet,
   SheetContent,
@@ -23,28 +22,28 @@ const Work = () => {
   const pathname = usePathname();
 
   useEffect(() => {
-      if (pathname === "/about") {
-        setVisibleCard("B");
-      } else if (pathname === "/work") {
-        setVisibleCard("C");
-      } else if (pathname === "/services") {
-        setVisibleCard("D");
-      } else{
-        setVisibleCard("A")
-      }
-    }, [pathname])
-  
-    const toVisibleCard = () => {
-      if (pathname === "/about") {
-        setVisibleCard("B");
-      } else if (pathname === "/work") {
-        setVisibleCard("C");
-      } else if (pathname === "/services") {
-        setVisibleCard("D");
-      } else {
-        setVisibleCard("A");
-      }
+    if (pathname === "/about") {
+      setVisibleCard("B");
+    } else if (pathname === "/work") {
+      setVisibleCard("C");
+    } else if (pathname === "/services") {
+      setVisibleCard("D");
+    } else {
+      setVisibleCard("A");
     }
+  }, [pathname]);
+
+  const toVisibleCard = () => {
+    if (pathname === "/about") {
+      setVisibleCard("B");
+    } else if (pathname === "/work") {
+      setVisibleCard("C");
+    } else if (pathname === "/services") {
+      setVisibleCard("D");
+    } else {
+      setVisibleCard("A");
+    }
+  };
 
   return (
     <main>
@@ -78,7 +77,12 @@ const Work = () => {
         <div className="py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           {/* Left Side */}
           <div>
-            <h1 className="text-[80px] leading-none mango">KELE</h1>
+            <Link
+              href="/work/projects"
+              className="text-[80px] leading-none mango"
+            >
+              KELE
+            </Link>
             <p className="text-xl mt-2">
               A Simple Approach To Financial Accessibility
             </p>
@@ -111,9 +115,12 @@ const Work = () => {
         <div className="py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           {/* Left Side */}
           <div>
-            <h1 className="text-[80px] leading-none mango uppercase">
+            <Link
+              href="/work/projects"
+              className="text-[80px] leading-none mango uppercase"
+            >
               autograph
-            </h1>
+            </Link>
             <p className="text-xl mt-2">
               Making a mark in Africa&apos;s stationery market
             </p>
@@ -146,7 +153,12 @@ const Work = () => {
         <div className="py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           {/* Left Side */}
           <div>
-            <h1 className="text-[80px] leading-none mango">PROPEL</h1>
+            <Link
+              href="/work/projects"
+              className="text-[80px] leading-none mango"
+            >
+              PROPEL
+            </Link>
             <p className="text-xl mt-2">Propeling the future of work</p>
           </div>
 
