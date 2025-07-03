@@ -43,15 +43,15 @@ export const Navbar = () => {
   }
 
   return (
-    <header className="fixed top-0 flex justify-between items-center md:px-3  min-w-screen backdrop-blur-lg z-10">
+    <header className="fixed top-0 flex justify-between items-center  min-w-screen backdrop-blur-lg z-10">
       <div className="flex items-center space-x-2">
         <Link href="/">
           <Image
             src="/justlogo.png"
             alt="logo"
             width={100}
-            height={40}
-            className="md:w-40 h-28"
+            height={50}
+            className="md:w-40 h-30"
           />
         </Link>
       </div>
@@ -94,9 +94,9 @@ export const Navbar = () => {
             <Image
               src="https://wearecheck.co/assets/images/menu-icon.svg"
               alt="logo"
-              height={80}
+              height={100}
               width={40}
-              className="md:w-16 md:h-30"
+              className="md:w-16"
             />
           </div>
         </SheetTrigger>

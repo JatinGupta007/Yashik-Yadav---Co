@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Work() {
   return (
     <main>
-      <section className="flex items-center gap-15 p-10">
-        <div className="space-y-20">
+      <section className="flex flex-col lg:flex-row lg:items-center lg:gap-15 lg:p-10 p-5">
+        <div className="lg:space-y-20">
           <p className="lg:text-xl text-lg font-semibold mb-2">
             We help them win in
           </p>
@@ -16,38 +16,49 @@ export default function Work() {
             alt="Laptop User"
             width={400}
             height={300}
-            className="rounded-xl"
+            className="rounded-xl hidden lg:block"
           />
         </div>
 
         {/* Background text */}
-        <div className="mt-16">
-          <h2 className="lg:text-[200px] text-[100px] leading-none mango">
+        <div className="lg:mt-16">
+          <h2 className="lg:text-[200px] text-[100px] leading-none mango ml-24 lg:ml-0">
             IMPACT
           </h2>
         </div>
 
         {/* Bottom left image */}
-        <div className="space-y-10">
+        <div className="lg:space-y-10">
           <Image
             src="/photo-speed.webp" // Replace with your image in public/images/
             alt="Chef Working"
             width={320}
             height={220}
-            className="rounded-xl mt-16"
+            className="rounded-xl mt-16 hidden lg:block"
           />
-          <br />
-          <br />
-          <br />
-          <br />
-          <h2 className="lg:text-[200px] text-[100px] text-[#ff9140] mango">
+          <br className="hidden lg:block" />
+          <br className="hidden lg:block" />
+          <br className="hidden lg:block" />
+          <br className="hidden lg:block" />
+          <h2 className="lg:text-[200px] text-[100px] text-[#ff9140] mango ml-40 lg:ml-0">
             SPEED
           </h2>
         </div>
       </section>
 
       <section>
-        <div className="flex flex-col w-full px-12">
+        <div className="p-5 flex flex-col items-center text-center space-y-5 lg:hidden">
+          <p className="text-xl uppercase">
+            What began as just an idea in a small office space, has grown into a
+            global company.
+          </p>
+          <Image src="/earth.png" height={80} width={200} alt="image" />
+          <p className="">
+            We have done extraordinary work with companies in over
+          </p>
+          <p className="mango text-[70px] ">13</p>
+        </div>
+        <div className="hidden lg:flex flex-col w-full px-12">
           <div className="flex items-center space-x-6">
             <div className="">
               <p className="text-xl uppercase">
