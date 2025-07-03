@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/alt-text */
+
 /* eslint-disable @next/next/no-img-element */
 import Footer from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
@@ -67,10 +67,11 @@ const Services = () => {
           </h1>
 
           <p className="text-lg leading-relaxed text-gray-800">
-            We want to know who you are and what you're about so we can connect
-            with your vision and needs. An in-depth understanding of your{" "}
-            <strong>'WHAT'</strong>, <strong>'WHY'</strong> and{" "}
-            <strong>'HOW'</strong>
+            We want to know who you are and what you&apos;re about so we can
+            connect with your vision and needs. An in-depth understanding of
+            your <strong>&lsquot;WHAT&rsquot;</strong>,{" "}
+            <strong>&lsquot;WHY&rsquot;</strong> and{" "}
+            <strong>&lsquot;HOW&rsquot;</strong>
             helps us to build strong and meaningful connections with your users.
           </p>
 
@@ -235,8 +236,8 @@ const Services = () => {
             </h3>
             <p>
               We take a purpose-led approach to positioning. A good
-              understanding of a brand's 'why' enables us to seamlessly position
-              them for industry leadership.
+              understanding of a brand&apos;s &lsquot;why&rsquot; enables us to
+              seamlessly position them for industry leadership.
             </p>
           </div>
         </div>
@@ -323,7 +324,7 @@ const Services = () => {
       </section>
       <p className="text-4xl uppercase px-24 leading-12 w-4/5">
         We are the creators of the brands everyone loves, the products that
-        everyone can't leave, and the stories everyone remembers.
+        everyone can&apos;t leave, and the stories everyone remembers.
       </p>
       <p className="text-xl text-right px-24">
         Best part? We have fun while at it.

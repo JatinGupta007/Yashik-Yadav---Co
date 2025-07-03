@@ -184,7 +184,7 @@ export default function Work() {
               autograph
             </h1>
             <p className="text-xl mt-2">
-              Making a mark in Africa’s stationery market
+              Making a mark in Africa&apos;s stationery market
             </p>
           </div>
 
