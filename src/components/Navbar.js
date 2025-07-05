@@ -43,19 +43,16 @@ export const Navbar = () => {
   }
 
   return (
-    <header className="top-0 flex justify-between items-center px-6  min-w-screen backdrop-blur-lg z-10">
+    <header className="top-0 flex justify-between items-center px-8 py-4 min-w-screen backdrop-blur-lg z-10">
       <div className="flex items-center space-x-2">
         <Link className="flex items-center" href="/">
           <Image
             src="/justlogo.png"
             alt="logo"
-            width={100}
+            width={200}
             height={50}
-            className="md:w-30 h-28"
+            className="md:w-86 "
           />
-          <h2 className="md:text-4xl text-lg uppercase mango tracking-wider">
-            Yashik Yadav & Co
-          </h2>
         </Link>
       </div>
 
@@ -153,6 +150,17 @@ export const Navbar = () => {
                   >
                     Services
                   </Link>
+
+                  <Link
+                    href="/industries"
+                    className={`${
+                      pathname === "/industries" ? "text-rose-400" : "text-white"
+                    } hover:text-rose-400`}
+                    onMouseEnter={() => setVisibleCard("C")}
+                    onMouseLeave={toVisibleCard}
+                  >
+                    Industries
+                  </Link>
                 </div>
                 {visibleCard === "A" && (
                   <div className="bg-[#f16333] text-white px-12 py-5 flex flex-col items-center rounded-lg">
@@ -199,7 +207,7 @@ export const Navbar = () => {
                     </p>
 
                     <video className="md:w-[200px]" playsInline autoPlay loop>
-                      <source src="https://mdn.check-dc.com/BASE/Checkwebsite/video-work-taxdiywebm-t0wMA.webm" />
+                      <source src="/video-work.webm" />
                     </video>
                   </div>
                 )}
@@ -213,7 +221,7 @@ export const Navbar = () => {
                     </p>
 
                     <video className="md:w-[200px]" playsInline autoPlay loop>
-                      <source src="https://mdn.check-dc.com/BASE/Checkwebsite/video-sevices-x9s6p3webm-t0wMA.webm" />
+                      <source src="/video-sevices.webm" />
                     </video>
                   </div>
                 )}

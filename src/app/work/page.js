@@ -49,7 +49,7 @@ const Work = () => {
     <main>
       <Navbar />
       <Popup />
-      <section className="flex border-b border-[#ff9140] gap-26 m-16 p-5">
+      <section className="flex border-b border-[#ff9140] gap-26 mx-16 pb-10">
         <div className="">
           <h1 className="text-[200px] mango">OUR WORK</h1>
           <div className="flex gap-10 text-5xl mango text-[#f16333]">

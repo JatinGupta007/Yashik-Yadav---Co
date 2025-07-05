@@ -31,8 +31,8 @@ const Popup = () => {
         <h2 className="text-2xl font-semibold mb-2">Get in Touch</h2>
         <p className="text-lg text-gray-600">
           📧 Email:{" "}
-          <a href="mailto:info@example.com" className="text-[#ff9140]">
-            info@example.com
+          <a href="mailto:hello@yashikyadav.com" className="text-[#ff9140]">
+            hello@yashikyadav.com
           </a>
           <br />
           🌐 Website:{" "}

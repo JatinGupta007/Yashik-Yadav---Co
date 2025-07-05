@@ -23,8 +23,8 @@ export default function Work() {
 
         {/* Background text */}
         <div className="lg:mt-16">
-          <h2 className="lg:text-[200px] text-[100px] leading-none mango ml-24 lg:ml-0">
-            IMPACT
+          <h2 className="lg:text-[200px] text-[100px] text-[#ff9140] mango ml-40 lg:ml-0">
+            SPEED
           </h2>
         </div>
 
@@ -41,8 +41,8 @@ export default function Work() {
           <br className="hidden lg:block" />
           <br className="hidden lg:block" />
           <br className="hidden lg:block" />
-          <h2 className="lg:text-[200px] text-[100px] text-[#ff9140] mango ml-40 lg:ml-0">
-            SPEED
+          <h2 className="lg:text-[200px] text-[100px] leading-none mango ml-24 lg:ml-0">
+            IMPACT
           </h2>
         </div>
       </section>
@@ -75,7 +75,7 @@ export default function Work() {
             </div>
             <div className="">
               <p className="flex flex-col">
-                <span className="mango text-[70px] ">13</span>{" "}
+                <span className="mango text-[70px] ">5</span>{" "}
                 <span className="text-3xl">COUNTRIES</span> AROUND THE WORLD
               </p>
             </div>
@@ -109,18 +109,18 @@ export default function Work() {
         </div>
       </section>
 
-      <section className="flex justify-center p-22 gap-20 h">
+      <section className="flex justify-center items-center p-22 gap-20 h">
         <div>
-          <p className="mango text-[220px] h-[200px]">WE DO</p>
-          <p className="mango text-[200px] h-[200px]">GREAT WORK</p>
+          <p className="mango text-[150px] h-[120px]">WE DO</p>
+          <p className="mango text-[140px] h-[130px]">GREAT WORK</p>
         </div>
-        <div className="self-end space-y-5 w-2/5">
+        <div className="space-y-5 w-2/5">
           <p className="text-xl">
             We uncover insights to achieve timelessness and relevance in this
             rapidly changing world.
           </p>
           <button className="mango bg-[#ff9140] text-4xl text-white uppercase px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
-            OUR WORK
+            OUR RECENT WORK
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -152,10 +152,10 @@ export default function Work() {
               href="/work/projects"
               className="text-[80px] leading-none mango"
             >
-              KELE
+              KELE (Fintech App)
             </Link>
             <p className="text-xl mt-2">
-              A Simple Approach To Financial Accessibility
+              SEO + UI Revamp → +147% Organic Traffic
             </p>
           </div>
 
@@ -190,11 +190,9 @@ export default function Work() {
               href="/work/projects"
               className="text-[80px] leading-none mango uppercase"
             >
-              autograph
+              aAutograph D2C
             </Link>
-            <p className="text-xl mt-2">
-              Making a mark in Africa&apos;s stationery market
-            </p>
+            <p className="text-xl mt-2">Shopify Build + Paid Ads → 3.8x ROAS</p>
           </div>
 
           {/* Right Side - Tags */}
@@ -226,11 +224,13 @@ export default function Work() {
           <div>
             <Link
               href="/work/projects"
-              className="text-[80px] leading-none mango"
+              className="text-[80px] leading-none mango uppercase"
             >
-              PROPEL
+              Propel Creators
             </Link>
-            <p className="text-xl mt-2">Propeling the future of work</p>
+            <p className="text-xl mt-2">
+              Paid Media Strategy → 800+ Leads in 6 Weeks
+            </p>
           </div>
 
           {/* Right Side - Tags */}
@@ -247,17 +247,21 @@ export default function Work() {
           </div>
         </div>
 
-        <div className="bg-[url(/dass.webp)] w-[1200px] h-[500px] bg-cover group">
-          <div className="hidden group-hover:flex h-[500px] justify-center items-center bg-black opacity-64">
-            <p className="text-white mango text-8xl">COMING SOON</p>
-          </div>
-        </div>
+        <Image
+          className="mt-14"
+          src="/dass.webp"
+          alt="kele-cover"
+          height={900}
+          width={1200}
+        />
         <div className="py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           {/* Left Side */}
           <div>
-            <h1 className="text-[80px] leading-none mango">ADDIDAS</h1>
+            <h1 className="text-[80px] leading-none mango uppercase">
+              Adidas India
+            </h1>
             <p className="text-xl mt-2">
-              Localising a digital brand for impact
+              Influencer Campaign + Video Ads → 1M+ Impressions
             </p>
           </div>
 
@@ -275,18 +279,18 @@ export default function Work() {
           </div>
         </div>
 
-        <div className="bg-[url(/odla-cover.webp)] w-[1200px] h-[500px] bg-cover group">
-          <div className="hidden group-hover:flex h-[500px] justify-center items-center bg-black opacity-64">
-            <p className="text-white mango text-8xl">COMING SOON</p>
-          </div>
-        </div>
+        <Image
+          className="mt-14"
+          src="/odla-cover.webp"
+          alt="kele-cover"
+          height={900}
+          width={1200}
+        />
         <div className="py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           {/* Left Side */}
           <div>
-            <h1 className="text-[80px] leading-none mango">ODLA</h1>
-            <p className="text-xl mt-2">
-              Achieving digital transformation for brave business leaders
-            </p>
+            <h1 className="text-[80px] leading-none mango">ODLA Wellness</h1>
+            <p className="text-xl mt-2">Local SEO → 4x Organic Leads</p>
           </div>
 
           {/* Right Side - Tags */}
@@ -304,6 +308,41 @@ export default function Work() {
               WEBSITE DESIGN
             </span>
           </div>
+        </div>
+      </section>
+
+      <section className="flex justify-center px-20 gap-16 py-16 bg-orange-200 font-serif mt-5">
+        <div className="w-3/5">
+          <p className="mango text-[140px] leading-32 uppercase">
+            Let’s Build Your Brand’s Digital Growth Engine
+          </p>
+        </div>
+        <div className="self-end space-y-5 mb-8">
+          <h3 className="text-xl">
+            We’re here to take your digital marketing to the next level with:
+          </h3>
+          <ul className="text-lg list-disc pl-8">
+            <li>Custom Strategy</li>
+            <li>Clear Roadmap</li>
+            <li>Fast Execution</li>
+            <li>Performance Tracking</li>
+          </ul>
+          <button className="mango bg-[#f16333] text-4xl text-white uppercase px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+            Schedule Your Free Strategy Call
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              viewBox="0 0 24 24"
+            >
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </button>
         </div>
       </section>
     </main>
