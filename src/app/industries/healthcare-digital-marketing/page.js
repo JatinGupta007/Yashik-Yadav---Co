@@ -9,7 +9,7 @@ export default function HealthcareDigitalMarketingPage(){
 
       <div className="space-y-8 px-28 py-12">
         <h1 className="text-[160px] mango text-center uppercase leading-34">
-          Architects & Interior Designers
+          Healthcare & Hospitals Marketing
         </h1>
         {/* Item 1 */}
         <div className="border-b border-[#ff9140] pb-8">

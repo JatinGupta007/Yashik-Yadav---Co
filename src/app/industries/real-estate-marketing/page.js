@@ -10,7 +10,7 @@ const page = () => {
       <Popup />
       <section className="px-24 py-12">
         <h1 className="text-[160px] mango text-center uppercase leading-34">
-          Architects & Interior Designers
+          Real Estate & Builders
         </h1>
         <div className="flex lg:p-16 bg-orange-200 w-full p-5 justify-between font-serif">
           <div>
