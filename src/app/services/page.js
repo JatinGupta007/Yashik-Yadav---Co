@@ -123,10 +123,10 @@ const Services = () => {
     <main>
       <Navbar />
       <Popup />
-      <section className="px-24 py-12">
+      <section className="px-32 py-12">
         <div className="relative">
           <h1 className="text-[180px] mango text-center uppercase leading-40">
-            SEO That Brings You to the Top — Organically.
+            SEO That Brings You to the Top - Organically.
           </h1>
 
           <div className="absolute top-10 left-10">

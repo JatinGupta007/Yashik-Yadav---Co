@@ -6,21 +6,10 @@ import Services from "@/components/Services";
 import Work from "@/components/Work";
 import Popup from "@/components/popup";
 
-
-
-const homeLinks = {
-  link_1: "Home",
-  link_2: "Contact us",
-  link_3: "Services",
-  link_4: "Work",
-};
-
-
-
 export default function App() {
   return (
     <main>
-      <Navbar navLinks={homeLinks} />
+      <Navbar />
       <Home />
       <Popup />
       <About />

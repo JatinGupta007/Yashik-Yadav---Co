@@ -60,11 +60,11 @@ export default function Footer() {
         <hr className="border-t border-black" />
 
         {/* Middle logo */}
-        <div className="m-auto w-fit">
+        <div className="m-auto py-3 w-fit">
           <Image
-            src="/logo B&W.png"
+            src="/fotlogo.png"
             alt="footer-logo"
-            height={150}
+            height={200}
             width={300}
             className="bg-transparent"
           />

@@ -103,7 +103,7 @@ export default function Work() {
               </p>
             </div>
           </div>
-          <div className="flex items-center space-x-15 mt-20">
+          <div className="flex items-center justify-around mt-20">
             <Image src="/earth.png" alt="earth" height={200} width={250} />
             <Image src="/map.png" alt="earth" height={200} width={250} />
             <Image src="/city.png" alt="earth" height={200} width={250} />

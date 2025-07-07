@@ -200,11 +200,11 @@ function About() {
           <div className="relative text-white flex items-center justify-center mango">
             {/* Background Text */}
             <h1 className="text-[220px] uppercase text-white text-center leading-45">
-              AGILE <span className="ml-50">STRONG</span> GROWTH-DRIVEN
+              AGILE <span className="ml-10">STRONG</span> GROWTH-DRIVEN
             </h1>
 
             {/* Hover Shape 1 */}
-            <div className="absolute top-20 left-0 clip-starburst group w-50 h-52 bg-[#f16333] clip-star transition-all duration-300 overflow-hidden cursor-pointer">
+            <div className="absolute top-20 -left-10 clip-starburst group w-50 h-52 bg-[#f16333] clip-star transition-all duration-300 overflow-hidden cursor-pointer">
               <img
                 src="https://mdn.check-dc.com/BASE/Checkwebsite/photo-agile-fsmx7gjpg-t0wMA.jpe"
                 alt="hover-img"
@@ -213,7 +213,7 @@ function About() {
             </div>
 
             {/* Hover Shape 2 */}
-            <div className="absolute top-0 right-80 clip-starburst group w-52 h-55  bg-[#f16333] clip-hex transition-all duration-300 overflow-hidden cursor-pointer">
+            <div className="absolute top-0 right-90 clip-starburst group w-52 h-55  bg-[#f16333] clip-hex transition-all duration-300 overflow-hidden cursor-pointer">
               <img
                 src="https://mdn.check-dc.com/BASE/Checkwebsite/photo-growth-driven-un8efhjpg-t0wMA.jpe"
                 alt="hover-img"

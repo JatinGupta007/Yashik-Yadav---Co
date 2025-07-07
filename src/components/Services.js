@@ -37,7 +37,7 @@ const Services = () => {
         </div>
       </div>
       <section className="overflow-y-auto lg:h-[525px] scrollbar-hide">
-        <div className="flex lg:p-12 bg-gray-100 w-full p-5 justify-between font-serif">
+        <div className="flex lg:p-12 bg-sky-50 w-full p-5 justify-between font-serif">
           <div>
             <h2 className="text-[70px] mango leading-16 mb-5">
               Full-Service Digital Marketing Company in Jaipur
@@ -77,7 +77,7 @@ const Services = () => {
           </video>
         </div>
 
-        <div className="flex lg:p-12 w-full p-5 justify-between font-serif bg-gray-300">
+        <div className="flex lg:p-12 w-full p-5 justify-between font-serif bg-sky-100">
           <div>
             <h2 className="text-[70px] mango leading-16 mb-6">
               Reimagining Growth, Speed & Impact
