@@ -25,7 +25,7 @@ const Services = () => {
           <h1 className="">What we do</h1>
         </div>
         <div className="absolute top-54 left-16 rotate-[-15deg] bg-yellow-300 px-5 h-13 hidden lg:block">
-          <p className="mango text-[40px] uppercase">Servicees</p>
+          <p className="mango text-[40px] uppercase">Services</p>
         </div>
       </div>
       <section className="overflow-y-auto lg:h-[525px] scrollbar-hide">

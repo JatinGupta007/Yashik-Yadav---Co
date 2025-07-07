@@ -47,7 +47,7 @@ const Industries = () => {
 
       <section className="flex mx-24 mb-10">
         <div className="w-1/2 bg-[#f2f7f6] p-10 py-16">
-          <h1 className="text-7xl mb-10 text-center mango uppercase">Services</h1>
+          <h1 className="text-7xl mb-10 text-center mango uppercase">Industries</h1>
           <ul className="space-y-6 text-5xl">
             {indusriesServices.map((eachService, i) => (
               <Link

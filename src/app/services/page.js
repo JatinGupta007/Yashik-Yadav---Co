@@ -186,18 +186,18 @@ const Services = () => {
 
       <section className="flex mx-24 mb-10 mt-10">
         <div className="w-1/2 bg-[#f2f7f6] p-10 mango">
-          <ul className="space-y-12 text-[4rem] tracking-tight">
+          <ul className="text-[4rem] tracking-tight">
             <li
               className={`${
                 card === "A" ? "text-black" : "text-gray-300"
-              } flex items-center justify-between`}
+              } flex items-center justify-between border-b border-gray-200 py-3`}
               onClick={() => setCard("A")}
             >
               DISCOVERY
               <span
                 className={`${
                   card === "A" ? "inline" : "hidden"
-                } ml-4 text-4xl`}
+                } ml-4 text-6xl font-bold`}
               >
                 ➔
               </span>
@@ -205,14 +205,14 @@ const Services = () => {
             <li
               className={`${
                 card === "B" ? "text-black" : "text-gray-300"
-              } flex items-center justify-between`}
+              } flex items-center justify-between border-b border-gray-200 pt-6 pb-4`}
               onClick={() => setCard("B")}
             >
               DEFINITION
               <span
                 className={`${
                   card === "B" ? "inline" : "hidden"
-                } ml-4 text-4xl`}
+                } ml-4  text-6xl font-bold`}
               >
                 ➔
               </span>
@@ -220,14 +220,14 @@ const Services = () => {
             <li
               className={`${
                 card === "C" ? "text-black" : "text-gray-300"
-              } flex items-center justify-between`}
+              } flex items-center justify-between border-b border-gray-200 pt-6 pb-4`}
               onClick={() => setCard("C")}
             >
               IDEATION/EXECUTION
               <span
                 className={`${
                   card === "C" ? "inline" : "hidden"
-                } ml-4 text-4xl`}
+                } ml-4 text-6xl font-bold`}
               >
                 ➔
               </span>
@@ -235,14 +235,14 @@ const Services = () => {
             <li
               className={`${
                 card === "D" ? "text-black" : "text-gray-300"
-              } flex items-center justify-between`}
+              } flex items-center justify-between border-b border-gray-200 pt-6 pb-4`}
               onClick={() => setCard("D")}
             >
               DELIVERY
               <span
                 className={`${
                   card === "D" ? "inline" : "hidden"
-                } ml-4 text-4xl`}
+                } ml-4 text-6xl font-bold`}
               >
                 ➔
               </span>
@@ -250,14 +250,14 @@ const Services = () => {
             <li
               className={`${
                 card === "E" ? "text-black" : "text-gray-300"
-              } flex items-center justify-between`}
+              } flex items-center justify-between border-b border-gray-200 pt-6 pb-4`}
               onClick={() => setCard("E")}
             >
               IMPACT MEASURING
               <span
                 className={`${
                   card === "E" ? "inline" : "hidden"
-                } ml-4 text-4xl`}
+                } ml-4 text-6xl font-bold`}
               >
                 ➔
               </span>
@@ -265,14 +265,14 @@ const Services = () => {
             <li
               className={`${
                 card === "F" ? "text-black" : "text-gray-300"
-              } flex items-center justify-between`}
+              } flex items-center justify-between border-b border-gray-200 pt-6 pb-4`}
               onClick={() => setCard("F")}
             >
               CONTINOUS PARTNERSHIP
               <span
                 className={`${
                   card === "F" ? "inline" : "hidden"
-                } ml-4 text-4xl`}
+                } ml-4 text-6xl font-bold`}
               >
                 ➔
               </span>
@@ -359,7 +359,7 @@ const Services = () => {
               fixes, internal linking strategy, and authority building
               techniques. Our team handles on-page optimization, content
               creation, GMB listings, and performance-ready site structuring.
-              Every task is done with intent — to boost organic reach,
+              Every task is done with intent - to boost organic reach,
               visibility, and user experience.
             </p>
             <img
@@ -387,10 +387,10 @@ const Services = () => {
               Once the foundation is set, we begin the full-scale execution
               across your website and digital assets. All technical
               implementations, meta-tag updates, structured data, and keyword
-              placements go live. We don’t just “deliver” -we test, optimize,
-              and fine-tune as we go. Our approach ensures minimal friction,
-              faster indexing, and immediate improvement in crawlability and
-              page health.
+              placements go live. We don&apos;t just “deliver” -we test,
+              optimize, and fine-tune as we go. Our approach ensures minimal
+              friction, faster indexing, and immediate improvement in
+              crawlability and page health.
             </p>
             <img
               src="https://mdn.check-dc.com/BASE/Checkwebsite/photo-service-img-1-pkds6hjpg-t0wMA.jpe"
@@ -443,11 +443,11 @@ const Services = () => {
             </h1>
 
             <p className="text-lg leading-relaxed text-gray-800">
-              SEO is not a one-time project — it&apos;s a long-term growth game.
+              SEO is not a one-time project - it&apos;s a long-term growth game.
               Even after execution and reporting, we stick around to help you
               scale what&apos;s working, fix what’s not, and explore new keyword
               opportunities as your business evolves. Our team acts as an
-              extended digital partner — keeping your brand visible,
+              extended digital partner - keeping your brand visible,
               competitive, and ahead of the algorithm curve
             </p>
             <img
@@ -504,7 +504,7 @@ const Services = () => {
               Smart Advertising for Instant Visibility.
             </h3>
             <p>
-              Google Ads is the fastest way to get found — and we make every
+              Google Ads is the fastest way to get found - and we make every
               click count. From targeted campaigns in Jaipur to national lead
               generation, we help you reach the right people at the right time.
             </p>
@@ -553,8 +553,8 @@ const Services = () => {
               Marketing That Delivers Revenue.
             </h3>
             <p>
-              Performance marketing isn’t about likes — it’s about ROI. We help
-              businesses scale revenue using integrated campaigns on Meta,
+              Performance marketing isn&apos;t about likes - it’s about ROI. We
+              help businesses scale revenue using integrated campaigns on Meta,
               Google, and beyond.
             </p>
           </div>
@@ -613,7 +613,7 @@ const Services = () => {
         <div className="flex flex-col justify-start">
           <p className="text-3xl mb-4">Our Edge</p>
           <p className="text-xl leading-relaxed">
-            Design meets functionality — with aesthetics, UX, SEO, and speed
+            Design meets functionality - with aesthetics, UX, SEO, and speed
             built in. We don’t just build websites; we build lead machines.
           </p>
 
@@ -639,7 +639,7 @@ const Services = () => {
               Visually Stunning. Technically Solid.
             </h3>
             <p>
-              Your website is your digital home — and we make it look and
+              Your website is your digital home - and we make it look and
               perform like your best salesperson. Whether you need a Shopify
               store, a WordPress site, or a custom portal, we deliver
               world-class performance with local impact.
@@ -833,8 +833,8 @@ const Services = () => {
         <div className="flex flex-col justify-start w-4/5">
           <p className="text-3xl mb-4">Why Choose Us</p>
           <p className="text-xl leading-relaxed">
-            We handle everything — from shortlisting creators to campaign
-            execution — while ensuring alignment with your brand goals
+            We handle everything - from shortlisting creators to campaign
+            execution - while ensuring alignment with your brand goals
           </p>
 
           {/* Button */}
@@ -872,7 +872,7 @@ const Services = () => {
           <p className="text-3xl mb-4">Why CRO?</p>
           <p className="text-xl leading-relaxed">
             Because every percentage improvement in conversions multiplies your
-            revenue. We improve what already works — and fix what doesn’t.
+            revenue. We improve what already works - and fix what doesn’t.
           </p>
 
           {/* Button */}
@@ -944,7 +944,7 @@ const Services = () => {
             </h3>
             <p>
               Stop guessing. Start scaling with custom dashboards that show
-              exactly what’s working and what’s not.
+              exactly what&apos;s working and what&apos;s not.
             </p>
           </div>
 
@@ -1002,7 +1002,7 @@ const Services = () => {
         <div className="flex flex-col justify-start w-4/5">
           <p className="text-3xl mb-4">Why ORM Works</p>
           <p className="text-xl leading-relaxed">
-            People buy from people they trust. We help you build — and protect —
+            People buy from people they trust. We help you build - and protect -
             that trust.{" "}
           </p>
 
@@ -1028,7 +1028,7 @@ const Services = () => {
               Turn Reviews Into Revenue.
             </h3>
             <p>
-              ### In a digital-first world, your online reputation is your first
+              In a digital-first world, your online reputation is your first
               impression. Let’s make it count.
             </p>
           </div>
