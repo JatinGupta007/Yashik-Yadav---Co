@@ -1,10 +1,43 @@
-/* eslint-disable @next/next/no-img-element */
-import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <main>
-      <footer className="text-black px-4 md:px-16 bg-[#ff9140]">
+    <main className="bg-gray-100">
+      <section className="flex justify-center px-20 gap-16 py-16 font-serif mt-5">
+        <div className="w-3/5">
+          <p className="mango text-[140px] leading-32 uppercase">
+            Let’s Build Your Brand’s Digital Growth Engine
+          </p>
+        </div>
+        <div className="self-end space-y-5 mb-8">
+          <h3 className="text-xl">
+            We’re here to take your digital marketing to the next level with:
+          </h3>
+          <ul className="text-lg list-disc pl-8">
+            <li>Custom Strategy</li>
+            <li>Clear Roadmap</li>
+            <li>Fast Execution</li>
+            <li>Performance Tracking</li>
+          </ul>
+          <button className="mango bg-black text-3xl text-white uppercase px-8 py-4 flex items-center justify-center gap-2 hover:opacity-90 transition-opacity mt-10">
+            Schedule Your Free Strategy Call
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              viewBox="0 0 24 24"
+            >
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <footer className="text-black px-4 md:px-16">
         {/* Top links
         <div className="flex flex-wrap justify-center md:justify-around gap-6 text-sm font-medium">
           {[
@@ -24,35 +57,17 @@ export default function Footer() {
             </a>
           ))}
         </div> */}
+        <hr className="border-t border-black" />
 
         {/* Middle logo */}
-        <div className="flex flex-col md:flex-row items-center justify-around p-10 font-serif">
-          <ul className="space-y-1">
-            <img src="/justlogo.png" alt="logo" className="w-70 mb-3 -ml-4" />
-            <h3 className="text-2xl mb-3">Contact Us</h3>
-            <li>Jaipur Office:</li>
-            <li>Email: hello@yashikyadav.com</li>
-            <li>Phone: +91-XXXXXXXXXX</li>
-          </ul>
-
-          <ul className="space-y-1">
-            <h3 className="text-2xl mb-3"> Industries We Serve</h3>
-            <li>Healthcare </li>
-            <li>D2C & Ecommerce</li>
-            <li>Real Estate</li>
-            <li>EdTech </li>
-            <li>Startups</li>
-          </ul>
-
-          <ul className="space-y-1">
-            <h3 className="text-2xl mb-3">Our Services</h3>
-            <li>SEO</li>
-            <li>Google Ads</li>
-            <li>Social Media Marketing</li>
-            <li>Website Design</li>
-            <li>Influencer Marketing</li>
-            <li>Branding</li>
-          </ul>
+        <div className="m-auto w-fit">
+          <Image
+            src="/logo B&W.png"
+            alt="footer-logo"
+            height={150}
+            width={300}
+            className="bg-transparent"
+          />
         </div>
 
         {/* Divider */}

@@ -23,7 +23,7 @@ export default function Work() {
 
         {/* Background text */}
         <div className="lg:mt-16">
-          <h2 className="lg:text-[200px] text-[100px] text-[#ff9140] mango ml-40 lg:ml-0">
+          <h2 className="lg:text-[200px] text-[100px] text-gray-300 mango ml-40 lg:ml-0">
             SPEED
           </h2>
         </div>
@@ -48,28 +48,29 @@ export default function Work() {
       </section>
 
       <section>
+        <h1 className="text-center text-5xl mango uppercase m-8">
+          Your Growth Partner in Jaipur & Beyond
+        </h1>
         <div className="p-5 flex flex-col items-center text-center space-y-5 lg:hidden">
-          <p className="text-xl uppercase">
-            What began as just an idea in a small office space, has grown into a
-            global company.
+          <p className="text-xl capatalize">
+            Maintaining a remarkable 99% client retention rate
           </p>
           <Image src="/earth.png" height={80} width={200} alt="image" />
           <p className="">
             We have done extraordinary work with companies in over
           </p>
-          <p className="mango text-[70px] ">13</p>
+          <p className="mango text-[70px] ">5</p>
         </div>
         <div className="hidden lg:flex flex-col w-full px-12">
-          <div className="flex items-center space-x-6">
-            <div className="">
-              <p className="text-xl uppercase">
-                What began as just an idea in a small office space, has grown
-                into a global company.
+          <div className="flex items-center space-x-5">
+            <div className="w-[850px]">
+              <p className="text-xl capatalize">
+                Maintaining a remarkable 99% client retention rate
               </p>
             </div>
             <Image src="/line_1.png" height={80} width={100} alt="image" />
             <div className="w-[350px]">
-              <p className="">
+              <p className="text-xl">
                 We have done extraordinary work with companies in over
               </p>
             </div>
@@ -80,23 +81,25 @@ export default function Work() {
               </p>
             </div>
             <Image src="/line_3.png" height={150} width={100} alt="image" />
-            <div className="w-[800px]">
+            <div className="w-[950px]">
               <p className="text-xl">
-                HELPING THEM RETHINK EVERYTHING AND CREATE IMPACT.
+                Achieving an average ROAS uplift of{" "}
+                <span className="text-3xl font-bold">4.3x</span> and helping
+                them rethink everything and create real impact.
               </p>
             </div>
             <div>
               <Image src="/line_2.png" height={200} width={700} alt="image" />
             </div>
             <div className="w-[500px]">
-              <p className="text-xl">Raising Funds worth over</p>
+              <p className="text-xl">Our Work Speaks Volumes</p>
               <p className="mango text-[60px]">
-                <span className="text-[40px]">$</span> <span>400</span>
+                <span className="text-[40px]"></span> <span>180+</span>
               </p>
             </div>
             <div className="w-[300px]">
-              <p className="text-sm">
-                <span className="text-xl">MILLION</span> <br /> AND COUNTING
+              <p className="text-sm mt-9">
+                <span className="text-xl">Projects executed </span>
               </p>
             </div>
           </div>
@@ -109,7 +112,7 @@ export default function Work() {
         </div>
       </section>
 
-      <section className="flex justify-center items-center p-22 gap-20 h">
+      <section className="flex items-center p-16 gap-42 justify-center">
         <div>
           <p className="mango text-[150px] h-[120px]">WE DO</p>
           <p className="mango text-[140px] h-[130px]">GREAT WORK</p>
@@ -119,7 +122,7 @@ export default function Work() {
             We uncover insights to achieve timelessness and relevance in this
             rapidly changing world.
           </p>
-          <button className="mango bg-[#ff9140] text-4xl text-white uppercase px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+          <button className="mango bg-black text-4xl text-white uppercase px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
             OUR RECENT WORK
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -308,41 +311,6 @@ export default function Work() {
               WEBSITE DESIGN
             </span>
           </div>
-        </div>
-      </section>
-
-      <section className="flex justify-center px-20 gap-16 py-16 bg-orange-200 font-serif mt-5">
-        <div className="w-3/5">
-          <p className="mango text-[140px] leading-32 uppercase">
-            Let’s Build Your Brand’s Digital Growth Engine
-          </p>
-        </div>
-        <div className="self-end space-y-5 mb-8">
-          <h3 className="text-xl">
-            We’re here to take your digital marketing to the next level with:
-          </h3>
-          <ul className="text-lg list-disc pl-8">
-            <li>Custom Strategy</li>
-            <li>Clear Roadmap</li>
-            <li>Fast Execution</li>
-            <li>Performance Tracking</li>
-          </ul>
-          <button className="mango bg-[#f16333] text-4xl text-white uppercase px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
-            Schedule Your Free Strategy Call
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              viewBox="0 0 24 24"
-            >
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <polyline points="12 5 19 12 12 19" />
-            </svg>
-          </button>
         </div>
       </section>
     </main>

@@ -3,13 +3,17 @@ const Home = () => {
   return (
     <>
       <main className="relative lg:px-18 px-4 pt-18 pb-16 flex flex-col lg:items-center justify-center">
+        <div className="flex items-center justify-center w-full">
+          <h2 className="text-center text-2xl">BEST DIGITAL MARKETING AGENCY</h2>
+        </div>
         <div className="flex items-center gap-3 lg:h-[220px]">
           <div className="relative">
             <div className="absolute lg:top-12 lg:-left-8 top-6 -left-3 rotate-[-12deg] bg-yellow-400 lg:px-4 px-2 lg:h-12">
               <p className="lg:text-[40px] text-[20px] mango">TECH</p>
             </div>
+
             <h1 className="lg:text-[250px] text-[120px] mango hidden lg:block">
-              BEST
+              RE
             </h1>
             <h1 className="lg:text-[250px] text-[120px] mango h-30 lg:hidden">
               RETHINK
@@ -27,9 +31,9 @@ const Home = () => {
 
           <div className="relative">
             <h1 className="lg:text-[250px] text-[120px] mango hidden lg:block">
-              DIGITAL
+              THINK
             </h1>
-            <div className="absolute lg:bottom-25 lg:-right-8 right-2 top-9 rotate-[15deg] bg-[#ff9140] lg:px-4 px-2 lg:h-12">
+            <div className="absolute lg:bottom-25 lg:-right-8 right-2 top-9 rotate-[15deg] bg-purple-200 lg:px-4 px-2 lg:h-12">
               <p className="lg:text-[40px] text-[20px] mango">BRAND</p>
             </div>
           </div>
@@ -47,11 +51,11 @@ const Home = () => {
 
           <div className="relative">
             <h1 className="lg:text-[250px] text-[120px] mango h-60 ml-12 lg:h-full">
-              MARKETING
+              EVERYTHING
             </h1>
 
             <div className="absolute bottom-24 right-[-10px] rotate-[-15deg] bg-orange-200 lg:px-5 px-2 lg:h-13">
-              <p className="mango lg:text-[40px] text-[20px]">AGENCY</p>
+              <p className="mango lg:text-[40px] text-[20px]">STRATEGY</p>
             </div>
           </div>
         </div>
@@ -67,7 +71,7 @@ const Home = () => {
             trusted by startups and enterprises. We deliver results via SEO,
             paid ads, social media & performance strategies.
           </p>
-          <button className="mango bg-[#ff9140] text-4xl text-white uppercase px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+          <button className="mango bg-black text-3xl text-white uppercase px-8 py-4  flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
             Let’s Build Your Growth Engine
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +88,6 @@ const Home = () => {
             </svg>
           </button>
         </section>
-        
       </main>
     </>
   );

@@ -1,50 +1,15 @@
-"use client";
+
 
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
 
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+
 import Popup from "@/components/popup";
 import { Navbar } from "@/components/Navbar";
 
 const Work = () => {
-  const [visibleCard, setVisibleCard] = useState("A");
-  const pathname = usePathname();
-
-  useEffect(() => {
-    if (pathname === "/about") {
-      setVisibleCard("B");
-    } else if (pathname === "/work") {
-      setVisibleCard("C");
-    } else if (pathname === "/services") {
-      setVisibleCard("D");
-    } else {
-      setVisibleCard("A");
-    }
-  }, [pathname]);
-
-  const toVisibleCard = () => {
-    if (pathname === "/about") {
-      setVisibleCard("B");
-    } else if (pathname === "/work") {
-      setVisibleCard("C");
-    } else if (pathname === "/services") {
-      setVisibleCard("D");
-    } else {
-      setVisibleCard("A");
-    }
-  };
-
+  
   return (
     <main>
       <Navbar />

@@ -139,7 +139,7 @@ const Services = () => {
             <h2 className="text-[40px] uppercase leading-12 mt-20 mb-6">
               Our Comprehensive SEO Solutions:
             </h2>
-            <ul className="bg-orange-400 p-6 space-y-2 list-disc pl-9">
+            <ul className="bg-gray-200 p-6 space-y-2 list-disc pl-9">
               <li>Deep Keyword Research with Local & Buyer Intent</li>
               <li>Technical SEO (Core Web Vitals, Speed, Mobile Usability)</li>
               <li>On-Page Optimization (Tags, Metadata, Internal Linking)</li>
@@ -169,7 +169,7 @@ const Services = () => {
                 converts. With a strong base in Jaipur, we deliver results with
                 complete transparency, education, and performance tracking.
               </p>
-              <button className="mt-10 mango bg-[#ff9140] text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all">
+              <button className="mt-10 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all">
                 EXPLORE BRAND WORK
                 <span className="ml-4 group-hover:translate-x-1 transition-transform">
                   ➜
@@ -181,21 +181,21 @@ const Services = () => {
       </section>
 
       <section className="flex mx-24 mb-10">
-        <div className="w-1/2 bg-[#ff9140] p-10 mango">
+        <div className="w-1/2 bg-[#f2f7f6] p-10 mango">
           <ul className="space-y-16 text-[4rem] tracking-tight">
             <li className="text-black flex items-center justify-between">
               DISCOVERY
               <span className="ml-4 text-4xl">➔</span>
             </li>
-            <li className="text-white">DEFINITION</li>
-            <li className="text-white">IDEATION/EXECUTION</li>
-            <li className="text-white">DELIVERY</li>
-            <li className="text-white">IMPACT MEASURING</li>
-            <li className="text-white">CONTINOUS PARTNERSHIP</li>
+            <li className="text-gray-300">DEFINITION</li>
+            <li className="text-gray-300">IDEATION/EXECUTION</li>
+            <li className="text-gray-300">DELIVERY</li>
+            <li className="text-gray-300">IMPACT MEASURING</li>
+            <li className="text-gray-300">CONTINOUS PARTNERSHIP</li>
           </ul>
         </div>
 
-        <div className="w-1/2 bg-[#f16333] p-16 text-black">
+        <div className="w-1/2 bg-[#aed9e0] p-16 text-black">
           <div className="flex space-x-4 mb-6">
             {Array(6)
               .fill()
@@ -212,10 +212,9 @@ const Services = () => {
           <p className="text-lg leading-relaxed text-gray-800">
             We want to know who you are and what you&apos;re about so we can
             connect with your vision and needs. An in-depth understanding of
-            your <strong>WHAT</strong>,{" "}
-            <strong>WHY</strong> and{" "}
-            <strong>HOW</strong>{" "}
-            helps us to build strong and meaningful connections with your users.
+            your <strong>WHAT</strong>, <strong>WHY</strong> and{" "}
+            <strong>HOW</strong> helps us to build strong and meaningful
+            connections with your users.
           </p>
 
           <p className="text-md mt-6 text-gray-700">
@@ -229,7 +228,7 @@ const Services = () => {
           />
         </div>
       </section>
-      <div className="bg-orange-300 flex justify-between px-20 py-4">
+      <div className="bg-yellow-300 flex justify-between px-20 py-16">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
@@ -254,7 +253,7 @@ const Services = () => {
           </p>
 
           {/* Button */}
-          <button className="mt-8 mango bg-[#ff9140] text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
+          <button className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
             Let’s Build Your Campaign
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
               ➜
@@ -270,7 +269,7 @@ const Services = () => {
         {/* Right column */}
         <div className="space-y-8">
           {/* Item 1 */}
-          <div className="border-b border-[#ff9140] pb-8">
+          <div className="border-b border-yellow-300 pb-8">
             <h3 className="text-3xl font-bold mb-5">
               Smart Advertising for Instant Visibility.
             </h3>
@@ -282,7 +281,7 @@ const Services = () => {
           </div>
 
           {/* Item 2 */}
-          <div className="border-b border-[#ff9140] pb-8">
+          <div className="border-b border-yellow-300 pb-8">
             <h3 className="text-xl font-bold mb-4">
               Our PPC Expertise Includes
             </h3>
@@ -301,7 +300,7 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="bg-[#ff9140] flex justify-between px-20 py-4">
+      <div className="bg-pink-200 flex justify-between px-20 py-16">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
@@ -319,7 +318,7 @@ const Services = () => {
         {/* Left column */}
         <div className="space-y-8">
           {/* Item 1 */}
-          <div className="border-b border-[#ff9140] pb-8">
+          <div className="border-b border-pink-300 pb-8">
             <h3 className="text-3xl font-bold mb-5">
               Marketing That Delivers Revenue.
             </h3>
@@ -331,7 +330,7 @@ const Services = () => {
           </div>
 
           {/* Item 2 */}
-          <div className="border-b border-[#ff9140] pb-8">
+          <div className="border-b border-pink-300 pb-8">
             <h3 className="text-xl font-bold mb-4">What We Do</h3>
             <ul className="space-y-2">
               <li>Funnel Design (TOFU, MOFU, BOFU)</li>
@@ -351,7 +350,7 @@ const Services = () => {
           </p>
 
           {/* Button */}
-          <button className="mt-8 mango bg-[#ff9140] text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
+          <button className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
             Book a Growth Strategy Call
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
               ➜
@@ -365,7 +364,7 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="bg-[#f16333] flex justify-between px-20 py-4">
+      <div className="bg-purple-300 flex justify-between px-20 py-16">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
@@ -389,7 +388,7 @@ const Services = () => {
           </p>
 
           {/* Button */}
-          <button className="mt-8 mango bg-[#ff9140] text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
+          <button className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
             Get a Free Design Proposal
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
               ➜
@@ -405,7 +404,7 @@ const Services = () => {
         {/* Right column */}
         <div className="space-y-8">
           {/* Item 1 */}
-          <div className="border-b border-[#ff9140] pb-8">
+          <div className="border-b border-purple-400 pb-8">
             <h3 className="text-3xl font-bold mb-5">
               Visually Stunning. Technically Solid.
             </h3>
@@ -418,7 +417,7 @@ const Services = () => {
           </div>
 
           {/* Item 2 */}
-          <div className="border-b border-[#ff9140] pb-8">
+          <div className="border-b border-purple-400 pb-8">
             <h3 className="text-xl font-bold mb-4">We Offer</h3>
             <ul className="space-y-2">
               <li>Custom Website Design & Development </li>
@@ -432,7 +431,7 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="bg-[#ff9140] flex justify-between px-20 py-4">
+      <div className="bg-gray-400 flex justify-between px-20 py-16">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
@@ -450,7 +449,7 @@ const Services = () => {
         {/* Left column */}
         <div className="space-y-8">
           {/* Item 1 */}
-          <div className="border-b border-[#ff9140] pb-8">
+          <div className="border-b border-gray-400 pb-8">
             <h3 className="text-3xl font-bold mb-5">
               Make Your Brand the Talk of the Town.
             </h3>
@@ -462,7 +461,7 @@ const Services = () => {
           </div>
 
           {/* Item 2 */}
-          <div className="border-b border-[#ff9140] pb-8">
+          <div className="border-b border-gray-400 pb-8">
             <h3 className="text-xl font-bold mb-4">Our SMM Services:</h3>
             <ul className="space-y-2">
               <li>Strategy Planning (Monthly/Quarterly)</li>
@@ -484,7 +483,7 @@ const Services = () => {
           </p>
 
           {/* Button */}
-          <button className="mt-8 mango bg-[#ff9140] text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
+          <button className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
             Schedule Your Free Social Media Review
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
               ➜
@@ -498,7 +497,7 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="bg-[#ff9140] flex justify-between px-20 py-4">
+      <div className="bg-green-500 flex justify-between px-20 py-16">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
@@ -522,7 +521,7 @@ const Services = () => {
           </p>
 
           {/* Button */}
-          <button className="mt-8 mango bg-[#ff9140] text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
+          <button className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
             Start Automating Today
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
               ➜
@@ -538,7 +537,7 @@ const Services = () => {
         {/* Right column */}
         <div className="space-y-8">
           {/* Item 1 */}
-          <div className="border-b border-[#ff9140] pb-8">
+          <div className="border-b border-green-500 pb-8">
             <h3 className="text-3xl font-bold mb-5">Convert More. Work Less</h3>
             <p>
               Automate your marketing and focus on what matters. From lead
@@ -548,7 +547,7 @@ const Services = () => {
           </div>
 
           {/* Item 2 */}
-          <div className="border-b border-[#ff9140] pb-8">
+          <div className="border-b border-green-500 pb-8">
             <h3 className="text-xl font-bold mb-4">Key Features</h3>
             <ul className="space-y-2">
               <li>CRM Setup and Automation (Zoho, GoHighLevel, HubSpot)</li>
@@ -562,7 +561,7 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="bg-[#ff9140] flex justify-between px-20 py-4">
+      <div className="bg-sky-200 flex justify-between px-20 py-16">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
@@ -580,7 +579,7 @@ const Services = () => {
         {/* Left column */}
         <div className="space-y-8">
           {/* Item 1 */}
-          <div className="border-b border-[#ff9140] pb-8">
+          <div className="border-b border-sky-400 pb-8">
             <h3 className="text-3xl font-bold mb-5">Authenticity That Sells</h3>
             <p>
               In today’s digital landscape, word of mouth is everything. We
@@ -589,7 +588,7 @@ const Services = () => {
           </div>
 
           {/* Item 2 */}
-          <div className="border-b border-[#ff9140] pb-8">
+          <div className="border-b border-sky-400 pb-8">
             <h3 className="text-xl font-bold mb-4">What’s Included</h3>
             <ul className="space-y-2">
               <li>Influencer Sourcing (Niche, Location, Audience Match)</li>
@@ -609,7 +608,7 @@ const Services = () => {
           </p>
 
           {/* Button */}
-          <button className="mt-8 mango bg-[#ff9140] text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
+          <button className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
             Launch Your Influencer Campaign
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
               ➜
@@ -623,7 +622,7 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="bg-[#ff9140] flex justify-between px-20 py-4">
+      <div className="bg-orange-300 flex justify-between px-20 py-16">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
@@ -647,7 +646,7 @@ const Services = () => {
           </p>
 
           {/* Button */}
-          <button className="mt-8 mango bg-[#ff9140] text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
+          <button className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
             Start Your CRO Audit
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
               ➜
@@ -691,7 +690,7 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="bg-[#ff9140] flex justify-between px-20 py-4">
+      <div className="bg-amber-200 flex justify-between px-20 py-16">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
@@ -709,7 +708,7 @@ const Services = () => {
         {/* Left column */}
         <div className="space-y-8">
           {/* Item 1 */}
-          <div className="border-b border-[#ff9140] pb-8">
+          <div className="border-b border-amber-300 pb-8">
             <h3 className="text-3xl font-bold mb-5">
               Data That Drives Decisions.
             </h3>
@@ -720,7 +719,7 @@ const Services = () => {
           </div>
 
           {/* Item 2 */}
-          <div className="border-b border-[#ff9140] pb-8">
+          <div className="border-b border-amber-300 pb-8">
             <h3 className="text-xl font-bold mb-4">We Provide</h3>
             <ul className="space-y-2">
               <li>GA4 Setup + GTM Configuration</li>
@@ -740,7 +739,7 @@ const Services = () => {
           </p>
 
           {/* Button */}
-          <button className="mt-8 mango bg-[#ff9140] text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
+          <button className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
             Request Dashboard Sample
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
               ➜
@@ -754,7 +753,7 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="bg-[#ff9140] flex justify-between px-20 py-4">
+      <div className="bg-blue-900 flex justify-between px-20 py-16">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
@@ -778,7 +777,7 @@ const Services = () => {
           </p>
 
           {/* Button */}
-          <button className="mt-8 mango bg-[#ff9140] text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
+          <button className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
             Book Your Reputation Audit
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
               ➜
@@ -794,7 +793,7 @@ const Services = () => {
         {/* Right column */}
         <div className="space-y-8">
           {/* Item 1 */}
-          <div className="border-b border-[#ff9140] pb-8">
+          <div className="border-b border-blue-900 pb-8">
             <h3 className="text-3xl font-bold mb-5">
               Turn Reviews Into Revenue.
             </h3>
@@ -805,7 +804,7 @@ const Services = () => {
           </div>
 
           {/* Item 2 */}
-          <div className="border-b border-[#ff9140] pb-8">
+          <div className="border-b border-blue-900 pb-8">
             <h3 className="text-xl font-bold mb-4">What’s Included</h3>
             <ul className="space-y-2">
               <li>Review Management (Google, Justdial, Practo, Sulekha)</li>

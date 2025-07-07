@@ -109,12 +109,12 @@ export const Navbar = () => {
             </SheetTitle>
             <SheetDescription asChild>
               <div className="flex justify-between py-10">
-                <div className="flex flex-col gap-6 uppercase text-7xl mango text-white">
+                <div className="flex flex-col gap-6 uppercase text-6xl mango text-black">
                   <Link
                     href="/"
                     className={`${
-                      pathname === "/" ? "text-[#f16333]" : "text-white"
-                    } hover:text-[#f16333]`}
+                      pathname === "/" ? "text-blue-700" : "text-white"
+                    } hover:text-blue-700`}
                     onMouseEnter={() => setVisibleCard("A")}
                     onMouseLeave={toVisibleCard}
                   >
@@ -123,7 +123,7 @@ export const Navbar = () => {
                   <Link
                     href="/about"
                     className={`${
-                      pathname === "/about" ? "text-yellow-600" : "text-white"
+                      pathname === "/about" ? "text-yellow-500" : "text-white"
                     } hover:text-yellow-500`}
                     onMouseEnter={() => setVisibleCard("B")}
                     onMouseLeave={toVisibleCard}
@@ -133,8 +133,8 @@ export const Navbar = () => {
                   <Link
                     href="/work"
                     className={`${
-                      pathname === "/work" ? "text-[#ff9140]" : "text-white"
-                    } hover:text-[#ff9140]`}
+                      pathname === "/work" ? "text-purple-400" : "text-white"
+                    } hover:text-purple-400`}
                     onMouseEnter={() => setVisibleCard("C")}
                     onMouseLeave={toVisibleCard}
                   >
@@ -143,8 +143,8 @@ export const Navbar = () => {
                   <Link
                     href="/services"
                     className={`${
-                      pathname === "/services" ? "text-rose-400" : "text-white"
-                    } hover:text-rose-400`}
+                      pathname === "/services" ? "text-green-700" : "text-white"
+                    } hover:text-green-700`}
                     onMouseEnter={() => setVisibleCard("D")}
                     onMouseLeave={toVisibleCard}
                   >
@@ -154,16 +154,18 @@ export const Navbar = () => {
                   <Link
                     href="/industries"
                     className={`${
-                      pathname === "/industries" ? "text-rose-400" : "text-white"
-                    } hover:text-rose-400`}
-                    onMouseEnter={() => setVisibleCard("C")}
+                      pathname === "/industries"
+                        ? "text-gray-400"
+                        : "text-white"
+                    } hover:text-gray-400`}
+                    onMouseEnter={() => setVisibleCard("E")}
                     onMouseLeave={toVisibleCard}
                   >
                     Industries
                   </Link>
                 </div>
                 {visibleCard === "A" && (
-                  <div className="bg-[#f16333] text-white px-12 py-5 flex flex-col items-center rounded-lg">
+                  <div className="bg-blue-700 text-white px-12 py-5 flex flex-col items-center rounded-lg">
                     {/* Text Section */}
 
                     <p className="text-lg md:text-xl max-w-md">
@@ -198,7 +200,7 @@ export const Navbar = () => {
                 )}
 
                 {visibleCard === "C" && (
-                  <div className="bg-[#ff9140] text-black px-12 py-5 flex flex-col items-center rounded-lg">
+                  <div className="bg-purple-400 text-black px-12 py-5 flex flex-col items-center rounded-lg">
                     {/* Text Section */}
 
                     <p className="text-lg md:text-xl max-w-md">
@@ -213,7 +215,7 @@ export const Navbar = () => {
                 )}
 
                 {visibleCard === "D" && (
-                  <div className="bg-rose-400 text-black px-12 py-5 flex flex-col items-center rounded-lg">
+                  <div className="bg-green-700 text-black px-12 py-5 flex flex-col items-center rounded-lg">
                     {/* Text Section */}
 
                     <p className="text-lg md:text-xl max-w-md">
@@ -222,6 +224,20 @@ export const Navbar = () => {
 
                     <video className="md:w-[200px]" playsInline autoPlay loop>
                       <source src="/video-sevices.webm" />
+                    </video>
+                  </div>
+                )}
+
+                {visibleCard === "E" && (
+                  <div className="bg-gray-400 text-black px-12 py-5 flex flex-col items-center rounded-lg">
+                    {/* Text Section */}
+
+                    <p className="text-lg md:text-xl max-w-md">
+                      Learn more about our journey and <br /> what defines us
+                    </p>
+
+                    <video className="md:w-[200px]" playsInline autoPlay loop>
+                      <source src="https://mdn.check-dc.com/BASE/Checkwebsite/video-about-us-hlhktpwebm-t0wMA.webm" />
                     </video>
                   </div>
                 )}

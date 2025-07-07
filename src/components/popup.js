@@ -14,7 +14,7 @@ const Popup = () => {
       {/* Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 bg-[#f16333] text-white p-4 rounded-full shadow-2xl hover:bg-[#ff9140] transition"
+        className="fixed bottom-6 right-6 z-50 bg-black text-white p-4 rounded-full shadow-2xl hover:bg-gray-400 transition"
       >
         {isOpen ? <IoCloseSharp size={35} /> : <IoMdChatbubbles size={35} />}
       </button>
@@ -31,7 +31,7 @@ const Popup = () => {
         <h2 className="text-2xl font-semibold mb-2">Get in Touch</h2>
         <p className="text-lg text-gray-600">
           📧 Email:{" "}
-          <a href="mailto:hello@yashikyadav.com" className="text-[#ff9140]">
+          <a href="mailto:hello@yashikyadav.com" className="text-blue-700">
             hello@yashikyadav.com
           </a>
           <br />
@@ -39,7 +39,7 @@ const Popup = () => {
           <a
             href="https://example.com"
             target="_blank"
-            className="text-[#ff9140]"
+            className="text-blue-700"
           >
             example.com
           </a>
@@ -64,7 +64,7 @@ const Popup = () => {
           />
           <button
             type="submit"
-            className="w-full bg-[#ff9140] text-white py-2 rounded hover:bg-[#f16333] transition"
+            className="w-full bg-black text-white py-2 rounded hover:bg-blue-700 transition"
           >
             Submit
           </button>

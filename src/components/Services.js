@@ -3,7 +3,6 @@ import React from "react";
 import { Globe, BarChart2, Zap, Handshake } from "lucide-react";
 
 const Services = () => {
-
   const metrics = [
     {
       icon: <Globe className="text-blue-600 w-5 h-5" />,
@@ -28,86 +27,82 @@ const Services = () => {
   ];
 
   return (
-    // <section className="flex items-center lg:h-[525px]">
-    //   <div className="relative">
-    //     <div className="text-[400px] mango text-white h-[525px] bg-[#f16333] px-16 hidden lg:block">
-    //       RE
-    //     </div>
-    //     <div className="absolute top-24 left-16 rotate-[-15deg] bg-yellow-300 px-5 h-13 hidden lg:block">
-    //       <p className="mango text-[40px]">BY</p>
-    //     </div>
-    //   </div>
-    //   <section className="overflow-y-auto lg:h-[525px] scrollbar-hide">
-    <section>
-      <div className="flex lg:p-16 bg-orange-200 w-full p-5 justify-between font-serif">
-        <div>
-          <h2 className="text-[70px] mango">
-            Full-Service Digital Marketing Company in Jaipur
-          </h2>
+    <section className="flex items-center lg:h-[525px]">
+      <div className="relative">
+        <div className="text-[180px] leading-40 uppercase mango text-white h-[525px] w-[350px] bg-green-700 px-10 hidden lg:flex flex-col items-center justify-center">
+          <h1 className="">What we do</h1>
+        </div>
+        <div className="absolute top-54 left-16 rotate-[-15deg] bg-yellow-300 px-5 h-13 hidden lg:block">
+          <p className="mango text-[40px] uppercase">Servicees</p>
+        </div>
+      </div>
+      <section className="overflow-y-auto lg:h-[525px] scrollbar-hide">
+        <div className="flex lg:p-12 bg-gray-100 w-full p-5 justify-between font-serif">
+          <div>
+            <h2 className="text-[70px] mango leading-16 mb-5">
+              Full-Service Digital Marketing Company in Jaipur
+            </h2>
 
-          {/* <div className="absolute bottom-20 right-[60px] rotate-[-15deg] bg-[#ff9140] lg:px-5 px-2 lg:h-13">
+            {/* <div className="absolute bottom-20 right-[60px] rotate-[-15deg] bg-[#ff9140] lg:px-5 px-2 lg:h-13">
                 <p className="mango lg:text-[40px] text-[20px]">BRAND</p>
               </div> */}
 
-          <ul className="space-y-3">
-            <h3 className="text-2xl mb-4">
-              We are a performance-driven digital marketing agency offering:
-            </h3>
-            <li>SEO Services – Rank on Google with targeted SEO</li>
-            <li>
-              Google Ads & PPC – Smart paid campaigns to generate qualified
-              leads
-            </li>
-            <li>
-              Social Media Marketing – Instagram & Facebook growth campaigns
-            </li>
-            <li>
-              Web Design & Development – Mobile-first, fast-loading websites
-            </li>
-            <li>
-              Influencer & Content Marketing – Authentic collaborations that
-              convert
-            </li>
-          </ul>
-          <p className="text-2xl font-bold text-right mt-7 text-[#ff9140]">
-            Results that matter. Strategies that scale.
-          </p>
+            <ul className="space-y-3">
+              <h3 className="text-2xl mb-4">
+                We are a performance-driven digital marketing agency offering:
+              </h3>
+              <li>SEO Services – Rank on Google with targeted SEO</li>
+              <li>
+                Google Ads & PPC – Smart paid campaigns to generate qualified
+                leads
+              </li>
+              <li>
+                Social Media Marketing – Instagram & Facebook growth campaigns
+              </li>
+              <li>
+                Web Design & Development – Mobile-first, fast-loading websites
+              </li>
+              <li>
+                Influencer & Content Marketing – Authentic collaborations that
+                convert
+              </li>
+            </ul>
+            <p className="text-2xl font-bold mt-7">
+              Results that matter. Strategies that scale.
+            </p>
+          </div>
+
+          <video className="w-[300px]" playsInline autoPlay loop muted>
+            <source src="/video-sevices.webm" type="video/webm" />
+          </video>
         </div>
 
-        <video className="w-[300px]" playsInline autoPlay loop>
-          <source src="/video-sevices.webm" type="video/webm" />
-        </video>
-      </div>
+        <div className="flex lg:p-12 w-full p-5 justify-between font-serif bg-gray-300">
+          <div>
+            <h2 className="text-[70px] mango leading-16 mb-6">
+              Reimagining Growth, Speed & Impact
+            </h2>
 
-      <div className="flex lg:p-16 w-full p-5 justify-between font-serif">
-        <video className="w-[300px]" playsInline autoPlay loop>
-          <source src="/video-work.webm" type="video/webm" />
-        </video>
-        <div>
-          <h2 className="text-[70px] mango">
-            Reimagining Growth, Speed & Impact
-          </h2>
-
-          {/* <div className="absolute bottom-20 right-[60px] rotate-[-15deg] bg-[#ff9140] lg:px-5 px-2 lg:h-13">
+            {/* <div className="absolute bottom-20 right-[60px] rotate-[-15deg] bg-[#ff9140] lg:px-5 px-2 lg:h-13">
                 <p className="mango lg:text-[40px] text-[20px]">BRAND</p>
               </div> */}
 
-          <ul className="space-y-3">
-            <h3 className="text-2xl mb-4">
-              Tired of vanity metrics? We deliver performance-first marketing
-              that brings results.
-            </h3>
-            <li>📌 Full-funnel strategy</li>
-            <li>🚀 Scalable campaigns</li>
-            <li>🧠 Data-driven insights</li>
-            <li>♻️ Consistent monthly growth</li>
-            <li>✅ Transparent reporting dashboard</li>
-          </ul>
-          <p className="text-xl font-bold text-right mt-7 text-[#ff9140]">
-            RWe combine paid & organic strategies for maximum ROI and lead
-            generation.
-          </p>
-          {/* <div className="relative">
+            <ul className="space-y-3">
+              <h3 className="text-2xl mb-4">
+                Tired of vanity metrics? We deliver performance-first marketing
+                that brings results.
+              </h3>
+              <li>Full-funnel strategy</li>
+              <li>Scalable campaigns</li>
+              <li>Data-driven insights</li>
+              <li>Consistent monthly growth</li>
+              <li>Transparent reporting dashboard</li>
+            </ul>
+            <p className="text-xl font-bold mt-7">
+              RWe combine paid & organic strategies for maximum ROI and lead
+              generation.
+            </p>
+            {/* <div className="relative">
             <h1 className="lg:text-[200px] text-[100px] mango">IMAGINING</h1>
 
             <div className="absolute bottom-20 right-[60px] rotate-[-15deg] bg-[#ff9140] lg:px-5 px-2 lg:h-13">
@@ -127,10 +122,13 @@ const Services = () => {
               className="lg:hidden"
             />
           </div>*/}
+          </div>
+          <video className="w-[300px]" playsInline autoPlay loop muted>
+            <source src="/video-work.webm" type="video/webm" />
+          </video>
         </div>
-      </div>
 
-      <div className="flex lg:p-16 bg-orange-200 w-full p-5 justify-between font-serif">
+        {/* <div className="flex lg:p-16 bg-gray-200 w-full p-5 justify-between font-serif">
         <div>
           <h2 className="text-[70px] mango">
             Your Growth Partner in Jaipur & Beyond
@@ -165,7 +163,7 @@ const Services = () => {
 
           {/* <div className="absolute bottom-20 right-[60px] rotate-[-15deg] bg-[#ff9140] lg:px-5 px-2 lg:h-13">
                 <p className="mango lg:text-[40px] text-[20px]">BRAND</p>
-              </div> */}
+              </div> *
 
           <p className="text-2xl font-bold text-right mt-7 text-[#ff9140]">
             We don’t just run campaigns — we build digital growth systems.
@@ -178,9 +176,9 @@ const Services = () => {
           width={200}
           className="hidden lg:block"
         />
-      </div>
+      </div> */}
+      </section>
     </section>
-    // </section>
   );
 };
 

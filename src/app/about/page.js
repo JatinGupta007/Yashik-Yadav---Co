@@ -11,7 +11,7 @@ function About() {
   return (
     <main>
       <Navbar />
-      <section className="flex justify-center items-center px-22 gap-20">
+      <section className="flex justify-center items-center px-30 gap-16">
         <div>
           <p className="mango text-[170px] h-[200px]">WE&apos;RE </p>
           <p className="mango text-[170px] leading-36 uppercase">
@@ -19,11 +19,11 @@ function About() {
           </p>
         </div>
         <div className="space-y-5 w-2/5 font-serif">
-          <div className="bg-[#f16333] px-4">
+          <div className="bg-yellow-400 w-50 px-4">
             <p className="text-[40px] mango">FOUNDED IN 2020</p>
           </div>
           <p className="text-xl">
-            Curiosity fuels innovation — and that’s exactly how we help brands
+            Curiosity fuels innovation - and that’s exactly how we help brands
             grow. Every project we take on begins with a question:
             <span className="font-bold">
               &quot;What if we could make this better?&quot;
@@ -31,16 +31,16 @@ function About() {
             And then set out to answer the question, as audaciously as possible.
           </p>
           <p>
-            Started with one client, one laptop, and the goal to build a
-            results-driven digital marketing agency in Jaipur. Today, we’re
-            powering growth across India and 4+ countries.
+            Started with one client, one laptop, and the goal to build a results
+            driven digital marketing agency in Jaipur. Today, we’re powering
+            growth across India and 4+ countries.
           </p>
         </div>
       </section>
 
       <Popup />
 
-      <section className="flex flex-col items-center px-28 space-y-10 gap-12 mt-16">
+      <section className="flex flex-col items-center px-28 space-y-10 mt-16">
         <Image
           src="/photo-aboutwebp.webp"
           alt="photo-about"
@@ -61,7 +61,7 @@ function About() {
               Google Ads and social media — we’re on a mission to **put your
               business at the forefront of your industry**.
             </p>
-            <button className="mango bg-[#f16333] text-4xl text-white uppercase px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+            <button className="mango bg-black text-4xl text-white uppercase px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
               OUR SERVICES
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,9 +81,13 @@ function About() {
         </div>
 
         <div className="flex justify-start gap-5 w-full h-140">
-          <h2 className="text-5xl uppercase leading-16">
-            From Freelance Hustle to Full-Fledged Agency
-          </h2>
+          <div>
+            <h2 className="text-5xl uppercase leading-16">
+              From Freelance Hustle to Full-Fledged Agency
+            </h2>
+            <Image src="/about-plant.png" alt="plant" height={400} width={300} />
+          </div>
+
           <div className="space-y-8 self-end w-350">
             <p className="text-xl">
               Back in 2020, our founder Yashik Yadav was just a solo marketer
@@ -106,7 +110,7 @@ function About() {
         </div>
       </section>
 
-      <section className="bg-[#ff9140] p-16 mt-20 m-16 space-y-32">
+      <section className="bg-green-800 p-16 mt-20 m-16 space-y-32">
         <div className="flex gap-8">
           <div className="bg-yellow-300 w-12 h-12 mt-10"></div>
           <div>
@@ -252,7 +256,7 @@ function About() {
             <div className="">
               <a
                 href="/careers"
-                className="inline-flex items-center justify-between bg-[#f16333] text-white text-4xl px-6 py-4 hover:bg-white hover:text-black transition-all duration-300 mango gap-24"
+                className="inline-flex items-center justify-between bg-black text-white text-4xl px-6 py-4 hover:bg-white hover:text-black transition-all duration-300 mango gap-24"
               >
                 CAREERS
                 <span className="ml-4 text-2xl">➔</span>
@@ -270,7 +274,7 @@ function About() {
           <div className="mt-10">
             <a
               href="/careers"
-              className="inline-flex items-center justify-between bg-[#ff9140] text-white text-4xl px-6 py-4 hover:bg-white hover:text-black transition-all duration-300 mango uppercase"
+              className="inline-flex items-center justify-between bg-black text-white text-4xl px-6 py-4 hover:bg-white hover:text-black transition-all duration-300 mango uppercase"
             >
               Our Work
               <span className="ml-4 text-2xl">➔</span>
@@ -278,7 +282,7 @@ function About() {
           </div>
         </div>
         <div className="relative">
-          <div className="absolute top-50 left-10 rotate-[-6deg] bg-[#f16333] px-4 text-center leading-10 pt-3 pb-1">
+          <div className="absolute top-50 left-10 rotate-[-6deg] bg-yellow-400 px-4 text-center leading-10 pt-3 pb-1">
             <p className="text-[40px] mango uppercase">
               Yes, we’re a little obsessed — and that’s a good thing.
             </p>
@@ -299,7 +303,7 @@ function About() {
         </div>
       </section>
 
-      <section className="flex justify-center px-20 gap-10 py-10 bg-gray-100 font-serif">
+      {/* <section className="flex justify-center px-20 gap-10 py-10 bg-gray-100 font-serif">
         <div className="w-3/5">
           <h2 className="mango text-[140px] leading-32 uppercase">
             Let&apos;s Make It Happen Together
@@ -330,7 +334,7 @@ function About() {
             </svg>
           </button>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </main>

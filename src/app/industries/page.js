@@ -46,16 +46,16 @@ const Industries = () => {
       </section>
 
       <section className="flex mx-24 mb-10">
-        <div className="w-1/2 bg-[#ff9140] p-10 py-16">
-        <h1 className="text-5xl mb-10 text-center">Services</h1>
-          <ul className="space-y-6 text-3xl tracking-tight font-serif">
+        <div className="w-1/2 bg-[#f2f7f6] p-10 py-16">
+          <h1 className="text-5xl mb-10 text-center">Services</h1>
+          <ul className="space-y-6 text-3xl tracking-tight">
             {indusriesServices.map((eachService, i) => (
               <Link
                 href={`/industries/${eachService}`}
                 key={i}
-                className="text-black hover:text-slate-700 flex items-center justify-between group capitalize"
+                className="text-gray-300 hover:text-slate-700 flex items-center justify-between group capitalize"
               >
-                {eachService}
+                {eachService.replace(/-/g, " ")}
                 <span className="ml-4 text-4xl hidden group-hover:inline">
                   ➔
                 </span>
@@ -64,7 +64,7 @@ const Industries = () => {
           </ul>
         </div>
 
-        <div className="w-1/2 bg-[#f16333] p-16 text-black">
+        <div className="w-1/2 bg-[#aed9e0] p-16 text-black">
           <div className="flex space-x-4 mb-6">
             {Array(6)
               .fill()
@@ -81,10 +81,9 @@ const Industries = () => {
           <p className="text-lg leading-relaxed text-gray-800">
             We want to know who you are and what you&apos;re about so we can
             connect with your vision and needs. An in-depth understanding of
-            your <strong>WHAT</strong>,{" "}
-            <strong>WHY</strong> and{" "}
-            <strong>HOW</strong>{" "}
-            helps us to build strong and meaningful connections with your users.
+            your <strong>WHAT</strong>, <strong>WHY</strong> and{" "}
+            <strong>HOW</strong> helps us to build strong and meaningful
+            connections with your users.
           </p>
 
           <p className="text-md mt-6 text-gray-700">
