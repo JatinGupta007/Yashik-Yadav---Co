@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <main className="bg-gray-100">
-      <section className="flex justify-center px-20 gap-16 py-16 font-serif mt-5">
+      <section className="flex justify-center px-20 gap-16 py-16 mt-5">
         <div className="w-3/5">
           <p className="mango text-[140px] leading-32 uppercase">
             Let’s Build Your Brand’s Digital Growth Engine

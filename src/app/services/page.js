@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+
+'use client'
 import Footer from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import Popup from "@/components/popup";
-import React from "react";
+import React, {useState} from "react";
 
 const servicePageData = [
   {
@@ -119,6 +121,8 @@ const servicePageData = [
 ];
 
 const Services = () => {
+  const [card, setCard] = useState("A")
+
   return (
     <main>
       <Navbar />
@@ -134,7 +138,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="flex justify-between mt-6 gap-20 font-serif">
+        <div className="flex justify-between mt-6 gap-20">
           <div className="w-1/2">
             <h2 className="text-[40px] uppercase leading-12 mt-20 mb-6">
               Our Comprehensive SEO Solutions:
@@ -150,7 +154,7 @@ const Services = () => {
               <li>Monthly Performance Reports with Recommendations</li>
             </ul>
           </div>
-          <div className="w-1/2 font-serif">
+          <div className="w-1/2">
             <p className="text-lg mb-26">
               At Yashik Yadav & Co., we craft intelligent SEO strategies
               tailored for growing businesses in Jaipur. With over a decade of
@@ -159,7 +163,7 @@ const Services = () => {
               you&apos;re a clinic, ecommerce store, or local brand, our SEO
               services deliver consistent, long-term growth.
             </p>
-            <div className="font-serif">
+            <div className="">
               <p className="text-[40px] uppercase leading-12 mb-4">
                 Why Our Clients <br />
                 Love Us
@@ -180,53 +184,279 @@ const Services = () => {
         </div>
       </section>
 
-      <section className="flex mx-24 mb-10">
+      <section className="flex mx-24 mb-10 mt-10">
         <div className="w-1/2 bg-[#f2f7f6] p-10 mango">
-          <ul className="space-y-16 text-[4rem] tracking-tight">
-            <li className="text-black flex items-center justify-between">
+          <ul className="space-y-12 text-[4rem] tracking-tight">
+            <li
+              className={`${
+                card === "A" ? "text-black" : "text-gray-300"
+              } flex items-center justify-between`}
+              onClick={() => setCard("A")}
+            >
               DISCOVERY
-              <span className="ml-4 text-4xl">➔</span>
+              <span
+                className={`${
+                  card === "A" ? "inline" : "hidden"
+                } ml-4 text-4xl`}
+              >
+                ➔
+              </span>
             </li>
-            <li className="text-gray-300">DEFINITION</li>
-            <li className="text-gray-300">IDEATION/EXECUTION</li>
-            <li className="text-gray-300">DELIVERY</li>
-            <li className="text-gray-300">IMPACT MEASURING</li>
-            <li className="text-gray-300">CONTINOUS PARTNERSHIP</li>
+            <li
+              className={`${
+                card === "B" ? "text-black" : "text-gray-300"
+              } flex items-center justify-between`}
+              onClick={() => setCard("B")}
+            >
+              DEFINITION
+              <span
+                className={`${
+                  card === "B" ? "inline" : "hidden"
+                } ml-4 text-4xl`}
+              >
+                ➔
+              </span>
+            </li>
+            <li
+              className={`${
+                card === "C" ? "text-black" : "text-gray-300"
+              } flex items-center justify-between`}
+              onClick={() => setCard("C")}
+            >
+              IDEATION/EXECUTION
+              <span
+                className={`${
+                  card === "C" ? "inline" : "hidden"
+                } ml-4 text-4xl`}
+              >
+                ➔
+              </span>
+            </li>
+            <li
+              className={`${
+                card === "D" ? "text-black" : "text-gray-300"
+              } flex items-center justify-between`}
+              onClick={() => setCard("D")}
+            >
+              DELIVERY
+              <span
+                className={`${
+                  card === "D" ? "inline" : "hidden"
+                } ml-4 text-4xl`}
+              >
+                ➔
+              </span>
+            </li>
+            <li
+              className={`${
+                card === "E" ? "text-black" : "text-gray-300"
+              } flex items-center justify-between`}
+              onClick={() => setCard("E")}
+            >
+              IMPACT MEASURING
+              <span
+                className={`${
+                  card === "E" ? "inline" : "hidden"
+                } ml-4 text-4xl`}
+              >
+                ➔
+              </span>
+            </li>
+            <li
+              className={`${
+                card === "F" ? "text-black" : "text-gray-300"
+              } flex items-center justify-between`}
+              onClick={() => setCard("F")}
+            >
+              CONTINOUS PARTNERSHIP
+              <span
+                className={`${
+                  card === "F" ? "inline" : "hidden"
+                } ml-4 text-4xl`}
+              >
+                ➔
+              </span>
+            </li>
           </ul>
         </div>
 
-        <div className="w-1/2 bg-[#aed9e0] p-16 text-black">
-          <div className="flex space-x-4 mb-6">
-            {Array(6)
-              .fill()
-              .map((_, i) => (
-                <div key={i} className="w-[100px] h-2 bg-white"></div>
-              ))}
+        {card === "A" && (
+          <div className="w-1/2 bg-[#aed9e0] p-16 text-black">
+            <div className="flex space-x-4 mb-6">
+              {Array(6)
+                .fill()
+                .map((_, i) => (
+                  <div key={i} className="w-[100px] h-2 bg-white"></div>
+                ))}
+            </div>
+            <h1 className="text-3xl font-medium leading-9 mb-8">
+              We begin by spending quality time with you in a series of
+              discovery sessions.
+            </h1>
+
+            <p className="text-lg leading-relaxed text-gray-800">
+              We take time to understand who you are, your business goals, and
+              your target audience. Our discovery sessions help us gather deep
+              insights into your brand purpose, buyer journey, and market
+              landscape. This sets the foundation for an SEO strategy that
+              aligns with your business vision and speaks directly to your
+              customers’ needs.
+            </p>
+            <img
+              src="https://mdn.check-dc.com/BASE/Checkwebsite/photo-service-img-1-pkds6hjpg-t0wMA.jpe"
+              alt="image"
+              className="h-90 w-full mt-16"
+            />
           </div>
+        )}
 
-          <h1 className="text-3xl font-medium leading-9 mb-8">
-            We begin by spending quality time with you in a series of discovery
-            sessions.
-          </h1>
+        {card === "B" && (
+          <div className="w-1/2 bg-purple-300 p-16 text-black">
+            <div className="flex space-x-4 mb-6">
+              {Array(6)
+                .fill()
+                .map((_, i) => (
+                  <div key={i} className="w-[100px] h-2 bg-white"></div>
+                ))}
+            </div>
+            <h1 className="text-3xl font-medium leading-9 mb-8">
+              Clear goals, clear wins.
+            </h1>
 
-          <p className="text-lg leading-relaxed text-gray-800">
-            We want to know who you are and what you&apos;re about so we can
-            connect with your vision and needs. An in-depth understanding of
-            your <strong>WHAT</strong>, <strong>WHY</strong> and{" "}
-            <strong>HOW</strong> helps us to build strong and meaningful
-            connections with your users.
-          </p>
+            <p className="text-lg leading-relaxed text-gray-800">
+              Once we’ve understood your vision, we move to defining the pillars
+              of your SEO strategy. We set clear KPIs (Key Performance
+              Indicators), segment your audience by behavior and search intent,
+              and group keywords into meaningful clusters. This step ensures
+              that every move we make is aligned with your business objectives,
+              target geography, and conversion funnel. With clarity in goals,
+              your SEO journey becomes measurable and focused from Day 1.
+            </p>
+            <img
+              src="https://mdn.check-dc.com/BASE/Checkwebsite/photo-service-img-1-pkds6hjpg-t0wMA.jpe"
+              alt="image"
+              className="h-90 w-full mt-16"
+            />
+          </div>
+        )}
 
-          <p className="text-md mt-6 text-gray-700">
-            P.S: Our co-founder might crack a few dad jokes during these
-            meetings, but you can just ignore them like we do.
-          </p>
-          <img
-            src="https://mdn.check-dc.com/BASE/Checkwebsite/photo-service-img-1-pkds6hjpg-t0wMA.jpe"
-            alt="image"
-            className="h-90 w-full mt-16"
-          />
-        </div>
+        {card === "C" && (
+          <div className="w-1/2 bg-[#ffcbb0] p-16 text-black">
+            <div className="flex space-x-4 mb-6">
+              {Array(6)
+                .fill()
+                .map((_, i) => (
+                  <div key={i} className="w-[100px] h-2 bg-white"></div>
+                ))}
+            </div>
+            <h1 className="text-3xl font-medium leading-9 mb-8">
+              Bringing strategy to life.
+            </h1>
+
+            <p className="text-lg leading-relaxed text-gray-800">
+              Here’s where ideas meet action. Based on our research, we build a
+              tailored SEO roadmap - including a content calendar, technical
+              fixes, internal linking strategy, and authority building
+              techniques. Our team handles on-page optimization, content
+              creation, GMB listings, and performance-ready site structuring.
+              Every task is done with intent — to boost organic reach,
+              visibility, and user experience.
+            </p>
+            <img
+              src="https://mdn.check-dc.com/BASE/Checkwebsite/photo-service-img-1-pkds6hjpg-t0wMA.jpe"
+              alt="image"
+              className="h-90 w-full mt-16"
+            />
+          </div>
+        )}
+
+        {card === "D" && (
+          <div className="w-1/2 bg-pink-300 p-16 text-black">
+            <div className="flex space-x-4 mb-6">
+              {Array(6)
+                .fill()
+                .map((_, i) => (
+                  <div key={i} className="w-[100px] h-2 bg-white"></div>
+                ))}
+            </div>
+            <h1 className="text-3xl font-medium leading-9 mb-8">
+              Bringing it live with perfection
+            </h1>
+
+            <p className="text-lg leading-relaxed text-gray-800">
+              Once the foundation is set, we begin the full-scale execution
+              across your website and digital assets. All technical
+              implementations, meta-tag updates, structured data, and keyword
+              placements go live. We don’t just “deliver” -we test, optimize,
+              and fine-tune as we go. Our approach ensures minimal friction,
+              faster indexing, and immediate improvement in crawlability and
+              page health.
+            </p>
+            <img
+              src="https://mdn.check-dc.com/BASE/Checkwebsite/photo-service-img-1-pkds6hjpg-t0wMA.jpe"
+              alt="image"
+              className="h-90 w-full mt-16"
+            />
+          </div>
+        )}
+
+        {card === "E" && (
+          <div className="w-1/2 bg-amber-500 p-16 text-black">
+            <div className="flex space-x-4 mb-6">
+              {Array(6)
+                .fill()
+                .map((_, i) => (
+                  <div key={i} className="w-[100px] h-2 bg-white"></div>
+                ))}
+            </div>
+            <h1 className="text-3xl font-medium leading-9 mb-8">
+              Tracking what matters.
+            </h1>
+
+            <p className="text-lg leading-relaxed text-gray-800">
+              What’s the point of SEO if you can’t measure results? We provide
+              comprehensive performance tracking using tools like Google
+              Analytics, Search Console, SEMrush, and others. We monitor keyword
+              movements, CTRs, impressions, leads generated, bounce rates, and
+              more. Our monthly reports give you real data, clear insights, and
+              actionable recommendations - so you always know what’s working.
+            </p>
+            <img
+              src="https://mdn.check-dc.com/BASE/Checkwebsite/photo-service-img-1-pkds6hjpg-t0wMA.jpe"
+              alt="image"
+              className="h-90 w-full mt-16"
+            />
+          </div>
+        )}
+
+        {card === "F" && (
+          <div className="w-1/2 bg-sky-400 p-16 text-black">
+            <div className="flex space-x-4 mb-6">
+              {Array(6)
+                .fill()
+                .map((_, i) => (
+                  <div key={i} className="w-[100px] h-2 bg-white"></div>
+                ))}
+            </div>
+            <h1 className="text-3xl font-medium leading-9 mb-8">
+              We grow as you grow
+            </h1>
+
+            <p className="text-lg leading-relaxed text-gray-800">
+              SEO is not a one-time project — it&apos;s a long-term growth game.
+              Even after execution and reporting, we stick around to help you
+              scale what&apos;s working, fix what’s not, and explore new keyword
+              opportunities as your business evolves. Our team acts as an
+              extended digital partner — keeping your brand visible,
+              competitive, and ahead of the algorithm curve
+            </p>
+            <img
+              src="https://mdn.check-dc.com/BASE/Checkwebsite/photo-service-img-1-pkds6hjpg-t0wMA.jpe"
+              alt="image"
+              className="h-90 w-full mt-16"
+            />
+          </div>
+        )}
       </section>
       <div className="bg-yellow-300 flex justify-between px-20 py-16">
         {/* Left side with square and text */}
@@ -242,7 +472,7 @@ const Services = () => {
         </p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black font-serif">
+      <section className="flex gap-20 px-16 py-16 bg-white text-black">
         {/* Left column */}
         <div className="flex flex-col justify-start w-4/5">
           <p className="text-3xl mb-4">Why Partner With Us</p>
@@ -314,7 +544,7 @@ const Services = () => {
         <p className="text-3xl text-black self-end mb-16"></p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black font-serif">
+      <section className="flex gap-20 px-16 py-16 bg-white text-black">
         {/* Left column */}
         <div className="space-y-8">
           {/* Item 1 */}
@@ -378,7 +608,7 @@ const Services = () => {
         </p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black font-serif">
+      <section className="flex gap-20 px-16 py-16 bg-white text-black">
         {/* Left column */}
         <div className="flex flex-col justify-start">
           <p className="text-3xl mb-4">Our Edge</p>
@@ -445,7 +675,7 @@ const Services = () => {
         <p className="text-3xl text-black self-end mb-16"></p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black font-serif">
+      <section className="flex gap-20 px-16 py-16 bg-white text-black">
         {/* Left column */}
         <div className="space-y-8">
           {/* Item 1 */}
@@ -511,7 +741,7 @@ const Services = () => {
         <p className="text-3xl text-black self-end mb-16"></p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black font-serif">
+      <section className="flex gap-20 px-16 py-16 bg-white text-black">
         {/* Left column */}
         <div className="flex flex-col justify-start w-4/5">
           <p className="text-3xl mb-4">Outcome</p>
@@ -575,7 +805,7 @@ const Services = () => {
         <p className="text-3xl text-black self-end mb-16"></p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black font-serif">
+      <section className="flex gap-20 px-16 py-16 bg-white text-black">
         {/* Left column */}
         <div className="space-y-8">
           {/* Item 1 */}
@@ -636,7 +866,7 @@ const Services = () => {
         <p className="text-3xl text-black self-end mb-16"></p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black font-serif">
+      <section className="flex gap-20 px-16 py-16 bg-white text-black">
         {/* Left column */}
         <div className="flex flex-col justify-start w-4/5">
           <p className="text-3xl mb-4">Why CRO?</p>
@@ -704,7 +934,7 @@ const Services = () => {
         <p className="text-3xl text-black self-end mb-16"></p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black font-serif">
+      <section className="flex gap-20 px-16 py-16 bg-white text-black">
         {/* Left column */}
         <div className="space-y-8">
           {/* Item 1 */}
@@ -767,7 +997,7 @@ const Services = () => {
         <p className="text-3xl text-black self-end mb-16"></p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black font-serif">
+      <section className="flex gap-20 px-16 py-16 bg-white text-black">
         {/* Left column */}
         <div className="flex flex-col justify-start w-4/5">
           <p className="text-3xl mb-4">Why ORM Works</p>

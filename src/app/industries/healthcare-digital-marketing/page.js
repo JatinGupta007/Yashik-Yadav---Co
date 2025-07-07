@@ -1,7 +1,9 @@
+import Footer from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import Popup from "@/components/popup";
 import React from "react";
-export default function HealthcareDigitalMarketingPage(){
+
+export default function Page(){
   return (
     <section>
       <Navbar />
@@ -34,6 +36,7 @@ export default function HealthcareDigitalMarketingPage(){
           </ul>
         </div>
       </div>
+      <Footer />
     </section>
   );
 };

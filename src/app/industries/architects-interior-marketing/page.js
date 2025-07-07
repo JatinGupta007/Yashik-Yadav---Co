@@ -1,8 +1,9 @@
+import Footer from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import Popup from "@/components/popup";
 
 
-export default function HealthcareDigitalMarketingPage(){
+export default function Page(){
   return (
     <>
       <Navbar />
@@ -47,6 +48,7 @@ export default function HealthcareDigitalMarketingPage(){
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

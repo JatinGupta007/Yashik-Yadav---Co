@@ -1,26 +1,18 @@
-import Image from "next/image";
-import React from "react";
-import { Globe, BarChart2, Zap, Handshake } from "lucide-react";
-
 const Services = () => {
   const metrics = [
     {
-      icon: <Globe className="text-blue-600 w-5 h-5" />,
       label: "Countries Served",
       value: "5+",
     },
     {
-      icon: <BarChart2 className="text-green-600 w-5 h-5" />,
       label: "Projects Executed",
       value: "180+",
     },
     {
-      icon: <Zap className="text-yellow-500 w-5 h-5" />,
       label: "Avg. ROAS Uplift",
       value: "4.3x",
     },
     {
-      icon: <Handshake className="text-orange-500 w-5 h-5" />,
       label: "Client Retention",
       value: "99%",
     },
@@ -37,9 +29,9 @@ const Services = () => {
         </div>
       </div>
       <section className="overflow-y-auto lg:h-[525px] scrollbar-hide">
-        <div className="flex lg:p-12 bg-sky-50 w-full p-5 justify-between font-serif">
+        <div className="flex lg:p-12 bg-sky-50 w-full p-5 justify-between">
           <div>
-            <h2 className="text-[70px] mango leading-16 mb-5">
+            <h2 className="text-[70px] mango leading-16 mb-5 uppercase">
               Full-Service Digital Marketing Company in Jaipur
             </h2>
 
@@ -77,9 +69,9 @@ const Services = () => {
           </video>
         </div>
 
-        <div className="flex lg:p-12 w-full p-5 justify-between font-serif bg-sky-100">
+        <div className="flex lg:p-12 w-full p-5 justify-between bg-sky-100">
           <div>
-            <h2 className="text-[70px] mango leading-16 mb-6">
+            <h2 className="text-[70px] mango leading-16 mb-6 uppercase">
               Reimagining Growth, Speed & Impact
             </h2>
 
@@ -128,7 +120,7 @@ const Services = () => {
           </video>
         </div>
 
-        {/* <div className="flex lg:p-16 bg-gray-200 w-full p-5 justify-between font-serif">
+        {/* <div className="flex lg:p-16 bg-gray-200 w-full p-5 justify-between">
         <div>
           <h2 className="text-[70px] mango">
             Your Growth Partner in Jaipur & Beyond

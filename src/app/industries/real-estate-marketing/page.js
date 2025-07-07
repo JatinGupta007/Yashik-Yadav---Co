@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import Popup from "@/components/popup";
 
@@ -52,6 +53,7 @@ const page = () => {
           </video>
         </div>
       </section>
+      <Footer />
     </main>
   );
 };

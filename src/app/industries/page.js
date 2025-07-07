@@ -36,7 +36,7 @@ const Industries = () => {
         </div>
         <div className="flex">
           <p className="w-1/2"></p>
-          <p className="text-xl font-serif w-1/2">
+          <p className="text-xl w-1/2">
             We provide tailored digital marketing solutions for industry
             verticals that demand specialized strategies, language, and audience
             targeting. Below is the finalized content and detailed URL structure
@@ -47,13 +47,13 @@ const Industries = () => {
 
       <section className="flex mx-24 mb-10">
         <div className="w-1/2 bg-[#f2f7f6] p-10 py-16">
-          <h1 className="text-5xl mb-10 text-center">Services</h1>
-          <ul className="space-y-6 text-3xl tracking-tight">
+          <h1 className="text-7xl mb-10 text-center mango uppercase">Services</h1>
+          <ul className="space-y-6 text-5xl">
             {indusriesServices.map((eachService, i) => (
               <Link
                 href={`/industries/${eachService}`}
                 key={i}
-                className="text-gray-300 hover:text-slate-700 flex items-center justify-between group capitalize"
+                className="text-gray-400 hover:text-slate-700 flex items-center justify-between group uppercase mango"
               >
                 {eachService.replace(/-/g, " ")}
                 <span className="ml-4 text-4xl hidden group-hover:inline">
@@ -73,7 +73,7 @@ const Industries = () => {
               ))}
           </div>
 
-          <h1 className="text-3xl font-medium leading-8 font-serif mb-8">
+          <h1 className="text-3xl font-medium leading-8 mb-8">
             We begin by spending quality time with you in a series of discovery
             sessions.
           </h1>

@@ -18,7 +18,7 @@ function About() {
             endlessly curious
           </p>
         </div>
-        <div className="space-y-5 w-2/5 font-serif">
+        <div className="space-y-5 w-2/5">
           <div className="bg-yellow-400 w-50 px-4">
             <p className="text-[40px] mango">FOUNDED IN 2020</p>
           </div>
@@ -303,7 +303,7 @@ function About() {
         </div>
       </section>
 
-      {/* <section className="flex justify-center px-20 gap-10 py-10 bg-gray-100 font-serif">
+      {/* <section className="flex justify-center px-20 gap-10 py-10 bg-gray-100">
         <div className="w-3/5">
           <h2 className="mango text-[140px] leading-32 uppercase">
             Let&apos;s Make It Happen Together
