@@ -38,6 +38,7 @@ const Work = () => {
           alt="kele-cover"
           height={900}
           width={1200}
+          className="w-full"
         />
         <div className="py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           {/* Left Side */}
@@ -71,7 +72,7 @@ const Work = () => {
         </div>
 
         <Image
-          className="mt-14"
+          className="mt-14 w-full"
           src="/autograph-cover.webp"
           alt="kele-cover"
           height={900}
@@ -109,7 +110,7 @@ const Work = () => {
         </div>
 
         <Image
-          className="mt-14"
+          className="mt-14 w-full"
           src="/propel-cover.webp"
           alt="kele-cover"
           height={900}
@@ -141,7 +142,7 @@ const Work = () => {
           </div>
         </div>
 
-        <div className="bg-[url(/dass.webp)] w-[1200px] h-[500px] bg-cover group">
+        <div className="bg-[url(/dass.webp)] w-full h-[500px] bg-cover group">
           <div className="hidden group-hover:flex h-[500px] justify-center items-center bg-black opacity-64">
             <p className="text-white mango text-8xl">COMING SOON</p>
           </div>
@@ -169,7 +170,7 @@ const Work = () => {
           </div>
         </div>
 
-        <div className="bg-[url(/odla-cover.webp)] w-[1200px] h-[500px] bg-cover group">
+        <div className="bg-[url(/odla-cover.webp)] w-full h-[500px] bg-cover group">
           <div className="hidden group-hover:flex h-[500px] justify-center items-center bg-black opacity-64">
             <p className="text-white mango text-8xl">COMING SOON</p>
           </div>

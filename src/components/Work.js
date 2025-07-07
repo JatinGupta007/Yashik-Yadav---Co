@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Work() {
   return (
-    <main>
-      <section className="flex flex-col lg:flex-row lg:items-center lg:gap-15 lg:p-10 p-5">
+    <main className="m-auto">
+      <section className="flex flex-col lg:flex-row lg:items-center justify-center lg:gap-15 lg:p-10 p-5">
         <div className="lg:space-y-20">
           <p className="lg:text-xl text-lg font-semibold mb-2">
             We help them win in
@@ -147,6 +147,7 @@ export default function Work() {
           alt="kele-cover"
           height={900}
           width={1200}
+          className="w-full"
         />
         <div className="py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           {/* Left Side */}
@@ -180,11 +181,12 @@ export default function Work() {
         </div>
 
         <Image
-          className="mt-14"
+          className="mt-14 w-full"
           src="/autograph-cover.webp"
           alt="kele-cover"
           height={900}
           width={1200}
+          
         />
         <div className="py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           {/* Left Side */}
@@ -216,7 +218,7 @@ export default function Work() {
         </div>
 
         <Image
-          className="mt-14"
+          className="mt-14 w-full"
           src="/propel-cover.webp"
           alt="kele-cover"
           height={900}
@@ -251,7 +253,7 @@ export default function Work() {
         </div>
 
         <Image
-          className="mt-14"
+          className="mt-14 w-full"
           src="/dass.webp"
           alt="kele-cover"
           height={900}
@@ -283,7 +285,7 @@ export default function Work() {
         </div>
 
         <Image
-          className="mt-14"
+          className="mt-14 w-full"
           src="/odla-cover.webp"
           alt="kele-cover"
           height={900}
