@@ -1,53 +1,103 @@
+/* eslint-disable @next/next/no-img-element */
 import Footer from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import Popup from "@/components/popup";
+import Image from "next/image";
 
-export default function Page() {
+import React from "react";
+
+const page = () => {
   return (
-    <>
+    <main className="overflow-hidden">
       <Navbar />
       <Popup />
-      <section className="px-28 py-12">
-        <div className="relative">
-          <h1 className="text-[160px] mango text-center uppercase leading-34">
-            Architects & Interior Designers
+      <div className="bg-yellow-300 flex flex-col lg:flex-row justify-between lg:px-20 px-7 lg:py-16 py-5">
+        {/* Left side with square and text */}
+        <div className="flex items-center space-x-6">
+          {/* Black Square */}
+          <div className="w-12 h-12 bg-black"></div>
+          <h1 className="text-[60px] lg:text-[100px] mango text-black uppercase">
+            Jewelry & Luxury Gifting Brands
           </h1>
         </div>
-        <div className="flex">
-          <div className="w-1/2 mt-30">
-            <h2 className="text-3xl mb-3">Services</h2>
-            <ul className="text-lg space-y-1">
-              <li>Portfolio Website Design + SEO</li>
-              <li>Instagram Growth Strategy + Reels</li>
-              <li>Video Walkthroughs of Projects</li>
-              <li>Google Business Profile & Maps Ranking</li>
-              <li>WhatsApp Chat Automation for Consultation Requests</li>
-            </ul>
-          </div>
-          <div className="w-1/2">
-            <h2 className="text-3xl mb-3">
-              {" "}
-              Build Your Design Brand Online – Reach, Inspire, Convert
-            </h2>
-            <p className="text-lg">
-              We help architecture firms, interior designers, and studios
-              showcase their work, rank in local search, and generate
-              high-ticket project inquiries.
+
+        {/* Right side text */}
+        <p className="text-xl lg:text-3xl text-black lg:self-end"></p>
+      </div>
+
+      <section className="flex flex-col lg:flex-row gap-20 lg:px-16 px-7 pt-16 bg-white text-black">
+        {/* Left column */}
+        <div className="flex flex-col justify-start lg:w-4/5">
+          <p className="text-5xl mb-4 uppercase mango">
+            Sparkle with SEO-Driven Success
+          </p>
+          <p className="text-xl leading-relaxed">
+            Organic results for your timeless designs.
+          </p>
+
+          {/* Button */}
+          <button className="mt-8 mango bg-black text-white px-6 py-4 text-2xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all uppercase">
+            Schedule a Free Jewelry SEO Plan
+            <span className="ml-4 group-hover:translate-x-1 transition-transform">
+              ➜
+            </span>
+          </button>
+          <img
+            src="/strategy_2.png"
+            alt="strategy"
+            className="w-50 self-center mt-20 -ml-16"
+          />
+        </div>
+
+        {/* Right column */}
+        <div className="space-y-8">
+          {/* Item 1 */}
+          <div className="border-b border-yellow-300 pb-8">
+            <h3 className="text-6xl mango mb-5 uppercase">
+              Trusted by Jewelers, Designers, Luxury Studios
+            </h3>
+            <p className="text-xl">
+              Convert aspirational shoppers into loyal buyers through
+              storytelling and intent-based campaigns. We make high-end jewelry
+              rank on Google and convert traffic into walk-ins or orders.
             </p>
-            <div className="mt-36">
-              <h2 className="text-3xl mb-3">Targeted Outcomes</h2>
-              <ul className="text-lg space-y-1 pl-4">
-                <li>Portfolio Website Design + SEO</li>
-                <li>Instagram Growth Strategy + Reels</li>
-                <li>Video Walkthroughs of Projects</li>
-                <li>Google Business Profile & Maps Ranking</li>
-                <li>WhatsApp Chat Automation for Consultation Requests</li>
-              </ul>
-            </div>
+          </div>
+
+          {/* Item 2 */}
+          <div className="border-b border-yellow-300 pb-8">
+            <h3 className="text-5xl mango mb-4 uppercase">Services We Offer</h3>
+            <ul className="space-y-2 text-xl">
+              <li>Collection SEO (Engagement, Bridal, Gold, Diamond)</li>
+              <li>Store-Based Local SEO</li>
+              <li>Premium Blogs (Gifting, Guides, Trends)</li>
+              <li>Pinterest + Instagram SEO Integration</li>
+              <li>Reputation + Review Management</li>
+              <li>Video Ads + Festival Campaigns</li>
+              <li>WhatsApp Quote Chatbots</li>
+            </ul>
           </div>
         </div>
       </section>
+      <Image
+        src="/REAL ESTATE MARKETING.jpg"
+        alt="REAL ESTATE MARKETING"
+        height={800}
+        width={1300}
+        className="pb-12 p-7 md:p-12"
+      />
+
+      <div className="border-b border-yellow-400 md:m-12 m-7 pb-12">
+        <h3 className="text-5xl mb-4 mango uppercase">Our Strategy</h3>
+        <p className="text-xl">
+          We build search rankings around keywords like: “gold kundan choker,”
+          “buy bridal sets online,” etc. Your site becomes an elegant SEO
+          machine, blending beauty and performance.
+        </p>
+      </div>
+
       <Footer />
-    </>
+    </main>
   );
-}
+};
+
+export default page;

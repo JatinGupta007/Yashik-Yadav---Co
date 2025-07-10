@@ -43,7 +43,7 @@ export const Navbar = () => {
   }
 
   return (
-    <header className="top-0 flex justify-between items-center px-8 py-4 min-w-screen backdrop-blur-lg z-10">
+    <header className="top-0 flex justify-between items-center md:px-8 py-4 min-w-screen backdrop-blur-lg z-10">
       <div className="flex items-center space-x-2">
         <Link className="flex items-center" href="/">
           <Image
@@ -90,7 +90,7 @@ export const Navbar = () => {
 
       <Sheet>
         <SheetTrigger>
-          <div className="flex items-center md:space-x-4 space-x-3 mr-6">
+          <div className="flex items-center md:space-x-4 space-x-3 pr-3 md:pr-6">
             <p className="font-normal text-sm md:text-lg">Menu</p>
             {/* The black shape on right */}
             <Image
@@ -108,8 +108,8 @@ export const Navbar = () => {
               Menu
             </SheetTitle>
             <SheetDescription asChild>
-              <div className="flex justify-between py-10">
-                <div className="flex flex-col gap-6 uppercase text-6xl mango text-black">
+              <div className="flex justify-between py-10 gap-10">
+                <div className="flex flex-col gap-5 uppercase text-6xl mango text-black">
                   <Link
                     href="/"
                     className={`${
@@ -155,92 +155,119 @@ export const Navbar = () => {
                     href="/industries"
                     className={`${
                       pathname === "/industries"
-                        ? "text-gray-400"
+                        ? "text-rose-300"
                         : "text-white"
-                    } hover:text-gray-400`}
+                    } hover:text-rose-300`}
                     onMouseEnter={() => setVisibleCard("E")}
                     onMouseLeave={toVisibleCard}
                   >
                     Industries
                   </Link>
+                  <Link
+                    href="/blogs"
+                    className={`${
+                      pathname === "/" ? "text-sky-200" : "text-white"
+                    } hover:text-sky-200`}
+                    onMouseEnter={() => setVisibleCard("F")}
+                    onMouseLeave={toVisibleCard}
+                  >
+                    Blogs
+                  </Link>
                 </div>
-                {visibleCard === "A" && (
-                  <div className="bg-blue-700 text-white px-12 py-5 flex flex-col items-center rounded-lg">
-                    {/* Text Section */}
 
-                    <p className="text-lg md:text-xl max-w-md">
-                      We craft experiences people <br />
-                      resonate with through empathy <br />
-                      and imagination
-                    </p>
+                <section className="hidden md:block">
+                  {visibleCard === "A" && (
+                    <div className="bg-blue-700 text-white px-12 py-5 flex flex-col items-center rounded-lg">
+                      {/* Text Section */}
 
-                    <video
-                      className="md:w-[300px] p-10"
-                      playsInline
-                      autoPlay
-                      loop
-                    >
-                      <source src="https://mdn.check-dc.com/BASE/Checkwebsite/video-home-j6akyxwebm-t0wMA.webm" />
-                    </video>
-                  </div>
-                )}
+                      <p className="text-lg md:text-xl max-w-md">
+                        We craft experiences people <br />
+                        resonate with through empathy <br />
+                        and imagination
+                      </p>
 
-                {visibleCard === "B" && (
-                  <div className="bg-yellow-400 text-black px-12 py-5 flex flex-col items-center rounded-lg">
-                    {/* Text Section */}
+                      <video
+                        className="md:w-[300px] p-10"
+                        playsInline
+                        autoPlay
+                        loop
+                      >
+                        <source src="https://mdn.check-dc.com/BASE/Checkwebsite/video-home-j6akyxwebm-t0wMA.webm" />
+                      </video>
+                    </div>
+                  )}
 
-                    <p className="text-lg md:text-xl max-w-md">
-                      Learn more about our journey and <br /> what defines us
-                    </p>
+                  {visibleCard === "B" && (
+                    <div className="bg-yellow-400 text-black px-12 py-5 flex flex-col items-center rounded-lg">
+                      {/* Text Section */}
 
-                    <video className="md:w-[200px]" playsInline autoPlay loop>
-                      <source src="https://mdn.check-dc.com/BASE/Checkwebsite/video-about-us-hlhktpwebm-t0wMA.webm" />
-                    </video>
-                  </div>
-                )}
+                      <p className="text-lg md:text-xl max-w-md">
+                        Learn more about our journey and <br /> what defines us
+                      </p>
 
-                {visibleCard === "C" && (
-                  <div className="bg-purple-400 text-black px-12 py-5 flex flex-col items-center rounded-lg">
-                    {/* Text Section */}
+                      <video className="md:w-[200px]" playsInline autoPlay loop>
+                        <source src="https://mdn.check-dc.com/BASE/Checkwebsite/video-about-us-hlhktpwebm-t0wMA.webm" />
+                      </video>
+                    </div>
+                  )}
 
-                    <p className="text-lg md:text-xl max-w-md">
-                      A glance at some of the extraordinary <br />
-                      work we do
-                    </p>
+                  {visibleCard === "C" && (
+                    <div className="bg-purple-400 text-black px-12 py-5 flex flex-col items-center rounded-lg">
+                      {/* Text Section */}
 
-                    <video className="md:w-[200px]" playsInline autoPlay loop>
-                      <source src="/video-work.webm" />
-                    </video>
-                  </div>
-                )}
+                      <p className="text-lg md:text-xl max-w-md">
+                        A glance at some of the extraordinary <br />
+                        work we do
+                      </p>
 
-                {visibleCard === "D" && (
-                  <div className="bg-green-700 text-black px-12 py-5 flex flex-col items-center rounded-lg">
-                    {/* Text Section */}
+                      <video className="md:w-[200px]" playsInline autoPlay loop>
+                        <source src="/video-work.webm" />
+                      </video>
+                    </div>
+                  )}
 
-                    <p className="text-lg md:text-xl max-w-md">
-                      How we work and how we can <br /> help you
-                    </p>
+                  {visibleCard === "D" && (
+                    <div className="bg-green-700 text-black px-12 py-5 flex flex-col items-center rounded-lg">
+                      {/* Text Section */}
 
-                    <video className="md:w-[200px]" playsInline autoPlay loop>
-                      <source src="/video-sevices.webm" />
-                    </video>
-                  </div>
-                )}
+                      <p className="text-lg md:text-xl max-w-md">
+                        How we work and how we can <br /> help you
+                      </p>
 
-                {visibleCard === "E" && (
-                  <div className="bg-gray-400 text-black px-12 py-5 flex flex-col items-center rounded-lg">
-                    {/* Text Section */}
+                      <video className="md:w-[200px]" playsInline autoPlay loop>
+                        <source src="/video-sevices.webm" />
+                      </video>
+                    </div>
+                  )}
 
-                    <p className="text-lg md:text-xl max-w-md">
-                      Learn more about our journey and <br /> what defines us
-                    </p>
+                  {visibleCard === "E" && (
+                    <div className="bg-rose-200 text-black px-12 py-5 flex flex-col items-center rounded-lg">
+                      {/* Text Section */}
 
-                    <video className="md:w-[200px]" playsInline autoPlay loop>
-                      <source src="https://mdn.check-dc.com/BASE/Checkwebsite/video-about-us-hlhktpwebm-t0wMA.webm" />
-                    </video>
-                  </div>
-                )}
+                      <p className="text-lg md:text-xl max-w-md">
+                        Learn more about our journey and <br /> what defines us
+                      </p>
+
+                      <video className="md:w-[200px]" playsInline autoPlay loop>
+                        <source src="https://mdn.check-dc.com/BASE/Checkwebsite/video-about-us-hlhktpwebm-t0wMA.webm" />
+                      </video>
+                    </div>
+                  )}
+
+                  {visibleCard === "F" && (
+                    <div className="bg-sky-200 text-black px-12 py-5 flex flex-col items-center rounded-lg">
+                      {/* Text Section */}
+
+                      <p className="text-lg md:text-xl max-w-md">
+                        Learn more about our journey and <br /> what defines us
+                      </p>
+
+                      <video className="md:w-[200px]" playsInline autoPlay loop>
+                        <source src="https://mdn.check-dc.com/BASE/Checkwebsite/video-about-us-hlhktpwebm-t0wMA.webm" />
+                      </video>
+                    </div>
+                  )}
+                </section>
               </div>
             </SheetDescription>
           </SheetHeader>

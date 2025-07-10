@@ -1,4 +1,3 @@
-
 /* eslint-disable @next/next/no-img-element */
 
 import Footer from "@/components/Footer";
@@ -6,19 +5,20 @@ import { Navbar } from "@/components/Navbar";
 import Popup from "@/components/popup";
 import Image from "next/image";
 
-
 function About() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <Navbar />
-      <section className="flex justify-center items-center px-30 gap-16">
+      <section className="flex flex-col lg:flex-row justify-center lg:items-center px-7 lg:px-30 gap-6 lg:gap-16">
         <div>
-          <p className="mango text-[170px] h-[200px]">WE&apos;RE </p>
-          <p className="mango text-[170px] leading-36 uppercase">
+          <p className="mango text-[120px] lg:text-[170px] h-[140px] lg:h-[200px]">
+            WE&apos;RE{" "}
+          </p>
+          <p className="mango text-[120px] lg:text-[170px] leading-28 lg:leading-36 uppercase">
             endlessly curious
           </p>
         </div>
-        <div className="space-y-5 w-2/5">
+        <div className="space-y-5 lg:w-2/5">
           <div className="bg-yellow-400 w-50 px-4">
             <p className="text-[40px] mango">FOUNDED IN 2020</p>
           </div>
@@ -40,18 +40,18 @@ function About() {
 
       <Popup />
 
-      <section className="flex flex-col items-center px-28 space-y-10 mt-16">
+      <section className="flex flex-col items-center px-7 md:px-28 space-y-10 mt-16">
         <Image
           src="/photo-aboutwebp.webp"
           alt="photo-about"
           width={900}
           height={800}
         />
-        <div className="flex justify-start gap-5 w-full h-100">
-          <h2 className="text-5xl uppercase leading-16">
+        <div className="flex flex-col lg:flex-row justify-start gap-5 w-full lg:h-100">
+          <h2 className="text-3xl lg:text-5xl uppercase lg:leading-16">
             We create ideas that are truly transformative.
           </h2>
-          <div className="space-y-8 self-end w-350">
+          <div className="space-y-8 lg:self-end lg:w-350">
             <p className="text-xl">
               We partner with brands to turn challenges into growth
               opportunities using full-funnel performance marketing.
@@ -61,7 +61,7 @@ function About() {
               Google Ads and social media — we’re on a mission to **put your
               business at the forefront of your industry**.
             </p>
-            <button className="mango bg-black text-4xl text-white uppercase px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+            <button className="mango bg-black text-2xl lg:text-4xl text-white uppercase px-4 lg:px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
               OUR SERVICES
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,15 +80,21 @@ function About() {
           </div>
         </div>
 
-        <div className="flex justify-start gap-5 w-full h-140">
+        <div className="flex flex-col lg:flex-row justify-start gap-5 w-full lg:h-140">
           <div>
-            <h2 className="text-5xl uppercase leading-16">
+            <h2 className="text-3xl lg:text-5xl uppercase lg:leading-16">
               From Freelance Hustle to Full-Fledged Agency
             </h2>
-            <Image src="/about-plant.png" alt="plant" height={400} width={300} />
+            <Image
+              src="/about-plant.png"
+              alt="plant"
+              height={400}
+              width={300}
+              className="w-30 lg:w-70"
+            />
           </div>
 
-          <div className="space-y-8 self-end w-350">
+          <div className="space-y-8 lg:self-end lg:w-350">
             <p className="text-xl">
               Back in 2020, our founder Yashik Yadav was just a solo marketer
               working late nights, building websites and running ad campaigns
@@ -110,31 +116,38 @@ function About() {
         </div>
       </section>
 
-      <section className="bg-green-800 p-16 mt-20 m-16 space-y-32">
+      <section className="bg-green-800 lg:p-16 p-5 mt-20 lg:m-16 space-y-32">
         <div className="flex gap-8">
           <div className="bg-yellow-300 w-12 h-12 mt-10"></div>
           <div>
-            <p className="mango text-9xl text-white">WE FOCUS ON</p>
-            <p className="mango text-9xl text-yellow-400">WHAT MATTERS</p>
+            <p className="mango text-6xl lg:text-9xl text-white">WE FOCUS ON</p>
+            <p className="mango text-6xl lg:text-9xl text-yellow-400">
+              WHAT MATTERS
+            </p>
           </div>
         </div>
 
-        <div className="flex justify-start">
-          <div className="border border-gray-200 w-40 h-12"></div>
-          <div className="w-full ml-5">
-            <p className="mango text-9xl text-white mb-10">IMPACT</p>
-            <p className="text-lg text-white">
-              We don’t believe in fluff. We focus on impact metrics — leads,
-              conversions, ROAS, and long-term brand visibility.
-            </p>
+        <div className="flex flex-col lg:flex-row justify-start">
+          <div className="flex">
+            <div className="border border-gray-200 w-16 h-12"></div>
+            <div className="w-full ml-5">
+              <p className="mango text-6xl lg:text-9xl text-white mb-10">
+                IMPACT
+              </p>
+              <p className="text-lg text-white">
+                We don’t believe in fluff. We focus on impact metrics — leads,
+                conversions, ROAS, and long-term brand visibility.
+              </p>
+            </div>
           </div>
           <Image
             src="/focus-sketch.svg"
             alt="focus-strech"
             width={350}
             height={200}
+            className="mt-10 lg:mt-0"
           />
-          <p className="text-lg text-white w-full self-end">
+          <p className="text-lg text-white w-full self-end pl-16 lg:pl-0">
             We find most exciting the opportunity to work on projects that can
             enhance the quality of lives of individuals, no matter how little.
             To do this we leverage technology and imaginative thinking to bring
@@ -142,26 +155,31 @@ function About() {
           </p>
         </div>
 
-        <div className="flex gap-5">
-          <div className="border border-gray-200 w-19 h-12"></div>
-          <div className="w-1/2">
-            <p className="mango text-9xl text-white mb-10">WORK</p>
-            <p className="text-lg text-white">
-              We obsess over the craft. From landing pages to ad creatives, we
-              create with purpose and performance in mind.
-            </p>
+        <div className="flex flex-col lg:flex-row ">
+          <div className="flex">
+            <div className="border border-gray-200 w-12 mr-6 h-12"></div>
+            <div className="w-1/2">
+              <p className="mango text-6xl lg:text-9xl text-white mb-10">
+                WORK
+              </p>
+              <p className="text-lg text-white">
+                We obsess over the craft. From landing pages to ad creatives, we
+                create with purpose and performance in mind.
+              </p>
+            </div>
           </div>
           <Image
             src="/focus-sketch_1.svg"
             alt="focus-strech"
             width={300}
             height={200}
+            className="ml-16 lg:ml-0 w-40 lg:w-70"
           />
-          <div className="self-end">
+          <div className="lg:self-end ml-16 lg:ml-20">
             <p className="text-lg text-white">
               The baseline is never enough. We constantly ask:
             </p>
-            <p className="mango text-8xl text-white mt-10 uppercase">
+            <p className="mango text-6xl lg:text-8xl text-white mt-10 uppercase">
               Push it further
             </p>
             <p className="text-lg text-white w-full">
@@ -170,24 +188,29 @@ function About() {
           </div>
         </div>
 
-        <div className="flex justify-start gap-5">
-          <div className="border border-gray-200 w-30 h-12"></div>
-          <div className="">
-            <p className="mango text-9xl text-white mb-10 uppercase">people</p>
+        <div className="flex flex-col lg:flex-row justify-start gap-5">
+          <div className="flex lg:flex-row">
+            <div className="border border-gray-200 w-12 mr-5 h-12"></div>
+            <div className="">
+              <p className="mango text-6xl lg:text-9xl text-white mb-10 uppercase">
+                people
+              </p>
+            </div>
           </div>
           <Image
             src="https://wearecheck.co/_nuxt/focus-sketch-people.CIAktQ3l.svg"
             alt="focus-strech"
             width={300}
             height={300}
+            className="ml-16 lg:ml-0 w-50 lg:w-full"
           />
-          <p className="text-lg text-white w-full self-center">
+          <p className="text-lg text-white w-full self-center pl-16 lg:pl-0">
             Marketing without soul is noise. We value human-first design and
             collaborative creativity.
           </p>
         </div>
 
-        <section className="p-16">
+        <section className="lg:p-16">
           {/* <div className="flex gap-18 mb-24">
             <p className="text-white w-2/3 text-xl font-bold">Our Team</p>
             <p className="text-white text-lg">
@@ -199,7 +222,7 @@ function About() {
 
           <div className="relative text-white flex items-center justify-center mango">
             {/* Background Text */}
-            <h1 className="text-[220px] uppercase text-white text-center leading-45">
+            <h1 className="text-[100px] lg:text-[220px] uppercase text-white text-center lg:leading-45">
               AGILE <span className="ml-10">STRONG</span> GROWTH-DRIVEN
             </h1>
 
@@ -213,7 +236,7 @@ function About() {
             </div>
 
             {/* Hover Shape 2 */}
-            <div className="absolute top-0 right-90 clip-starburst group w-52 h-55  bg-[#f16333] clip-hex transition-all duration-300 overflow-hidden cursor-pointer">
+            <div className="hidden lg:block absolute top-0 right-90 clip-starburst group w-52 h-55  bg-[#f16333] clip-hex transition-all duration-300 overflow-hidden cursor-pointer">
               <img
                 src="https://mdn.check-dc.com/BASE/Checkwebsite/photo-growth-driven-un8efhjpg-t0wMA.jpe"
                 alt="hover-img"
@@ -232,7 +255,7 @@ function About() {
           </div>
         </section>
 
-        <section className="flex flex-col md:flex-row w-full">
+        <section className="flex flex-col lg:flex-row w-full -mt-24 lg:-mt-0">
           {/* Left (green) section */}
           <div className="text-white p-10 md:p-20 space-y-6 text-xl">
             <p>
@@ -253,7 +276,7 @@ function About() {
             </p>
 
             {/* Careers Button */}
-            <div className="">
+            <div className="mt-6 lg:mt-0">
               <a
                 href="/careers"
                 className="inline-flex items-center justify-between bg-black text-white text-4xl px-6 py-4 hover:bg-white hover:text-black transition-all duration-300 mango gap-24"
@@ -266,8 +289,8 @@ function About() {
         </section>
       </section>
 
-      <section className="flex items-center justify-center px-24 mt-20">
-        <div className="w-full">
+      <section className="flex flex-col lg:flex-row items-center justify-center lg:px-24 px-6 mt-20">
+        <div className="w-full order-3 lg:order-1">
           <p className="text-lg">
             We believe in marketing that doesn’t just look good — it performs.
           </p>
@@ -281,21 +304,21 @@ function About() {
             </a>
           </div>
         </div>
-        <div className="relative">
-          <div className="absolute top-50 left-10 rotate-[-6deg] bg-yellow-400 px-4 text-center leading-10 pt-3 pb-1">
-            <p className="text-[40px] mango uppercase">
-              Yes, we’re a little obsessed — and that’s a good thing.
+        <div className="relative order-1 lg:order-2">
+          <div className="absolute lg:top-50 top-30 left-10 rotate-[-6deg] bg-yellow-400 lg:px-4 px-1 text-center lg:leading-10 lg:pt-3 pt-1 lg:pb-1">
+            <p className="text-[23px] lg:text-[40px] mango uppercase">
+              Yes, we&apos;re a little obsessed — and that&apos;s a good thing.
             </p>
           </div>
-          <p className="mango text-[150px] text-center leading-32 uppercase flex-1">
+          <p className="mango text-[80px] lg:text-[150px] text-center leading-18 lg:leading-32 uppercase flex-1">
             WE&apos;RE beyond passionate about what we do
           </p>
           <img src="/earth.png" alt="earth" className="w-900" />
-          <p className="text-lg text-center m-3">
+          <p className="text-lg lg:text-center m-3 text-left">
             Campaigns executed across India, UAE, UK, and US.
           </p>
         </div>
-        <div className="w-full">
+        <div className="w-full order-2 lg:order-3 ">
           <p className="text-lg">
             Whether it’s SEO for a doctor in Jaipur or Google Ads for a global
             ecommerce brand, we work as an extension of your business.

@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 
-'use client'
+"use client";
 import Footer from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import Popup from "@/components/popup";
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 const servicePageData = [
   {
@@ -121,26 +121,26 @@ const servicePageData = [
 ];
 
 const Services = () => {
-  const [card, setCard] = useState("A")
+  const [card, setCard] = useState("A");
 
   return (
-    <main>
+    <main className="overflow-hidden">
       <Navbar />
       <Popup />
-      <section className="px-32 py-12">
+      <section className="lg:px-32 px-7 py-12">
         <div className="relative">
-          <h1 className="text-[180px] mango text-center uppercase leading-40">
+          <h1 className="text-[100px] lg:text-[180px] mango text-center uppercase leading-22 lg:leading-40">
             SEO That Brings You to the Top - Organically.
           </h1>
 
           <div className="absolute top-10 left-10">
-            <img src="/services_logo.png" alt="line" className="w-60" />
+            <img src="/services_logo.png" alt="line" className="w-30 lg:w-60" />
           </div>
         </div>
 
-        <div className="flex justify-between mt-6 gap-20">
-          <div className="w-1/2">
-            <h2 className="text-[40px] uppercase leading-12 mt-20 mb-6">
+        <div className="flex flex-col lg:flex-row justify-between mt-6 gap-20">
+          <div className="lg:w-1/2 order-2 lg:order-1">
+            <h2 className="text-[40px] uppercase leading-12 lg:mt-20 mb-6">
               Our Comprehensive SEO Solutions:
             </h2>
             <ul className="bg-gray-200 p-6 space-y-2 list-disc pl-9">
@@ -154,8 +154,8 @@ const Services = () => {
               <li>Monthly Performance Reports with Recommendations</li>
             </ul>
           </div>
-          <div className="w-1/2">
-            <p className="text-lg mb-26">
+          <div className="lg:w-1/2">
+            <p className="text-lg lg:mb-26 mb-16 order-1 lg:order-2">
               At Yashik Yadav & Co., we craft intelligent SEO strategies
               tailored for growing businesses in Jaipur. With over a decade of
               experience, we understand Google&apos;s ever-evolving algorithm,
@@ -184,8 +184,8 @@ const Services = () => {
         </div>
       </section>
 
-      <section className="flex mx-24 mb-10 mt-10">
-        <div className="w-1/2 bg-[#f2f7f6] p-10 mango">
+      <section className="flex flex-col lg:flex-row lg:mx-24 mx-7 mb-10 mt-10">
+        <div className="lg:w-1/2 bg-[#f2f7f6] p-10 mango">
           <ul className="text-[4rem] tracking-tight">
             <li
               className={`${
@@ -281,7 +281,7 @@ const Services = () => {
         </div>
 
         {card === "A" && (
-          <div className="w-1/2 bg-[#aed9e0] p-16 text-black">
+          <div className="lg:w-1/2 bg-[#aed9e0] p-16 text-black">
             <div className="flex space-x-4 mb-6">
               {Array(6)
                 .fill()
@@ -311,7 +311,7 @@ const Services = () => {
         )}
 
         {card === "B" && (
-          <div className="w-1/2 bg-purple-300 p-16 text-black">
+          <div className="lg:w-1/2 bg-purple-300 p-16 text-black">
             <div className="flex space-x-4 mb-6">
               {Array(6)
                 .fill()
@@ -341,7 +341,7 @@ const Services = () => {
         )}
 
         {card === "C" && (
-          <div className="w-1/2 bg-[#ffcbb0] p-16 text-black">
+          <div className="lg:w-1/2 bg-[#ffcbb0] p-16 text-black">
             <div className="flex space-x-4 mb-6">
               {Array(6)
                 .fill()
@@ -371,7 +371,7 @@ const Services = () => {
         )}
 
         {card === "D" && (
-          <div className="w-1/2 bg-pink-300 p-16 text-black">
+          <div className="lg:w-1/2 bg-pink-300 p-16 text-black">
             <div className="flex space-x-4 mb-6">
               {Array(6)
                 .fill()
@@ -401,7 +401,7 @@ const Services = () => {
         )}
 
         {card === "E" && (
-          <div className="w-1/2 bg-amber-500 p-16 text-black">
+          <div className="lg:w-1/2 bg-amber-500 p-16 text-black">
             <div className="flex space-x-4 mb-6">
               {Array(6)
                 .fill()
@@ -430,7 +430,7 @@ const Services = () => {
         )}
 
         {card === "F" && (
-          <div className="w-1/2 bg-sky-400 p-16 text-black">
+          <div className="lg:w-1/2 bg-sky-400 p-16 text-black">
             <div className="flex space-x-4 mb-6">
               {Array(6)
                 .fill()
@@ -458,23 +458,25 @@ const Services = () => {
           </div>
         )}
       </section>
-      <div className="bg-yellow-300 flex justify-between px-20 py-16">
+      <div className="bg-yellow-300 flex flex-col lg:flex-row justify-between lg:px-20 px-7 lg:py-16 py-5">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
           <div className="w-12 h-12 bg-black"></div>
-          <h1 className="text-[100px] mango text-black">Google Ads</h1>
+          <h1 className="text-[60px] lg:text-[100px] mango text-black">
+            Google Ads
+          </h1>
         </div>
 
         {/* Right side text */}
-        <p className="text-3xl text-black self-end mb-16">
+        <p className="text-xl lg:text-3xl text-black lg:self-end">
           Pay-Per-Click Advertising
         </p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black">
+      <section className="flex flex-col lg:flex-row gap-20 lg:px-16 px-7 py-16 bg-white text-black">
         {/* Left column */}
-        <div className="flex flex-col justify-start w-4/5">
+        <div className="flex flex-col justify-start lg:w-4/5">
           <p className="text-3xl mb-4">Why Partner With Us</p>
           <p className="text-xl leading-relaxed">
             We&apos;re a certified Google Ads partner agency with over 10 years
@@ -530,21 +532,21 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="bg-pink-200 flex justify-between px-20 py-16">
+      <div className="bg-pink-300 flex flex-col lg:flex-row justify-between lg:px-20 px-7 lg:py-28 py-6">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
           <div className="w-12 h-12 bg-black"></div>
-          <h1 className="text-[100px] mango text-black uppercase">
+          <h1 className="text-[60px] lg:text-[100px] mango text-black leading-14">
             Social Media Marketing
           </h1>
         </div>
 
         {/* Right side text */}
-        <p className="text-3xl text-black self-end mb-16"></p>
+        <p className="text-3xl text-black self-end"></p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black">
+      <section className="flex flex-col lg:flex-row gap-20 md:px-16 px-7 py-16 bg-white text-black">
         {/* Left column */}
         <div className="space-y-8">
           {/* Item 1 */}
@@ -594,21 +596,23 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="bg-purple-300 flex justify-between px-20 py-16">
+      <div className="bg-purple-300 flex flex-col lg:flex-row justify-between lg:px-20 px-7 lg:py-16 py-6">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
           <div className="w-12 h-12 bg-black"></div>
-          <h1 className="text-[100px] mango text-black">Web Design</h1>
+          <h1 className="text-[60px] lg:text-[100px] mango text-black">
+            Web Design
+          </h1>
         </div>
 
         {/* Right side text */}
-        <p className="text-3xl text-black self-end mb-16">
+        <p className="text-xl lg:text-3xl text-black lg:self-end">
           Website Design & Development
         </p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black">
+      <section className="flex flex-col lg:flex-row gap-20 lg:px-16 px-7 py-16 bg-white text-black">
         {/* Left column */}
         <div className="flex flex-col justify-start">
           <p className="text-3xl mb-4">Our Edge</p>
@@ -661,21 +665,21 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="bg-gray-400 flex justify-between px-20 py-16">
+      <div className="bg-gray-400 flex flex-col lg:flex-row justify-between lg:px-20 px-7 lg:py-28 py-6">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
           <div className="w-12 h-12 bg-black"></div>
-          <h1 className="text-[100px] mango text-black">
+          <h1 className="text-[60px] lg:text-[100px] mango text-black leading-14">
             Performance Marketing
           </h1>
         </div>
 
         {/* Right side text */}
-        <p className="text-3xl text-black self-end mb-16"></p>
+        <p className="text-3xl text-black self-end"></p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black">
+      <section className="flex flex-col lg:flex-row gap-20 md:px-16 px-7 py-16 bg-white text-black">
         {/* Left column */}
         <div className="space-y-8">
           {/* Item 1 */}
@@ -727,21 +731,21 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="bg-green-500 flex justify-between px-20 py-16">
+      <div className="bg-green-500 flex flex-col lg:flex-row justify-between lg:px-20 px-7 lg:py-28 py-6">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
           <div className="w-12 h-12 bg-black"></div>
-          <h1 className="text-[100px] mango text-black">
+          <h1 className="text-[60px] lg:text-[100px] mango text-black leading-14">
             Marketing Automation
           </h1>
         </div>
 
         {/* Right side text */}
-        <p className="text-3xl text-black self-end mb-16"></p>
+        <p className="text-3xl text-black self-end"></p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black">
+      <section className="flex flex-col lg:flex-row gap-20 md:px-16 px-7 py-16 bg-white text-black">
         {/* Left column */}
         <div className="flex flex-col justify-start w-4/5">
           <p className="text-3xl mb-4">Outcome</p>
@@ -791,21 +795,21 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="bg-sky-200 flex justify-between px-20 py-16">
+      <div className="bg-sky-200 flex flex-col lg:flex-row justify-between lg:px-20 px-7 lg:py-28 py-6">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
           <div className="w-12 h-12 bg-black"></div>
-          <h1 className="text-[100px] mango text-black">
+          <h1 className="text-[60px] lg:text-[100px] mango text-black leading-14">
             Influencer & Content Marketing
           </h1>
         </div>
 
         {/* Right side text */}
-        <p className="text-3xl text-black self-end mb-16"></p>
+        <p className="text-xl lg:text-3xl text-black lg:self-end"></p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black">
+      <section className="flex flex-col lg:flex-row gap-20 md:px-16 px-7 py-16 bg-white text-black">
         {/* Left column */}
         <div className="space-y-8">
           {/* Item 1 */}
@@ -852,21 +856,21 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="bg-orange-300 flex justify-between px-20 py-16">
+      <div className="bg-orange-300 flex flex-col lg:flex-row justify-between lg:px-20 px-7 lg:py-28 py-6">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
           <div className="w-12 h-12 bg-black"></div>
-          <h1 className="text-[100px] mango text-black">
+          <h1 className="text-[60px] lg:text-[100px] mango text-black leading-14">
             Conversion Rate Optimization (CRO)
           </h1>
         </div>
 
         {/* Right side text */}
-        <p className="text-3xl text-black self-end mb-16"></p>
+        <p className="text-xl lg:text-3xl text-black lg:self-end"></p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black">
+      <section className="flex flex-col lg:flex-row gap-20 md:px-16 px-7 py-16 bg-white text-black">
         {/* Left column */}
         <div className="flex flex-col justify-start w-4/5">
           <p className="text-3xl mb-4">Why CRO?</p>
@@ -920,21 +924,21 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="bg-amber-200 flex justify-between px-20 py-16">
+      <div className="bg-amber-200 flex flex-col lg:flex-row justify-between lg:px-20 px-7 lg:py-28 py-6">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
           <div className="w-12 h-12 bg-black"></div>
-          <h1 className="text-[100px] mango text-black">
+          <h1 className="text-[60px] lg:text-[100px] mango text-black leading-14">
             Analytics & Reporting
           </h1>
         </div>
 
         {/* Right side text */}
-        <p className="text-3xl text-black self-end mb-16"></p>
+        <p className="text-xl lg:text-3xl text-black lg:self-end"></p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black">
+      <section className="flex flex-col lg:flex-row gap-20 md:px-16 px-7 py-16 bg-white text-black">
         {/* Left column */}
         <div className="space-y-8">
           {/* Item 1 */}
@@ -983,21 +987,21 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="bg-blue-900 flex justify-between px-20 py-16">
+      <div className="bg-blue-900 flex flex-col lg:flex-row justify-between lg:px-20 px-7 lg:py-28 py-6">
         {/* Left side with square and text */}
         <div className="flex items-center space-x-6">
           {/* Black Square */}
           <div className="w-12 h-12 bg-black"></div>
-          <h1 className="text-[100px] mango text-black">
+          <h1 className="text-[60px] lg:text-[100px] mango text-white leading-14">
             Online Reputation Management (ORM)
           </h1>
         </div>
 
         {/* Right side text */}
-        <p className="text-3xl text-black self-end mb-16"></p>
+        <p className="text-xl lg:text-3xl text-black lg:self-end"></p>
       </div>
 
-      <section className="flex gap-20 px-16 py-16 bg-white text-black">
+      <section className="flex flex-col lg:flex-row gap-20 md:px-16 px-7 py-16 bg-white text-black">
         {/* Left column */}
         <div className="flex flex-col justify-start w-4/5">
           <p className="text-3xl mb-4">Why ORM Works</p>
@@ -1047,12 +1051,12 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="mb-10 mt-10">
-        <p className="text-4xl uppercase px-24 leading-12 w-4/5">
+      <div className="mb-10 lg:mt-10">
+        <p className="text-2xl lg:text-4xl uppercase px-7 lg:px-24 lg:leading-12 lg:w-4/5">
           We are the creators of the brands everyone loves, the products that
           everyone can&apos;t leave, and the stories everyone remembers.
         </p>
-        <p className="text-xl text-right px-24">
+        <p className="lg:text-xl text-right lg:px-24">
           Best part? We have fun while at it.
         </p>
       </div>

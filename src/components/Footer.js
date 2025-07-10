@@ -3,9 +3,9 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <main className="bg-gray-100">
-      <section className="flex justify-center px-20 gap-16 py-16 mt-5">
-        <div className="w-3/5">
-          <p className="mango text-[140px] leading-32 uppercase">
+      <section className="flex flex-col lg:flex-row justify-center lg:px-20 px-5 md:gap-16 gap-8 py-16 mt-5">
+        <div className="lg:w-3/5">
+          <p className="mango text-[80px] leading-18 lg:text-[140px] lg:leading-32 uppercase">
             Let’s Build Your Brand’s Digital Growth Engine
           </p>
         </div>
@@ -66,7 +66,7 @@ export default function Footer() {
             alt="footer-logo"
             height={200}
             width={300}
-            className="bg-transparent"
+            className="w-40 md:w-full"
           />
         </div>
 

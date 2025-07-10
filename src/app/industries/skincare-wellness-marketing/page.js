@@ -1,53 +1,127 @@
 import Footer from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import Popup from "@/components/popup";
+import Image from "next/image";
+import { GiSoap } from "react-icons/gi";
 
-export default function Page() {
+import React from "react";
+
+const page = () => {
   return (
-    <>
+    <main className="overflow-hidden">
       <Navbar />
       <Popup />
-      <section className="px-28 py-12">
-        <div className="relative">
-          <h1 className="text-[160px] mango text-center uppercase leading-34">
-            Architects & Interior Designers
-          </h1>
-        </div>
-        <div className="flex">
-          <div className="w-1/2 mt-30">
-            <h2 className="text-3xl mb-3">Services</h2>
-            <ul className="text-lg space-y-1">
-              <li>Portfolio Website Design + SEO</li>
-              <li>Instagram Growth Strategy + Reels</li>
-              <li>Video Walkthroughs of Projects</li>
-              <li>Google Business Profile & Maps Ranking</li>
-              <li>WhatsApp Chat Automation for Consultation Requests</li>
-            </ul>
-          </div>
-          <div className="w-1/2">
-            <h2 className="text-3xl mb-3">
-              {" "}
-              Build Your Design Brand Online – Reach, Inspire, Convert
+      <section className="lg:px-24 p-7 lg:py-12">
+        <h1 className="text-[90px] md:text-[160px] mango text-center uppercase leading-22 md:leading-34 mb-10">
+          Skincare, Wellness & Salons
+        </h1>
+        <Image
+          src="/IVF & GYNECOLOGY MARKETING.jpg"
+          alt="IVF, Gynecology & Fertility Clinic Marketing"
+          height={700}
+          width={1300}
+          className="mb-12"
+        />
+        <div className="flex flex-col md:flex-row lg:px-16 md:pt-16 bg-orange-200 w-full p-5 justify-between">
+          <div>
+            {/* <div className="absolute bottom-20 right-[60px] rotate-[-15deg] bg-[#ff9140] lg:px-5 px-2 lg:h-13">
+                <p className="mango lg:text-[40px] text-[20px]">BRAND</p>
+              </div> */}
+            <h2 className="text-6xl mango mb-4 uppercase">
+              For Holistic, Clean, Science-Backed Products
             </h2>
-            <p className="text-lg">
-              We help architecture firms, interior designers, and studios
-              showcase their work, rank in local search, and generate
-              high-ticket project inquiries.
+            <p className="mb-3 text-xl">
+              Launch fashion-forward campaigns that drive virality, conversions,
+              and loyalty. We help you rank, educate, and convert — all while
+              building trust with conscious buyers.
             </p>
-            <div className="mt-36">
-              <h2 className="text-3xl mb-3">Targeted Outcomes</h2>
-              <ul className="text-lg space-y-1 pl-4">
-                <li>Portfolio Website Design + SEO</li>
-                <li>Instagram Growth Strategy + Reels</li>
-                <li>Video Walkthroughs of Projects</li>
-                <li>Google Business Profile & Maps Ranking</li>
-                <li>WhatsApp Chat Automation for Consultation Requests</li>
-              </ul>
-            </div>
           </div>
+
+          <video className="w-[300px] -mt-20 md:-mt-0" playsInline autoPlay loop>
+            <source src="/video-sevices.webm" type="video/webm" />
+          </video>
+        </div>
+        <ul className="space-y-3 py-16 text-xl">
+          <h3 className="text-6xl mango mb-6 uppercase">Services We Offer</h3>
+          <li className="border-b border-orange-300 pb-3">
+            Skincare Product SEO (Skin Concerns, Ingredients)
+          </li>
+          <li className="border-b border-orange-300 pb-3">
+            Health-Based Blog Writing (Acne, Pigmentation, PCOD)
+          </li>
+          <li className="border-b border-orange-300 pb-3">
+            Pinterest + Instagram Optimization
+          </li>
+          <li className="border-b border-orange-300 pb-3">
+            Review Integration & UGC Strategy
+          </li>
+          <li className="border-b border-orange-300 pb-3">
+            Lookbook Creatives + Trend Hooks
+          </li>
+          <li className="border-b border-orange-300 pb-3">
+            Meta Ads for Catalog Performance
+          </li>
+          <li className="border-b border-orange-300 pb-3">
+            Retargeting for High Cart Value
+          </li>
+          <li className="border-b border-orange-300 pb-3">
+            Email & SMS Drop Notifications
+          </li>
+        </ul>
+
+        <section className="flex flex-col lg:flex-row lg:items-center lg:p-12 p-7 lg:py-16 border-b border-blue-400 gap-10 justify-center mb-12 bg-orange-200">
+          <div className="lg:w-3/5">
+            <p className="mango text-[60px] md:text-[90px] uppercase leading-13 md:leading-22 text-black">
+              Let&apos;s Build Organic Credibility for Your Brand
+            </p>
+
+            {/* <p className="mango text-[100px] h-[90px] lg:text-[140px] lg:h-[130px]">
+            GREAT WORK
+          </p> */}
+          </div>
+          <div className="space-y-5 bg-orange-300 p-7 lg:p-12 lg:w-2/5">
+            <p className="text-xl">
+              No hype. Just honest SEO that works for wellness brands.
+            </p>
+            <button className="mango bg-black text-2xl text-white uppercase px-4 md:px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+              Talk to a Wellness SEO Expert
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                viewBox="0 0 24 24"
+              >
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+          </div>
+        </section>
+
+        <div className="border-b border-orange-400 pb-12">
+          <h3 className="text-6xl mb-4 mango uppercase">Our Strategy</h3>
+          <p className="text-xl">
+            In the skincare & wellness world, Google is your biggest influencer.
+            We help your brand show up with authentic content that answers real
+            skin/health problems. From product pages with strong technical SEO
+            to ingredient-explainer blogs and before-after case studies — your
+            users will learn and trust before they buy.
+          </p>
+        </div>
+        <div className="flex items-center justify-center mt-12 gap-2">
+          <GiSoap size={30} />
+          <p className="text-center text-xl">
+            Building Organic Trust for Skincare, Ayurveda & Wellness Brands
+          </p>
         </div>
       </section>
       <Footer />
-    </>
+    </main>
   );
-}
+};
+
+export default page;
