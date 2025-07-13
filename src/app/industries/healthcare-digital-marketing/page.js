@@ -1,14 +1,14 @@
 import Footer from "@/components/Footer";
-import { Navbar } from "@/components/Navbar";
+import { Header } from "@/components/Header";
 import Popup from "@/components/popup";
 import Image from "next/image";
 import React from "react";
 import { TiTickOutline } from "react-icons/ti";
 
-export default function Page(){
+export default function Page() {
   return (
     <section className="overflow-x-hidden">
-      <Navbar />
+      <Header />
       <Popup />
 
       <div className="space-y-8 md:px-28 px-7 py-8 md:py-12">
@@ -112,5 +112,4 @@ export default function Page(){
       <Footer />
     </section>
   );
-};
-
+}

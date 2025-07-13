@@ -1,12 +1,12 @@
 import Footer from "@/components/Footer";
-import { Navbar } from "@/components/Navbar";
+import { Header } from "@/components/Header";
 import Popup from "@/components/popup";
 import Image from "next/image";
 
 export default function Page() {
   return (
     <>
-      <Navbar />
+      <Header />
       <Popup />
       <section className="lg:px-24 lg:py-12 p-7">
         <div className="relative">

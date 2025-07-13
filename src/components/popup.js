@@ -14,7 +14,7 @@ const Popup = () => {
       {/* Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 bg-black text-white p-4 rounded-full shadow-2xl hover:bg-gray-400 transition"
+        className="fixed bottom-6 right-6 z-50 bg-black text-white p-4 rounded-full shadow-2xl hover:bg-blue-600 transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95"
       >
         {isOpen ? <IoCloseSharp size={35} /> : <IoMdChatbubbles size={35} />}
       </button>

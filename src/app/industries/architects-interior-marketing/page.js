@@ -1,12 +1,12 @@
 import Footer from "@/components/Footer";
-import { Navbar } from "@/components/Navbar";
+import { Header } from "@/components/Header";
 import Popup from "@/components/popup";
 import Image from "next/image";
 
 export default function Page() {
   return (
     <>
-      <Navbar />
+      <Header />
       <Popup />
       <section className="lg:px-24 p-7 lg:py-12">
         <div className="relative">
@@ -41,8 +41,7 @@ export default function Page() {
             <h2 className="text-6xl uppercase mango mb-3">Services We Offer</h2>
             <ul className="text-lg space-y-2">
               <li>
-                Landing Pages by Service (Kitchen, Living Room, Office,
-                etc.)
+                Landing Pages by Service (Kitchen, Living Room, Office, etc.)
               </li>
               <li>Review Strategy + CRM Integration</li>
               <li>Portfolio Website Design + SEO</li>

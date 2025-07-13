@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer";
-import { Navbar } from "@/components/Navbar";
+import { Header } from "@/components/Header";
 import Popup from "@/components/popup";
 import Image from "next/image";
 import React from "react";
@@ -8,7 +8,7 @@ import { PiHighHeelFill } from "react-icons/pi";
 export default function Page() {
   return (
     <section className="overflow-x-hidden">
-      <Navbar />
+      <Header />
       <Popup />
 
       <div className="space-y-8 lg:px-28 p-7 lg:py-12">
@@ -94,10 +94,10 @@ export default function Page() {
         <div className="border-b border-blue-300 pb-12">
           <h3 className="text-5xl mb-4 mango uppercase">Our Strategy</h3>
           <p className="text-xl">
-            We optimize for visual keywords like: &quot;Black lehenga,&quot; &quot;summer
-            co-ord set under 3k,&quot; etc. Collection pages are designed with
-            conversion-focused meta data. We also build content that brings
-            repeat traffic — like styling tips, fashion trends,
+            We optimize for visual keywords like: &quot;Black lehenga,&quot;
+            &quot;summer co-ord set under 3k,&quot; etc. Collection pages are
+            designed with conversion-focused meta data. We also build content
+            that brings repeat traffic — like styling tips, fashion trends,
             behind-the-scenes of shoots
           </p>
         </div>

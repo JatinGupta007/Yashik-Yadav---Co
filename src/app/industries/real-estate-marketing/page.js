@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Footer from "@/components/Footer";
-import { Navbar } from "@/components/Navbar";
+import { Header } from "@/components/Header";
 import Popup from "@/components/popup";
 import Image from "next/image";
 
@@ -9,7 +9,7 @@ import React from "react";
 const page = () => {
   return (
     <main className="overflow-hidden">
-      <Navbar />
+      <Header />
       <Popup />
       <div className="bg-yellow-300 flex flex-col lg:flex-row justify-between lg:px-20 px-7 lg:py-16 py-5">
         {/* Left side with square and text */}
@@ -28,7 +28,9 @@ const page = () => {
       <section className="flex flex-col lg:flex-row gap-20 lg:px-16 px-7 pt-16 bg-white text-black">
         {/* Left column */}
         <div className="flex flex-col justify-start lg:w-4/5">
-          <p className="text-5xl mb-4 uppercase mango">Real Estate & Builders</p>
+          <p className="text-5xl mb-4 uppercase mango">
+            Real Estate & Builders
+          </p>
           <p className="text-xl leading-relaxed">
             Rank. Reach. Close More Projects. Let’s optimize your listings and
             start closing.

@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer";
-import { Navbar } from "@/components/Navbar";
+import { Header } from "@/components/Header";
 import Popup from "@/components/popup";
 import Image from "next/image";
 import { GiSoap } from "react-icons/gi";
@@ -9,7 +9,7 @@ import React from "react";
 const page = () => {
   return (
     <main className="overflow-hidden">
-      <Navbar />
+      <Header />
       <Popup />
       <section className="lg:px-24 p-7 lg:py-12">
         <h1 className="text-[90px] md:text-[160px] mango text-center uppercase leading-22 md:leading-34 mb-10">
@@ -37,7 +37,12 @@ const page = () => {
             </p>
           </div>
 
-          <video className="w-[300px] -mt-20 md:-mt-0" playsInline autoPlay loop>
+          <video
+            className="w-[300px] -mt-20 md:-mt-0"
+            playsInline
+            autoPlay
+            loop
+          >
             <source src="/video-sevices.webm" type="video/webm" />
           </video>
         </div>

@@ -1,8 +1,8 @@
-import React from 'react';
-import Image from 'next/image';
-import { Navbar } from '@/components/Navbar';
-import Popup from '@/components/popup';
-import Footer from '@/components/Footer';
+import React from "react";
+import Image from "next/image";
+import { Header } from "@/components/Header";
+import Popup from "@/components/popup";
+import Footer from "@/components/Footer";
 
 const posts = [
   {
@@ -43,7 +43,7 @@ const posts = [
 const page = () => {
   return (
     <main>
-      <Navbar />
+      <Header />
       <Popup />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-16 bg-white">
         {/* Left: Stay In Touch */}
@@ -161,6 +161,6 @@ const page = () => {
       <Footer />
     </main>
   );
-}
+};
 
-export default page
+export default page;

@@ -2,7 +2,7 @@
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
-import { Navbar } from "@/components/Navbar";
+import { Header } from "@/components/Header";
 import Popup from "@/components/popup";
 
 const values = [
@@ -61,22 +61,33 @@ const values = [
 const Industries = () => {
   return (
     <main className="overflow-hidden">
-      <Navbar />
+      <Header />
       <Popup />
       <section className="lg:px-24 px-7 lg:py-12 py-8">
         <div className="relative">
-          <h1 className="text-[80px] lg:text-[160px] mango uppercase leading-16 lg:leading-34">
+          <h1
+            className="text-[80px] lg:text-[160px] mango uppercase leading-16 lg:leading-34"
+            data-aos="fade-down"
+          >
             digital marketing solutions for industry specialized
           </h1>
 
           <div className="absolute top-10 left-10">
-            <img src="/services_logo.png" alt="line" className="w-40 lg:w-60" />
+            <img
+              src="/services_logo.png"
+              alt="line"
+              className="w-40 lg:w-60"
+              data-aos="fade-up"
+            />
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row md:px-0">
           <div className="lg:w-3/5 w-full">
-            <p className="text-lg md:text-2xl mt-10 md:pr-16 uppercase">
+            <p
+              className="text-lg md:text-2xl mt-10 md:pr-16 uppercase"
+              data-aos="fade-right"
+            >
               We provide tailored digital marketing solutions for industry
               verticals that demand specialized strategies, language, and
               audience targeting. Below is the finalized content and detailed
@@ -88,6 +99,7 @@ const Industries = () => {
               height={300}
               width={700}
               className="md:mt-44 my-10 md:my-0"
+              data-aos="fade-left"
             />
           </div>
           <div className="md:w-2/5 md:-mt-28">
@@ -96,12 +108,24 @@ const Industries = () => {
               alt="industry Image"
               height={400}
               width={400}
+              data-aos="fade-left"
+              data-aos-delay="200"
             />
-            <div className="bg-[#006046] p-8 md:p-16">
-              <p className="bg-yellow-300 px-3 pt-1 text-5xl mango w-42">
+            <div
+              className="bg-[#006046] p-8 md:p-16"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
+              <p
+                className="bg-yellow-300 px-3 pt-1 text-5xl mango w-42"
+                data-aos="fade-down"
+              >
                 OUR MISSION
               </p>
-              <p className="text-2xl md:text-4xl mt-5 text-white">
+              <p
+                data-aos="fade-down"
+                className="text-2xl md:text-4xl mt-5 text-white"
+              >
                 To partner with audacious companies globally to achieve
                 timelessness and relevance in a rapidly evolving world by
                 employing a human-centred, design-led perspective
@@ -111,10 +135,16 @@ const Industries = () => {
         </div>
         <div className="flex flex-col md:flex-row bg-[#e6efed]">
           <div className="md:w-3/5 p-5 md:p-16 order-2 md:order-1">
-            <p className="bg-yellow-400 px-3 pt-1 text-5xl mango w-42">
+            <p
+              className="bg-yellow-400 px-3 pt-1 text-5xl mango w-42"
+              data-aos="fade-down"
+            >
               OUR VISION
             </p>
-            <p className="text-3xl md:text-4xl md:mt-12 mt-6">
+            <p
+              data-aos="fade-down"
+              className="text-3xl md:text-4xl md:mt-12 mt-6"
+            >
               To be creators of the brands that everyone loves, the products
               that everyone can’t leave, and the stories everyone remembers.
             </p>
@@ -125,8 +155,10 @@ const Industries = () => {
               alt="indusry image"
               height={200}
               width={450}
+              data-aos="fade-left"
+              data-aos-delay="600"
             />
-            <p className="text-xl md:mt-22 p-4">
+            <p data-aos="fade-up" className="text-xl md:mt-22 p-4">
               We are not just crazy about our groundbreaking work, we thrive on
               mutual respect, regardless of gender or background. Our ethos?
               Elevate one another, own your journey, have fun, and always push
@@ -137,16 +169,23 @@ const Industries = () => {
       </section>
 
       <section className="px-7 md:px-24 md:py-12 py-8">
-        <h1 className="mango text-6xl md:text-8xl text-center uppercase">
+        <h1
+          data-aos="zoom-in"
+          className="mango text-6xl md:text-8xl text-center uppercase"
+        >
           Our Industry Specific Services
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-24 px-6 py-16 text-center">
           {values.map((item, idx) => (
-            <div key={idx} className="flex flex-col items-center space-y-6">
+            <div
+              key={idx}
+              className="flex flex-col items-center space-y-6"
+              data-aos="flip-up"
+            >
               <Image src={item.icon} alt="Icon" width={100} height={40} />
               <Link
                 href={`/industries/${item.title}`}
-                className="text-4xl font-bold leading-tight uppercase"
+                className="text-4xl font-bold leading-tight uppercase transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95"
               >
                 {item.title.replace("-", " ").replace("-", " ")}
               </Link>

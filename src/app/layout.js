@@ -1,7 +1,5 @@
-
 import "./globals.css";
-
-
+import AOSInit from "@/components/AOS";
 
 export const metadata = {
   title: "Yashik Yadav & Co",
@@ -14,7 +12,10 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/justlogo.ico" />
       </head>
-      <body>{children}</body>
+      <body>
+        <AOSInit /> {/* AOS initialized here */}
+        {children}
+      </body>
     </html>
   );
 }

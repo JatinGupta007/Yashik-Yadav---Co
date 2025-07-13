@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 import {
@@ -13,7 +13,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-export const Navbar = () => {
+export const Header = () => {
   //const { link_1, link_2, link_3, link_4 } = navLinks;
   const [visibleCard, setVisibleCard] = useState(null);
   const pathname = usePathname();
@@ -45,13 +45,16 @@ export const Navbar = () => {
   return (
     <header className="top-0 flex justify-between items-center md:px-8 py-4 min-w-screen backdrop-blur-lg z-10">
       <div className="flex items-center space-x-2">
-        <Link className="flex items-center" href="/">
-          <Image
-            src="/justlogo.png"
+        <Link
+          className="flex items-center justify-center gap-2 px-4 py-2 text-white rounded-lg transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95"
+          href="/"
+        >
+          <img
+            src="/website logo.png"
             alt="logo"
-            width={200}
+            width={150}
             height={50}
-            className="md:w-86 "
+            className="md:w-72 "
           />
         </Link>
       </div>
@@ -90,15 +93,15 @@ export const Navbar = () => {
 
       <Sheet>
         <SheetTrigger>
-          <div className="flex items-center md:space-x-4 space-x-3 pr-3 md:pr-6">
+          <div className="flex items-center md:space-x-4 space-x-3 pr-3 md:pr-6 transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95">
             <p className="font-normal text-sm md:text-lg">Menu</p>
             {/* The black shape on right */}
-            <Image
+            <img
               src="https://wearecheck.co/assets/images/menu-icon.svg"
               alt="logo"
               height={100}
               width={40}
-              className="md:w-16"
+              className="md:w-12"
             />
           </div>
         </SheetTrigger>
@@ -114,7 +117,7 @@ export const Navbar = () => {
                     href="/"
                     className={`${
                       pathname === "/" ? "text-blue-700" : "text-white"
-                    } hover:text-blue-700`}
+                    } hover:text-blue-700 transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95`}
                     onMouseEnter={() => setVisibleCard("A")}
                     onMouseLeave={toVisibleCard}
                   >
@@ -124,7 +127,7 @@ export const Navbar = () => {
                     href="/about"
                     className={`${
                       pathname === "/about" ? "text-yellow-500" : "text-white"
-                    } hover:text-yellow-500`}
+                    } hover:text-yellow-500 transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95`}
                     onMouseEnter={() => setVisibleCard("B")}
                     onMouseLeave={toVisibleCard}
                   >
@@ -134,7 +137,7 @@ export const Navbar = () => {
                     href="/work"
                     className={`${
                       pathname === "/work" ? "text-purple-400" : "text-white"
-                    } hover:text-purple-400`}
+                    } hover:text-purple-400 transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95`}
                     onMouseEnter={() => setVisibleCard("C")}
                     onMouseLeave={toVisibleCard}
                   >
@@ -144,7 +147,7 @@ export const Navbar = () => {
                     href="/services"
                     className={`${
                       pathname === "/services" ? "text-green-700" : "text-white"
-                    } hover:text-green-700`}
+                    } hover:text-green-700 transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95`}
                     onMouseEnter={() => setVisibleCard("D")}
                     onMouseLeave={toVisibleCard}
                   >
@@ -157,7 +160,7 @@ export const Navbar = () => {
                       pathname === "/industries"
                         ? "text-rose-300"
                         : "text-white"
-                    } hover:text-rose-300`}
+                    } hover:text-rose-300 transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95`}
                     onMouseEnter={() => setVisibleCard("E")}
                     onMouseLeave={toVisibleCard}
                   >
@@ -167,7 +170,7 @@ export const Navbar = () => {
                     href="/blogs"
                     className={`${
                       pathname === "/" ? "text-sky-200" : "text-white"
-                    } hover:text-sky-200`}
+                    } hover:text-sky-200 transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95`}
                     onMouseEnter={() => setVisibleCard("F")}
                     onMouseLeave={toVisibleCard}
                   >

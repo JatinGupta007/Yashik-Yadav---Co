@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer";
-import { Navbar } from "@/components/Navbar";
+import { Header } from "@/components/Header";
 import Popup from "@/components/popup";
 import { FaBriefcase } from "react-icons/fa";
 import { RiCouponLine } from "react-icons/ri";
@@ -20,7 +20,7 @@ const services = [
 const page = () => {
   return (
     <main>
-      <Navbar />
+      <Header />
       <Popup />
       <section className="lg:px-16 p-7 lg:py-12">
         <h1 className="text-[90px] lg:text-[160px] mango text-center uppercase leading-22 lg:leading-34 lg:px-40 mb-5">
@@ -61,13 +61,20 @@ const page = () => {
               </tbody>
             </table>
 
-            <video className="w-[250px] -mt-24 m:-mt-0 mb-6 md:mb-0" playsInline autoPlay loop>
+            <video
+              className="w-[250px] -mt-24 m:-mt-0 mb-6 md:mb-0"
+              playsInline
+              autoPlay
+              loop
+            >
               <source src="/video-work.webm" type="video/webm" />
             </video>
           </div>
           <div className="flex items-center gap-2 justify-center">
             <FaBriefcase size={30} />
-            <p className="md:text-xl">For Event Planners, Agencies, Designers</p>
+            <p className="md:text-xl">
+              For Event Planners, Agencies, Designers
+            </p>
           </div>
         </div>
       </section>

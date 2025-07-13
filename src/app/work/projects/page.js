@@ -1,13 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import Footer from "@/components/Footer";
-import { Navbar } from "@/components/Navbar";
+import { Header } from "@/components/Header";
+
 import Popup from "@/components/popup";
 import React from "react";
 
 const Projects = () => {
   return (
     <main>
-      <Navbar />
+      <Header />
       <section className="w-full px-16 py-10">
         {/* Left Side: Logo + Title */}
         <div className="flex items-center gap-10">
