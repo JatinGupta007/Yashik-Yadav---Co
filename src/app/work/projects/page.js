@@ -7,7 +7,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Header />
       <section className="w-full px-16 py-10">
         {/* Left Side: Logo + Title */}

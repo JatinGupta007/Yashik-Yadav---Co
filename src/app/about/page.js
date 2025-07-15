@@ -8,7 +8,7 @@ function About() {
   return (
     <main className="overflow-hidden">
       <Header />
-      <section className="flex flex-col lg:flex-row justify-center lg:items-center px-7 lg:px-30 gap-6 lg:gap-16">
+      <section className="flex flex-col md:flex-row justify-center md:items-center px-7 md:px-20 md:pt-16 lg:px-30 gap-6 md:gap-10 lg:gap-16">
         <div>
           <p
             data-aos="flip-up"
@@ -31,7 +31,7 @@ function About() {
           >
             <p className="text-[40px] mango">FOUNDED IN 2020</p>
           </div>
-          <p className="text-xl" data-aos="flip-down" data-aos-delay="400">
+          <p className="lg:text-xl" data-aos="flip-down" data-aos-delay="400">
             Curiosity fuels innovation - and that’s exactly how we help brands
             grow. Every project we take on begins with a question:
             <span className="font-bold">
@@ -347,7 +347,7 @@ function About() {
         </section>
       </section>
 
-      <section className="flex flex-col lg:flex-row items-center justify-center lg:px-24 px-6 mt-20">
+      <section className="flex flex-col lg:flex-row items-center justify-center md:px-20 lg:px-24 px-6 mt-20">
         <div className="w-full order-3 lg:order-1" data-aos="fade-right">
           <p className="text-lg">
             We believe in marketing that doesn’t just look good — it performs.
@@ -360,9 +360,9 @@ function About() {
           </div>
         </div>
         <div className="relative order-1 lg:order-2">
-          <div className="absolute lg:top-50 top-30 left-10 rotate-[-6deg] bg-yellow-400 lg:px-4 px-1 text-center lg:leading-10 lg:pt-3 pt-1 lg:pb-1 z-10">
+          <div className="absolute lg:top-50 lg:left-15 top-30 left-4 md:top-12 md:left-36 rotate-[-6deg] bg-yellow-400 lg:px-4 px-1 text-center lg:leading-10 lg:pt-3 pt-1 lg:pb-1 z-10">
             <p
-              className="text-[23px] lg:text-[40px] mango uppercase"
+              className="text-[22px] lg:text-[40px] mango uppercase"
               data-aos="zoom-out"
             >
               Yes, we&apos;re a little obsessed — and that&apos;s a good thing.
@@ -382,12 +382,12 @@ function About() {
           />
           <p
             data-aos="fade-down"
-            className="text-lg lg:text-center m-3 text-left"
+            className="text-lg md:text-center m-3 text-left"
           >
             Campaigns executed across India, UAE, UK, and US.
           </p>
         </div>
-        <div className="w-full order-2 lg:order-3 ">
+        <div className="w-full order-2 lg:order-3 md:mt-6 lg:mt-0">
           <p className="text-lg" data-aos="fade-left">
             Whether it&apos;s SEO for a doctor in Jaipur or Google Ads for a
             global ecommerce brand, we work as an extension of your business.

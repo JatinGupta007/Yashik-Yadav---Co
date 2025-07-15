@@ -13,16 +13,16 @@ const WorkHome = () => {
         className="w-full h-[220px] md:h-full"
         data-aos="flip-left"
       />
-      <div className="py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <div className="py-6 flex flex-col md:flex-row justify-between items-start lg:items-center gap-6">
         {/* Left Side */}
         <div data-aos="fade-right">
           <Link
             href="/work/projects"
-            className="text-[50px] md:text-[80px] leading-none mango transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95"
+            className="text-[50px] lg:text-[80px] leading-none mango transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95"
           >
             KELE (Fintech App)
           </Link>
-          <p className="md:text-xl mt-2">
+          <p className="text-xl mt-2">
             SEO + UI Revamp → +147% Organic Traffic
           </p>
         </div>
@@ -57,7 +57,7 @@ const WorkHome = () => {
         <div data-aos="fade-right">
           <Link
             href="/work/projects"
-            className="text-[50px] md:text-[80px] leading-none mango uppercase transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95"
+            className="text-[50px] lg:text-[80px] leading-none mango uppercase transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95"
           >
             Autograph D2C
           </Link>
@@ -94,7 +94,7 @@ const WorkHome = () => {
         <div data-aos="fade-right">
           <Link
             href="/work/projects"
-            className="text-[50px] md:text-[80px] leading-none mango uppercase transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95"
+            className="text-[50px] lg:text-[80px] leading-none mango uppercase transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95"
           >
             Propel Creators
           </Link>
@@ -128,7 +128,7 @@ const WorkHome = () => {
       <div className="py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         {/* Left Side */}
         <div data-aos="fade-right">
-          <h1 className="text-[50px] md:text-[80px] leading-none mango uppercase transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95">
+          <h1 className="text-[50px] lg:text-[80px] leading-none mango uppercase transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95">
             Adidas India
           </h1>
           <p className="text-xl mt-2">
@@ -161,7 +161,7 @@ const WorkHome = () => {
       <div className="py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         {/* Left Side */}
         <div data-aos="fade-right">
-          <h1 className="text-[50px] md:text-[80px] leading-none mango transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95">
+          <h1 className="text-[50px] lg:text-[80px] leading-none mango transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95">
             ODLA Wellness
           </h1>
           <p className="text-xl mt-2">Local SEO → 4x Organic Leads</p>

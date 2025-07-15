@@ -1,7 +1,7 @@
 
 const HeroSection = () => {
   return (
-    <section className="relative lg:px-18 px-4 lg:pt-18 pt-10 pb-16 flex flex-col items-center justify-center">
+    <section className="relative md:px-18 px-4 lg:pt-18 pt-10 pb-16 flex flex-col items-center justify-center">
       <div className="flex items-center justify-center w-full">
         <h2 className="text-center text-xl md:text-2xl" data-aos="flip-down">
           BEST DIGITAL MARKETING AGENCY
@@ -78,15 +78,15 @@ const HeroSection = () => {
 
       {/* Description + button */}
       <div
-        className="mt-10 flex flex-col lg:flex-row justify-end items-center lg:justify-between lg:gap-54 gap-10"
+        className="mt-10 flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:gap-54 gap-10"
         data-aos="fade-up"
       >
-        <p className="text-lg md:text-xl max-w-110">
+        <p className="text-lg md:text-xl max-w-110 text-center lg:text-left">
           Grow your business with a Jaipur-based digital marketing company
           trusted by startups and enterprises. We deliver results via SEO, paid
           ads, social media & performance strategies.
         </p>
-        <button className="group mango self-start bg-black text-2xl md:text-3xl text-white uppercase md:px-8 px-4 py-4  flex items-center justify-center gap-2 hover:opacity-90 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95">
+        <button className="group mango  bg-black text-2xl md:text-3xl text-white uppercase md:px-8 px-4 py-4  flex items-center justify-center gap-2 hover:opacity-90 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95">
           Let&apos;s Build Your Growth Engine
           <svg
             xmlns="http://www.w3.org/2000/svg"

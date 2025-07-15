@@ -42,7 +42,7 @@ const posts = [
 
 const page = () => {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Header />
       <Popup />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-16 bg-white">

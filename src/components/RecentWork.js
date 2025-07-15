@@ -2,7 +2,7 @@ import React from "react";
 
 const RecentWork = () => {
   return (
-    <section className="flex flex-col lg:flex-row lg:items-center p-5 md:p-16 lg:gap-42 gap-12 justify-center mb-6">
+    <section className="flex flex-col md:flex-row items-center p-5 md:p-16 lg:gap-42 gap-12 justify-center mb-6">
       <div data-aos="fade-up">
         <p className="mango text-[100px] h-[90px] lg:text-[150px] lg:h-[120px]">
           WE DO
@@ -11,7 +11,7 @@ const RecentWork = () => {
           GREAT WORK
         </p>
       </div>
-      <div className="space-y-5 lg:w-2/5" data-aos="fade-down">
+      <div className="space-y-5 md:w-2/5 text-center flex flex-col justify-center" data-aos="fade-down">
         <p className="text-xl">
           We uncover insights to achieve timelessness and relevance in this
           rapidly changing world.

@@ -19,7 +19,7 @@ const values = [
   {
     icon: "/industry_logo_2.png", // add this to /public
     title: "real-estate-marketing",
-    desc: "We bring you buyer-ready traffic from Google — people searching for flats, plots, rentals, and more.",
+    desc: "We bring you buyer-ready traffic from Google - people searching for flats, plots, rentals, and more.",
   },
   {
     icon: "/industry_logo_3.png", // add this to /public
@@ -34,12 +34,12 @@ const values = [
   {
     icon: "/industry_logo_4.png", // add this to /public
     title: "fashion-apparel-marketing",
-    desc: "From Indian ethnic to western streetwear — we help fashion stores and labels gain visibility without over-relying on ads.",
+    desc: "From Indian ethnic to western streetwear - we help fashion stores and labels gain visibility without over-relying on ads.",
   },
   {
     icon: "/industry_logo_3.png", // add this to /public
     title: "skincare-wellness-marketing",
-    desc: "We help you rank, educate, and convert — all while building trust with conscious buyers.",
+    desc: "We help you rank, educate, and convert - all while building trust with conscious buyers.",
   },
   {
     icon: "/industry_logo_5.png", // add this to /public
@@ -66,13 +66,13 @@ const Industries = () => {
       <section className="lg:px-24 px-7 lg:py-12 py-8">
         <div className="relative">
           <h1
-            className="text-[80px] lg:text-[160px] mango uppercase leading-16 lg:leading-34"
+            className="text-[70px] text-center lg:text-[160px] mango uppercase leading-16 lg:leading-34"
             data-aos="fade-down"
           >
             digital marketing solutions for industry specialized
           </h1>
 
-          <div className="absolute top-10 left-10">
+          <div className="absolute top-3 md:-top-3 md:left-20 lg:top-10 lg:left-10">
             <img
               src="/services_logo.png"
               alt="line"
@@ -85,7 +85,7 @@ const Industries = () => {
         <div className="flex flex-col md:flex-row md:px-0">
           <div className="lg:w-3/5 w-full">
             <p
-              className="text-lg md:text-2xl mt-10 md:pr-16 uppercase"
+              className="text-lg md:text-2xl mt-16 md:pr-16 uppercase"
               data-aos="fade-right"
             >
               We provide tailored digital marketing solutions for industry
@@ -98,11 +98,11 @@ const Industries = () => {
               alt="manufacturing-industry"
               height={300}
               width={700}
-              className="md:mt-44 my-10 md:my-0"
+              className="lg:mt-66 md:mt-25 my-10 md:my-0"
               data-aos="fade-left"
             />
           </div>
-          <div className="md:w-2/5 md:-mt-28">
+          <div className="md:w-2/5">
             <Image
               src="/industries_1.png"
               alt="industry Image"
@@ -112,7 +112,7 @@ const Industries = () => {
               data-aos-delay="200"
             />
             <div
-              className="bg-[#006046] p-8 md:p-16"
+              className="bg-[#006046] p-8 lg:p-16"
               data-aos="fade-left"
               data-aos-delay="400"
             >
@@ -124,7 +124,7 @@ const Industries = () => {
               </p>
               <p
                 data-aos="fade-down"
-                className="text-2xl md:text-4xl mt-5 text-white"
+                className="text-2xl lg:text-4xl mt-5 text-white"
               >
                 To partner with audacious companies globally to achieve
                 timelessness and relevance in a rapidly evolving world by
@@ -149,7 +149,7 @@ const Industries = () => {
               that everyone can’t leave, and the stories everyone remembers.
             </p>
           </div>
-          <div className="md:w-2/5 order-1 md:order-2">
+          <div className="md:w-2/6 lg:w-2/5 order-1 md:order-2 md:ml-13 lg:ml-0">
             <Image
               src="/industries_2.png"
               alt="indusry image"
@@ -168,14 +168,14 @@ const Industries = () => {
         </div>
       </section>
 
-      <section className="px-7 md:px-24 md:py-12 py-8">
+      <section className="md:px-24 md:py-12 py-8">
         <h1
           data-aos="zoom-in"
           className="mango text-6xl md:text-8xl text-center uppercase"
         >
           Our Industry Specific Services
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-24 px-6 py-16 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-24 px-4 py-16 text-center">
           {values.map((item, idx) => (
             <div
               key={idx}

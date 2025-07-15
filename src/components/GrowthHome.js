@@ -28,7 +28,7 @@ const GrowthHome = () => {
       {/* Background text */}
       <div className="lg:mt-16">
         <h2
-          className="lg:text-[200px] text-[100px] text-gray-300 mango ml-28 md:ml-0"
+          className="lg:text-[200px] text-[100px] text-gray-300 mango ml-24 md:ml-0"
           data-aos="fade-up"
         >
           SPEED
@@ -51,7 +51,7 @@ const GrowthHome = () => {
         <br className="hidden md:block" />
         <br className="hidden lg:block" />
         <h2
-          className="lg:text-[200px] text-[100px] leading-none mango ml-48 md:ml-0"
+          className="lg:text-[200px] text-[100px] leading-none mango ml-44 md:ml-0"
           data-aos="fade-up"
         >
           IMPACT

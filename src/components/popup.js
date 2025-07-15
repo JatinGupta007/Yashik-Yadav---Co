@@ -21,7 +21,7 @@ const Popup = () => {
 
       {/* Popup */}
       <div
-        className={`fixed bottom-28 right-6 w-90 bg-white p-8 rounded-xl shadow-lg z-40 transition-all duration-300 ${
+        className={`fixed bottom-28 right-6 w-90 bg-white p-8 rounded-xl shadow-lg z-40 transition-all duration-900 ${
           isOpen
             ? "translate-y-0 opacity-100"
             : "translate-y-10 opacity-0 pointer-events-none"

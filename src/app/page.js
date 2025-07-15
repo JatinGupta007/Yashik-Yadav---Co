@@ -12,7 +12,7 @@ import { Header } from "@/components/Header";
 
 export default function App() {
   return (
-    <main className="overflow-y-hidden mx-auto">
+    <main className="overflow-x-hidden mx-auto">
       <Header />
       <HeroSection />
       <AboutHome />

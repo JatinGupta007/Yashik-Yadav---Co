@@ -3,15 +3,19 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <main className="bg-gray-100">
-      <section className="flex flex-col lg:flex-row justify-center lg:px-20 px-5 md:gap-16 gap-8 py-16 mt-5">
+      <section className="flex flex-col lg:flex-row justify-center md:px-20 px-5 md:gap-16 gap-8 py-16 mt-5">
         <div className="lg:w-3/5" data-aos="fade-down">
-          <p className="mango text-[80px] leading-18 lg:text-[140px] lg:leading-32 uppercase">
-            Let’s Build Your Brand’s Digital Growth Engine
+          <p className="mango text-[70px] leading-16 lg:text-[140px] lg:leading-32 uppercase">
+            Let&apos;s Build Your Brand&apos;s Digital Growth Engine
           </p>
         </div>
-        <div className="self-end space-y-5 mb-8" data-aos="fade-up">
+        <div
+          className="lg:self-end space-y-5 mb-8"
+          data-aos="fade-up"
+        >
           <h3 className="text-xl">
-            We’re here to take your digital marketing to the next level with:
+            We&apos;re here to take your digital marketing to the next level
+            with:
           </h3>
           <ul className="text-lg list-disc pl-8">
             <li>Custom Strategy</li>
@@ -19,7 +23,7 @@ export default function Footer() {
             <li>Fast Execution</li>
             <li>Performance Tracking</li>
           </ul>
-          <button className="mango bg-black text-3xl text-white uppercase px-8 py-4 flex items-center justify-center gap-2 hover:opacity-90 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 mt-10">
+          <button className="mango bg-black text-3xl text-white uppercase px-6 md:px-8 py-4 flex items-center justify-center gap-3 hover:opacity-90 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 mt-10">
             Schedule Your Free Strategy Call
             <svg
               xmlns="http://www.w3.org/2000/svg"

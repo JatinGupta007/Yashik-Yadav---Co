@@ -105,9 +105,9 @@ export const Header = () => {
             />
           </div>
         </SheetTrigger>
-        <SheetContent className="bg-transparent backdrop-blur px-14 py-2 min-w-4/5">
-          <SheetHeader className="text-white">
-            <SheetTitle className="text-4xl text-white font-bold">
+        <SheetContent className="bg-white backdrop-blur px-14 py-2 min-w-3/5">
+          <SheetHeader className="text-black">
+            <SheetTitle className="text-4xl text-black font-bold">
               Menu
             </SheetTitle>
             <SheetDescription asChild>
@@ -116,7 +116,7 @@ export const Header = () => {
                   <Link
                     href="/"
                     className={`${
-                      pathname === "/" ? "text-blue-700" : "text-white"
+                      pathname === "/" ? "text-blue-700" : "text-black"
                     } hover:text-blue-700 transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95`}
                     onMouseEnter={() => setVisibleCard("A")}
                     onMouseLeave={toVisibleCard}
@@ -126,7 +126,7 @@ export const Header = () => {
                   <Link
                     href="/about"
                     className={`${
-                      pathname === "/about" ? "text-yellow-500" : "text-white"
+                      pathname === "/about" ? "text-yellow-500" : "text-black"
                     } hover:text-yellow-500 transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95`}
                     onMouseEnter={() => setVisibleCard("B")}
                     onMouseLeave={toVisibleCard}
@@ -136,7 +136,7 @@ export const Header = () => {
                   <Link
                     href="/work"
                     className={`${
-                      pathname === "/work" ? "text-purple-400" : "text-white"
+                      pathname === "/work" ? "text-purple-400" : "text-black"
                     } hover:text-purple-400 transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95`}
                     onMouseEnter={() => setVisibleCard("C")}
                     onMouseLeave={toVisibleCard}
@@ -146,7 +146,7 @@ export const Header = () => {
                   <Link
                     href="/services"
                     className={`${
-                      pathname === "/services" ? "text-green-700" : "text-white"
+                      pathname === "/services" ? "text-green-700" : "text-black"
                     } hover:text-green-700 transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95`}
                     onMouseEnter={() => setVisibleCard("D")}
                     onMouseLeave={toVisibleCard}
@@ -159,7 +159,7 @@ export const Header = () => {
                     className={`${
                       pathname === "/industries"
                         ? "text-rose-300"
-                        : "text-white"
+                        : "text-black"
                     } hover:text-rose-300 transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95`}
                     onMouseEnter={() => setVisibleCard("E")}
                     onMouseLeave={toVisibleCard}
@@ -169,7 +169,7 @@ export const Header = () => {
                   <Link
                     href="/blogs"
                     className={`${
-                      pathname === "/" ? "text-sky-200" : "text-white"
+                      pathname === "/blogs" ? "text-sky-200" : "text-black"
                     } hover:text-sky-200 transition-transform duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95`}
                     onMouseEnter={() => setVisibleCard("F")}
                     onMouseLeave={toVisibleCard}
@@ -180,7 +180,7 @@ export const Header = () => {
 
                 <section className="hidden md:block">
                   {visibleCard === "A" && (
-                    <div className="bg-blue-700 text-white px-12 py-5 flex flex-col items-center rounded-lg">
+                    <div className="bg-blue-700 text-black px-12 py-5 flex flex-col items-center rounded-lg">
                       {/* Text Section */}
 
                       <p className="text-lg md:text-xl max-w-md">

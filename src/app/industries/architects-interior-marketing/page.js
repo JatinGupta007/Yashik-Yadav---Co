@@ -5,10 +5,10 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <>
+    <main className="overflow-hidden">
       <Header />
       <Popup />
-      <section className="lg:px-24 p-7 lg:py-12">
+      <section className="lg:px-24 md:px-20 p-7 lg:py-12">
         <div className="relative">
           <h1 className="text-[90px] lg:text-[160px] mango text-center uppercase leading-22 lg:leading-34 mb-3">
             ARCHITECTS & INTERIOR MARKETING
@@ -80,7 +80,7 @@ export default function Page() {
               For Architects, Interior Studios, Consultants Let’s showcase your
               designs to the right clients.
             </p>
-            <button className="mango bg-black text-2xl text-white uppercase px-4 md:px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+            <button className="mango bg-black text-2xl text-white uppercase px-4 md:px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95">
               Get a Free SEO Strategy Plan
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -111,6 +111,6 @@ export default function Page() {
         </div>
       </section>
       <Footer />
-    </>
+    </main>
   );
 }

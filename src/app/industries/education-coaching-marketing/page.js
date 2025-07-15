@@ -8,19 +8,22 @@ export default function Page() {
     <>
       <Header />
       <Popup />
-      <section className="lg:px-24 lg:py-12 p-7">
+      <section className="lg:px-24 md:px-20 lg:py-12 p-7">
         <div className="relative">
-          <h1 className="text-[90px] lg:text-[160px] mango text-center uppercase leading-22 lg:leading-34 mb-3">
+          <h1
+            data-aos="fade-up"
+            className="text-[90px] lg:text-[160px] mango text-center uppercase leading-22 lg:leading-34 mb-3"
+          >
             Education, Coaching & EdTech
           </h1>
         </div>
         <div className="flex">
           <div className="lg:w-1/2"></div>
           <div className="lg:w-1/2">
-            <h2 className="text-6xl mango mb-3 uppercase">
+            <h2 data-aos="fade-left" className="text-6xl mango mb-3 uppercase">
               Get More Enrollments for Your Courses or Coaching
             </h2>
-            <p className="text-lg">
+            <p data-aos="fade-left" className="text-lg">
               Build authority and enrollments through demo booking flows,
               webinar funnels, and nurturing automations. We help educational
               brands rank on Google, drive inquiries, and build digital
@@ -34,11 +37,14 @@ export default function Page() {
           height={800}
           width={1400}
           className="rounded-xl my-16"
+          data-aos="zoom-out"
         />
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2">
-            <h2 className="text-6xl uppercase mango mb-3">Services We Offer</h2>
-            <ul className="text-lg space-y-2">
+            <h2 data-aos="fade-right" className="text-6xl uppercase mango mb-3">
+              Services We Offer
+            </h2>
+            <ul data-aos="fade-right" className="text-lg space-y-2">
               <li>Demo Class & Webinar Ad Funnels</li>
               <li>Institute SEO + Google Ads</li>
               <li>Reels + Testimonial Video Edits</li>
@@ -47,7 +53,7 @@ export default function Page() {
               <li>WhatsApp + Email Automation</li>
             </ul>
           </div>
-          <div className="md:w-1/2 md:mt-46 mt-10">
+          <div data-aos="fade-left" className="md:w-1/2 md:mt-46 mt-10">
             <h2 className="text-6xl mango uppercase mb-3">Targeted Outcomes</h2>
             <ul className="text-lg space-y-2 md:pl-4">
               <li>
@@ -69,9 +75,12 @@ export default function Page() {
           </div>
         </div>
 
-        <section className="flex flex-col md:flex-row md:items-center md:p-12 p-7 md:py-16 border-b border-blue-400 gap-6 justify-center mb-12 bg-cyan-500 mt-16">
-          <div className="w-7/12">
-            <p className="mango text-[60px] md:text-[100px] uppercase leading-13 md:leading-22 text-white">
+        <section className="flex flex-col lg:flex-row md:items-center md:p-12 p-7 md:py-16 border-b border-blue-400 gap-6 justify-center mb-12 bg-cyan-500 mt-16">
+          <div className="lg:w-7/12">
+            <p
+              data-aos="fade-up"
+              className="mango text-[60px] md:text-[100px] uppercase leading-13 md:leading-22 text-white"
+            >
               Book More Admissions, Rank Higher
             </p>
 
@@ -79,12 +88,15 @@ export default function Page() {
             GREAT WORK
           </p> */}
           </div>
-          <div className="space-y-5 bg-cyan-200 md:p-12 p-7 md:w-5/12">
+          <div
+            data-aos="fade-down"
+            className="space-y-5 bg-cyan-200 md:p-12 p-7 lg:w-5/12"
+          >
             <p className="text-xl">
               Helping Institutions Attract Students in a Digital World Let’s
               build an inbound engine for your education brand.
             </p>
-            <button className="mango bg-black text-2xl text-white uppercase px-4 md:px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+            <button className="mango bg-black text-2xl text-white uppercase px-4 md:px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95">
               Get a Free SEO Strategy Plan
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +116,7 @@ export default function Page() {
         </section>
         <div className="flex">
           <div className="md:w-1/2"></div>
-          <div className="md:w-1/2">
+          <div data-aos="fade-left" className="md:w-1/2">
             <h3 className="text-5xl mango uppercase">Our Strategy</h3>
             <p className="text-xl">
               We research what patients are searching like: “urologist near me,”

@@ -196,7 +196,7 @@ const Services = () => {
               </p>
               <button
                 data-aos="fade-right"
-                className="mt-10 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95"
+                className="mt-10 mango bg-black text-white px-3 py-2 text-2xl md:px-6 md:py-4 md:text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95"
               >
                 EXPLORE BRAND WORK
                 <span className="ml-4 group-hover:translate-x-1 transition-transform">
@@ -519,9 +519,9 @@ const Services = () => {
           {/* Button */}
           <button
             data-aos="flip-right"
-            className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
+            className="mt-8 mango bg-black text-white px-3 py-2 text-2xl md:px-6 md:py-4 md:text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
           >
-            Let’s Build Your Campaign
+            Let&apos;s Build Your Campaign
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
               ➜
             </span>
@@ -529,7 +529,7 @@ const Services = () => {
           <img
             src="/strategy_1.png"
             alt="strategy"
-            className="w-50 self-center mt-5 -ml-16"
+            className="w-80 pl-30 mt-5 -ml-16"
             data-aos="flip-right"
           />
         </div>
@@ -640,7 +640,7 @@ const Services = () => {
           </div>
         </div>
         {/* Right column */}
-        <div className="flex flex-col justify-start w-4/5">
+        <div className="flex flex-col justify-start lg:w-4/5">
           <p className="text-3xl mb-4" data-aos="fade-left">
             Results We Bring
           </p>
@@ -651,7 +651,7 @@ const Services = () => {
           {/* Button */}
           <button
             data-aos="fade-left"
-            className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
+            className="mt-8 mango bg-black text-white px-3 py-2 text-2xl md:px-6 md:py-4 md:text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
           >
             Book a Growth Strategy Call
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
@@ -661,7 +661,7 @@ const Services = () => {
           <img
             src="/strategy_2.png"
             alt="strategy"
-            className="w-50 self-center mt-5 -ml-16"
+            className="w-80 pl-30 mt-5 -ml-16"
             data-aos="fade-left"
           />
         </div>
@@ -700,7 +700,7 @@ const Services = () => {
           {/* Button */}
           <button
             data-aos="fade-up"
-            className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
+            className="mt-8 mango bg-black text-white px-3 py-2 text-2xl md:px-6 md:py-4 md:text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
           >
             Get a Free Design Proposal
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
@@ -710,7 +710,7 @@ const Services = () => {
           <img
             src="/strategy_3.png"
             alt="strategy"
-            className="w-50 self-center mt-5 -ml-16"
+            className="w-80 pl-30 mt-5 -ml-16"
             data-aos="fade-up"
           />
         </div>
@@ -819,7 +819,7 @@ const Services = () => {
           </div>
         </div>
         {/* Right column */}
-        <div className="flex flex-col justify-start w-4/5">
+        <div className="flex flex-col justify-start lg:w-4/5">
           <p className="text-3xl mb-4" data-aos="fade-down">
             Why It Works
           </p>
@@ -832,7 +832,7 @@ const Services = () => {
           {/* Button */}
           <button
             data-aos="fade-down"
-            className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
+            className="mt-8 mango bg-black text-white px-3 py-2 text-2xl md:px-6 md:py-4 md:text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
           >
             Schedule Your Free Social Media Review
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
@@ -842,7 +842,7 @@ const Services = () => {
           <img
             src="/strategy_1.png"
             alt="strategy"
-            className="w-50 self-center mt-5 -ml-16"
+            className="w-80 pl-30 mt-5 -ml-16"
             data-aos="fade-down"
           />
         </div>
@@ -867,7 +867,7 @@ const Services = () => {
 
       <section className="flex flex-col lg:flex-row gap-20 md:px-16 px-7 py-16 bg-white text-black">
         {/* Left column */}
-        <div className="flex flex-col justify-start w-4/5">
+        <div className="flex flex-col justify-start lg:w-4/5">
           <p className="text-3xl mb-4" data-aos="fade-right">
             Outcome
           </p>
@@ -879,7 +879,7 @@ const Services = () => {
           {/* Button */}
           <button
             data-aos="fade-right"
-            className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
+            className="mt-8 mango bg-black text-white px-3 py-2 text-2xl md:px-6 md:py-4 md:text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
           >
             Start Automating Today
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
@@ -889,7 +889,7 @@ const Services = () => {
           <img
             src="/strategy_2.png"
             alt="strategy"
-            className="w-50 self-center mt-5 -ml-16"
+            className="w-80 pl-30 mt-5 -ml-16"
             data-aos="fade-right"
           />
         </div>
@@ -993,7 +993,7 @@ const Services = () => {
           </div>
         </div>
         {/* Right column */}
-        <div className="flex flex-col justify-start w-4/5">
+        <div className="flex flex-col justify-start lg:w-4/5">
           <p className="text-3xl mb-4" data-aos="flip-left">
             Why Choose Us
           </p>
@@ -1005,7 +1005,7 @@ const Services = () => {
           {/* Button */}
           <button
             data-aos="flip-left"
-            className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
+            className="mt-8 mango bg-black text-white px-3 py-2 text-2xl md:px-6 md:py-4 md:text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
           >
             Launch Your Influencer Campaign
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
@@ -1015,7 +1015,7 @@ const Services = () => {
           <img
             src="/strategy_3.png"
             alt="strategy"
-            className="w-50 self-center mt-5 -ml-16"
+            className="w-80 pl-30 mt-5 -ml-16"
           />
         </div>
       </section>
@@ -1039,7 +1039,7 @@ const Services = () => {
 
       <section className="flex flex-col lg:flex-row gap-20 md:px-16 px-7 py-16 bg-white text-black">
         {/* Left column */}
-        <div className="flex flex-col justify-start w-4/5">
+        <div className="flex flex-col justify-start lg:w-4/5">
           <p className="text-3xl mb-4" data-aos="fade-down">
             Why CRO?
           </p>
@@ -1051,7 +1051,7 @@ const Services = () => {
           {/* Button */}
           <button
             data-aos="fade-down"
-            className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
+            className="mt-8 mango bg-black text-white px-3 py-2 text-2xl md:px-6 md:py-4 md:text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
           >
             Start Your CRO Audit
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
@@ -1061,7 +1061,7 @@ const Services = () => {
           <img
             src="/strategy_2.png"
             alt="strategy"
-            className="w-50 self-center mt-5 -ml-16"
+            className="w-80 pl-30 mt-5 -ml-16"
             data-aos="fade-down"
           />
         </div>
@@ -1165,7 +1165,7 @@ const Services = () => {
           </div>
         </div>
         {/* Right column */}
-        <div className="flex flex-col justify-start w-4/5">
+        <div className="flex flex-col justify-start lg:w-4/5">
           <p className="text-3xl mb-4" data-aos="flip-left">
             Why Trust Us
           </p>
@@ -1177,7 +1177,7 @@ const Services = () => {
           {/* Button */}
           <button
             data-aos="flip-left"
-            className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
+            className="mt-8 mango bg-black text-white px-3 py-2 text-2xl md:px-6 md:py-4 md:text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
           >
             Request Dashboard Sample
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
@@ -1187,7 +1187,7 @@ const Services = () => {
           <img
             src="/strategy_1.png"
             alt="strategy"
-            className="w-50 self-center mt-5 -ml-16"
+            className="w-80 pl-30 mt-5 -ml-16"
             data-aos="flip-left"
           />
         </div>
@@ -1212,7 +1212,7 @@ const Services = () => {
 
       <section className="flex flex-col lg:flex-row gap-20 md:px-16 px-7 py-16 bg-white text-black">
         {/* Left column */}
-        <div className="flex flex-col justify-start w-4/5">
+        <div className="flex flex-col justify-start lg:w-4/5">
           <p data-aos="fade-right" className="text-3xl mb-4">
             Why ORM Works
           </p>
@@ -1224,7 +1224,7 @@ const Services = () => {
           {/* Button */}
           <button
             data-aos="fade-right"
-            className="mt-8 mango bg-black text-white px-6 py-4 text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
+            className="mt-8 mango bg-black text-white px-3 py-2 text-2xl md:px-6 md:py-4 md:text-4xl flex items-center justify-between w-fit group hover:bg-gray-900 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 uppercase"
           >
             Book Your Reputation Audit
             <span className="ml-4 group-hover:translate-x-1 transition-transform">
@@ -1234,7 +1234,7 @@ const Services = () => {
           <img
             src="/strategy_3.png"
             alt="strategy"
-            className="w-50 self-center mt-5 -ml-16"
+            className="w-80 pl-30 mt-5 -ml-16"
             data-aos="fade-right"
           />
         </div>
@@ -1279,7 +1279,7 @@ const Services = () => {
       </section>
 
       <div data-aos="zoom-out" className="mb-10 lg:mt-10">
-        <p className="text-2xl lg:text-4xl uppercase px-7 lg:px-24 lg:leading-12 lg:w-4/5">
+        <p className="text-2xl lg:text-4xl uppercase px-7 lg:px-24 lg:leading-12 lg:lg:w-4/5">
           We are the creators of the brands everyone loves, the products that
           everyone can&apos;t leave, and the stories everyone remembers.
         </p>
