@@ -190,7 +190,7 @@ const Services = () => {
                 Love Us
               </p>
               <p className="tex-lg" data-aos="fade-right">
-                Our strategies go beyond rankings — they drive traffic that
+                Our strategies go beyond rankings - they drive traffic that
                 converts. With a strong base in Jaipur, we deliver results with
                 complete transparency, education, and performance tracking.
               </p>

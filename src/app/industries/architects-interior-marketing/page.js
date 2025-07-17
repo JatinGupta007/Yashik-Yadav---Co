@@ -10,17 +10,20 @@ export default function Page() {
       <Popup />
       <section className="lg:px-24 md:px-20 p-7 lg:py-12">
         <div className="relative">
-          <h1 className="text-[90px] lg:text-[160px] mango text-center uppercase leading-22 lg:leading-34 mb-3">
+          <h1
+            data-aos="flip-up"
+            className="text-[90px] lg:text-[160px] mango text-center uppercase leading-22 lg:leading-34 mb-3"
+          >
             ARCHITECTS & INTERIOR MARKETING
           </h1>
         </div>
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2"></div>
           <div className="md:w-1/2">
-            <h2 className="text-6xl mango mb-3 uppercase">
-              Build Your Design Brand Online - Reach, Inspire, Convert
+            <h2 data-aos="fade-left" className="text-6xl mango mb-3 uppercase">
+              Build Your Design Brand Online Reach, Inspire, Convert
             </h2>
-            <p className="text-lg">
+            <p data-aos="fade-left" className="text-lg">
               We help architecture firms, interior designers, and studios
               showcase their work, rank in local search, and generate
               high-ticket project inquiries. We help architecture firms,
@@ -30,6 +33,7 @@ export default function Page() {
           </div>
         </div>
         <Image
+          data-aos="zoom-in"
           src="/EDUCATION & COACHING MARKETING.webp"
           alt="Health_care"
           height={700}
@@ -38,36 +42,46 @@ export default function Page() {
         />
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2">
-            <h2 className="text-6xl uppercase mango mb-3">Services We Offer</h2>
+            <h2 data-aos="fade-up" className="text-6xl uppercase mango mb-3">
+              Services We Offer
+            </h2>
             <ul className="text-lg space-y-2">
-              <li>
+              <li data-aos="fade-up">
                 Landing Pages by Service (Kitchen, Living Room, Office, etc.)
               </li>
-              <li>Review Strategy + CRM Integration</li>
-              <li>Portfolio Website Design + SEO</li>
-              <li>Instagram Growth Strategy + Reels</li>
-              <li>Video Walkthroughs of Projects</li>
-              <li>Course Landing Page SEO + CTA Optimization</li>
-              <li>Blog Content on Exams, Results, Tips</li>
-              <li>WhatsApp + Email Automation</li>
+              <li data-aos="fade-up">Review Strategy + CRM Integration</li>
+              <li data-aos="fade-up">Portfolio Website Design + SEO</li>
+              <li data-aos="fade-up">Instagram Growth Strategy + Reels</li>
+              <li data-aos="fade-up">Video Walkthroughs of Projects</li>
+              <li data-aos="fade-up">
+                Course Landing Page SEO + CTA Optimization
+              </li>
+              <li data-aos="fade-up">Blog Content on Exams, Results, Tips</li>
+              <li data-aos="fade-up">WhatsApp + Email Automation</li>
             </ul>
           </div>
           <div className="md:w-1/2 md:mt-46 md:pl-10 mt-10">
-            <h2 className="text-6xl mango uppercase mb-3">Targeted Outcomes</h2>
+            <h2 data-aos="fade-down" className="text-6xl mango uppercase mb-3">
+              Targeted Outcomes
+            </h2>
             <ul className="text-lg space-y-2 md:pl-4">
-              <li>Project Inquiries</li>
-              <li>Studio Appointments</li>
-              <li>Design-Driven SEO for Creatives</li>
-              <li>Residential & Commercial Leads</li>
-              <li>Google Business Profile & Maps Ranking</li>
-              <li>WhatsApp Chat Automation for Consultation Requests</li>
+              <li data-aos="fade-down">Project Inquiries</li>
+              <li data-aos="fade-down">Studio Appointments</li>
+              <li data-aos="fade-down">Design-Driven SEO for Creatives</li>
+              <li data-aos="fade-down">Residential & Commercial Leads</li>
+              <li data-aos="fade-down">
+                Google Business Profile & Maps Ranking
+              </li>
+              <li data-aos="fade-down">
+                WhatsApp Chat Automation for Consultation Requests
+              </li>
             </ul>
           </div>
         </div>
 
         <section className="flex flex-col lg:flex-row lg:items-center p-7 lg:p-12 lg:py-16 border-b border-blue-400 gap-6 justify-center mb-12 bg-lime-200 mt-16">
           <div className="lg:w-7/12">
-            <p className="mango text-[60px] md:text-[100px] uppercase leading-13 md:leading-22 text-black">
+            <p data-aos="zoom-in" className="mango text-[60px] md:text-[100px] uppercase leading-13 md:leading-22 text-black">
               Build Your Digital Foundation Today
             </p>
 
@@ -75,7 +89,7 @@ export default function Page() {
             GREAT WORK
           </p> */}
           </div>
-          <div className="space-y-5 bg-lime-400 p-7 lg:p-12 lg:w-5/12">
+          <div data-aos="zoom-out" className="space-y-5 bg-lime-400 p-7 lg:p-12 lg:w-5/12">
             <p className="text-xl">
               For Architects, Interior Studios, Consultants Let’s showcase your
               designs to the right clients.
@@ -101,8 +115,8 @@ export default function Page() {
         <div className="flex">
           <div className="md:w-1/2"></div>
           <div className="md:w-1/2">
-            <h3 className="text-5xl mango uppercase">Our Strategy</h3>
-            <p className="text-xl">
+            <h3 data-aos="flip-up" className="text-5xl mango uppercase">Our Strategy</h3>
+            <p data-aos="flip-up" className="text-xl">
               We help you rank for terms like “modern 3BHK interior designer,”
               “Vastu compliant home,” etc. Project storytelling meets Google
               optimization — crafted perfectly.

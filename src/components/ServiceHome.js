@@ -46,19 +46,19 @@ const ServiceHome = () => {
                 <h3 className="text-2xl mb-4">
                   We are a performance-driven digital marketing agency offering:
                 </h3>
-                <li>SEO Services – Rank on Google with targeted SEO</li>
+                <li>SEO Services - Rank on Google with targeted SEO</li>
                 <li>
-                  Google Ads & PPC – Smart paid campaigns to generate qualified
+                  Google Ads & PPC - Smart paid campaigns to generate qualified
                   leads
                 </li>
                 <li>
-                  Social Media Marketing – Instagram & Facebook growth campaigns
+                  Social Media Marketing - Instagram & Facebook growth campaigns
                 </li>
                 <li>
-                  Web Design & Development – Mobile-first, fast-loading websites
+                  Web Design & Development - Mobile-first, fast-loading websites
                 </li>
                 <li>
-                  Influencer & Content Marketing – Authentic collaborations that
+                  Influencer & Content Marketing - Authentic collaborations that
                   convert
                 </li>
               </ul>

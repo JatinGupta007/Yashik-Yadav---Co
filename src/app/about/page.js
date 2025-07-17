@@ -71,7 +71,7 @@ function About() {
             </p>
             <p className="text-xl" data-aos="fade-right">
               From building high-converting websites to scaling brands with
-              Google Ads and social media — we’re on a mission to **put your
+              Google Ads and social media - we&apos;re on a mission to **put your
               business at the forefront of your industry**.
             </p>
             <button className="mango bg-black text-2xl lg:text-4xl text-white uppercase px-4 lg:px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95">
@@ -127,7 +127,7 @@ function About() {
               Today, we are a full-stack digital marketing agency trusted by
               100+ brands across healthcare, e-commerce, tech, and lifestyle.
               The same hunger, curiosity, and client-first mindset still drives
-              us — just with a bigger team and a bolder vision.
+              us - just with a bigger team and a bolder vision.
             </p>
           </div>
         </div>
@@ -163,7 +163,7 @@ function About() {
                 IMPACT
               </p>
               <p className="text-lg text-white" data-aos="flip-left">
-                We don’t believe in fluff. We focus on impact metrics — leads,
+                We don&apos;t believe in fluff. We focus on impact metrics - leads,
                 conversions, ROAS, and long-term brand visibility.
               </p>
             </div>
@@ -321,7 +321,7 @@ function About() {
               ownership, creativity, and speed.
             </p>
             <p data-aos="fade-right">
-              Whether it&apos;s 1-on-1 with clients or large-scale campaigns —
+              Whether it&apos;s 1-on-1 with clients or large-scale campaigns -
               we move fast, optimize faster, and always deliver with care.
             </p>
           </div>
@@ -350,7 +350,7 @@ function About() {
       <section className="flex flex-col lg:flex-row items-center justify-center md:px-20 lg:px-24 px-6 mt-20">
         <div className="w-full order-3 lg:order-1" data-aos="fade-right">
           <p className="text-lg">
-            We believe in marketing that doesn’t just look good — it performs.
+            We believe in marketing that doesn&apos;t just look good - it performs.
           </p>
           <div className="mt-10">
             <a className="inline-flex items-center justify-between bg-black text-white text-4xl px-6 py-4 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 mango uppercase">
@@ -365,7 +365,7 @@ function About() {
               className="text-[22px] lg:text-[40px] mango uppercase"
               data-aos="zoom-out"
             >
-              Yes, we&apos;re a little obsessed — and that&apos;s a good thing.
+              Yes, we&apos;re a little obsessed and that&apos;s a good thing.
             </p>
           </div>
           <p
