@@ -7,7 +7,6 @@ const ServiceHome = () => {
         <div
           className="text-[100px] lg:text-[180px] leading-22 lg:leading-40 uppercase mango text-white h-[525px] w-[230px] lg:w-[350px] bg-green-700 px-10 hidden md:flex flex-col items-center justify-center"
           data-aos="fade-right"
-          data-aos-duration="200"
         >
           <h1 className="" data-aos="fade-up">
             What we do
@@ -25,9 +24,8 @@ const ServiceHome = () => {
       <div>
         <div className="overflow-y-auto md:h-[525px] scrollbar-hide p-5 md:p-0">
           <div
-            className="flex flex-col lg:flex-row lg:p-12 bg-sky-50 w-full p-5 justify-between"
+            className="flex flex-col lg:flex-row lg:p-12 bg-[#f5f5f5] w-full p-5 justify-between"
             data-aos="fade-left"
-            data-aos-duration="200"
             data-aos-delay="300"
           >
             <div>
@@ -79,7 +77,7 @@ const ServiceHome = () => {
             </video>
           </div>
 
-          <div className="flex flex-col lg:flex-row lg:p-12 w-full p-5 justify-between bg-sky-100">
+          <div className="flex flex-col lg:flex-row lg:p-12 w-full p-5 justify-between bg-teal-50">
             <div>
               <h2 className="text-[50px] lg:text-[70px] mango leading-12 lg:leading-16 mb-6 uppercase">
                 Reimagining Growth, Speed & Impact

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const PartnerHome = () => {
   return (
-    <section className="flex-wrap" data-aos="flip-up">
+    <section className="flex-wrap" data-aos="flip-left">
       <h1
         className="text-center text-5xl mango uppercase m-8"
         data-aos="fade-up"

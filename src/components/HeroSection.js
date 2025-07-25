@@ -19,7 +19,7 @@ const HeroSection = () => {
           >
             RE
           </h1>
-          <h1 className="text-[120px] mango h-30 lg:hidden">RETHINK</h1>
+          <h1 data-aos="flip-down" className="text-[120px] mango h-30 lg:hidden">RETHINK</h1>
         </div>
 
         <video
@@ -72,14 +72,14 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <video loop muted autoPlay className="-mt-10 w-full lg:hidden">
+      <video data-aos="zoom-in" loop muted autoPlay className="-mt-10 w-full lg:hidden">
         <source src="/video_1.mp4" />
       </video>
 
       {/* Description + button */}
       <div
         className="mt-10 flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:gap-54 gap-10"
-        data-aos="fade-up"
+        data-aos="flip-up"
       >
         <p className="text-lg md:text-xl max-w-110 text-center lg:text-left">
           Grow your business with a Jaipur-based digital marketing company

@@ -248,7 +248,7 @@ export const Header = () => {
                       {/* Text Section */}
 
                       <p className="text-lg md:text-xl max-w-md">
-                        Learn more about our journey and <br /> what defines us
+                        Learn more about our workin Industries and which define the industry specific services that we provide you.
                       </p>
 
                       <video className="md:w-[200px]" playsInline autoPlay loop>
@@ -262,7 +262,7 @@ export const Header = () => {
                       {/* Text Section */}
 
                       <p className="text-lg md:text-xl max-w-md">
-                        Learn more about our journey and <br /> what defines us
+                        Learn more about our Company by exploring our journey and what defines us
                       </p>
 
                       <video className="md:w-[200px]" playsInline autoPlay loop>

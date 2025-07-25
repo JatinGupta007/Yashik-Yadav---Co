@@ -63,6 +63,7 @@ const Industries = () => {
     <main className="overflow-hidden">
       <Header />
       <Popup />
+      {/* Hero Section */}
       <section className="lg:px-24 px-7 lg:py-12 py-8">
         <div className="relative">
           <h1
@@ -167,7 +168,7 @@ const Industries = () => {
           </div>
         </div>
       </section>
-
+       {/* Industries Section */}
       <section className="md:px-24 md:py-12 py-8">
         <h1
           data-aos="zoom-in"

@@ -32,16 +32,7 @@ const Popup = () => {
         <p className="text-lg text-gray-600">
           📧 Email:{" "}
           <a href="mailto:hello@yashikyadav.com" className="text-blue-700">
-            hello@yashikyadav.com
-          </a>
-          <br />
-          🌐 Website:{" "}
-          <a
-            href="https://example.com"
-            target="_blank"
-            className="text-blue-700"
-          >
-            example.com
+            yashikyadavandco@gmail.com
           </a>
         </p>
 

@@ -3,11 +3,13 @@ import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
 import Popup from "@/components/popup";
 import Image from "next/image";
+import Link from "next/link";
 
 function About() {
   return (
     <main className="overflow-hidden">
       <Header />
+      {/* Hero Section */}
       <section className="flex flex-col md:flex-row justify-center md:items-center px-7 md:px-20 md:pt-16 lg:px-30 gap-6 md:gap-10 lg:gap-16">
         <div>
           <p
@@ -46,9 +48,9 @@ function About() {
           </p>
         </div>
       </section>
-
+      {/* Popup Component */}
       <Popup />
-
+      {/* About Section */}
       <section className="flex flex-col items-center px-7 md:px-28 space-y-10 mt-16">
         <Image
           src="/photo-aboutwebp.webp"
@@ -71,25 +73,27 @@ function About() {
             </p>
             <p className="text-xl" data-aos="fade-right">
               From building high-converting websites to scaling brands with
-              Google Ads and social media - we&apos;re on a mission to **put your
-              business at the forefront of your industry**.
+              Google Ads and social media - we&apos;re on a mission to put your
+              business at the forefront of your industry.
             </p>
-            <button className="mango bg-black text-2xl lg:text-4xl text-white uppercase px-4 lg:px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95">
-              OUR SERVICES
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                viewBox="0 0 24 24"
-              >
-                <line x1="5" y1="12" x2="19" y2="12" />
-                <polyline points="12 5 19 12 12 19" />
-              </svg>
-            </button>
+            <Link href="/services">
+              <button className="mango bg-black text-2xl lg:text-4xl text-white uppercase px-4 lg:px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95">
+                OUR SERVICES
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  viewBox="0 0 24 24"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -116,13 +120,15 @@ function About() {
               Back in 2020, our founder Yashik Yadav was just a solo marketer
               working late nights, building websites and running ad campaigns
               from a small home office in Jaipur. What started as freelance gigs
-              soon turned into long-term clients - and bigger opportunities.
+              soon turned into long-term clients and bigger opportunities.
             </p>
             <p className="text-xl" data-aos="flip-left">
               From ranking local doctors on Google Maps to running Google Ads
               for multi-city real estate firms, the mission became clear:
             </p>
-            <p>Make marketing simple, transparent, and results-driven.</p>
+            <p className="text-xl" data-aos="flip-right">
+              Make marketing simple, transparent, and results-driven.
+            </p>
             <p className="text-xl" data-aos="zoom-in">
               Today, we are a full-stack digital marketing agency trusted by
               100+ brands across healthcare, e-commerce, tech, and lifestyle.
@@ -132,7 +138,7 @@ function About() {
           </div>
         </div>
       </section>
-
+      {/* Focus Section */}
       <section className="bg-green-800 lg:p-16 p-5 mt-20 lg:m-16 space-y-32">
         <div className="flex gap-8">
           <div className="bg-yellow-300 w-12 h-12 mt-10"></div>
@@ -163,8 +169,8 @@ function About() {
                 IMPACT
               </p>
               <p className="text-lg text-white" data-aos="flip-left">
-                We don&apos;t believe in fluff. We focus on impact metrics - leads,
-                conversions, ROAS, and long-term brand visibility.
+                We don&apos;t believe in fluff. We focus on impact metrics -
+                leads, conversions, ROAS, and long-term brand visibility.
               </p>
             </div>
           </div>
@@ -346,17 +352,18 @@ function About() {
           </div>
         </section>
       </section>
-
+      {/* Our Work Section */}
       <section className="flex flex-col lg:flex-row items-center justify-center md:px-20 lg:px-24 px-6 mt-20">
         <div className="w-full order-3 lg:order-1" data-aos="fade-right">
           <p className="text-lg">
-            We believe in marketing that doesn&apos;t just look good - it performs.
+            We believe in marketing that doesn&apos;t just look good - it
+            performs.
           </p>
           <div className="mt-10">
-            <a className="inline-flex items-center justify-between bg-black text-white text-4xl px-6 py-4 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 mango uppercase">
+            <Link href="/work" className="inline-flex items-center justify-between bg-black text-white text-4xl px-6 py-4 transition-all duration-200 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 mango uppercase">
               Our Work
               <span className="ml-4 text-2xl">➔</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="relative order-1 lg:order-2">
@@ -394,40 +401,7 @@ function About() {
           </p>
         </div>
       </section>
-
-      {/* <section className="flex justify-center px-20 gap-10 py-10 bg-gray-100">
-        <div className="w-3/5">
-          <h2 className="mango text-[140px] leading-32 uppercase">
-            Let&apos;s Make It Happen Together
-          </h2>
-        </div>
-        <div className="self-end space-y-5 mb-8">
-          <h3 className="text-xl">
-            Let’s co-create your next breakthrough campaign.
-          </h3>
-          <p>
-            We build systems, not just strategies — and that’s what sets us
-            apart.
-          </p>
-          <button className="mango bg-[#f16333] text-4xl text-white uppercase px-8 py-4 max-w-[360px] flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
-            Start a conversation
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              viewBox="0 0 24 24"
-            >
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <polyline points="12 5 19 12 12 19" />
-            </svg>
-          </button>
-        </div>
-      </section> */}
-
+      {/* Footer Section */}
       <Footer />
     </main>
   );
